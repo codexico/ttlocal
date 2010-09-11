@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
                 success: function (data) {
                     if (data === "updated") {
                         if (window.console) {
-                            console.log("Updated! You can refresh now.");
+                            window.console.log("Updated! You can refresh now.");
                         }
                     }//TODO: add some visual alert? auto-refresh content?
                 }
@@ -142,13 +142,25 @@ jQuery(document).ready(function ($) {
             menuCountryOnClickQuicksand();
             menuTownOnClickQuicksand();
         }
-
+        function urlAnchor(){
+            var locationHash = window.location.hash,
+            lhash, //hash sem '#'
+            $filteredHash; //lista do local do hash
+            if(locationHash){
+                lhash = locationHash.replace(/^#/, '');
+                $filteredHash = $data.find('li[data-hash=' + lhash+ ']');
+                if($filteredHash.size()){//encontrou algo
+                    reappendQuicksand($applications, $filteredHash);
+                }
+            }
+        }
         function init() {
             //            updateCacheTT();
             //            cronTT();
             lancelotLinks();
             lancelotMenu();
             menusOnClickQuicksand();
+            urlAnchor();
         }
         // reveal all things private by assigning public pointers
         return {
@@ -158,5 +170,6 @@ jQuery(document).ready(function ($) {
 
 
     TTlocal.init();
+
 
 });

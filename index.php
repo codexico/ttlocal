@@ -1,9 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>TTlocal - Local Twitter Trending Topics</title>
-        <meta name="description" content="Check out Twitter Trending Topics from all the places in the World in one simple view." />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+        <meta property="og:title" content="Local Twitter Trending Topics"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://ttlocal.info"/>
+        <meta property="og:site_name" content="TTlocal"/>
+        <meta property="fb:admins" content="USER_ID"/>
+        <meta property="og:description"
+              content="Check out Twitter Trending Topics from all the places in the World in one simple view."/>
+
+        <meta name="description"
+              content="Check out Twitter Trending Topics from all the places in the World in one simple view."/>
         <meta http-equiv="content-language" content="en" />
 
 
@@ -25,20 +37,6 @@
         <!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
         <!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
         <!-- end 960 ieca -->
-
-
-        <!-- google analytics -->
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-17676120-1']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-        <!-- end google analytics -->
 
 
     </head>
@@ -101,28 +99,9 @@
 
         <script type="text/javascript" src="js/ttlocal.js"></script>
 
-        <!-- twitter goodies -->
-        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-        <script src="http://platform.twitter.com/anywhere.js?id=7xd5gQGwuWDsOBSc5Wa7Hg&v=1" type="text/javascript"></script>
-        <!--
-        <script type="text/javascript">
-            twttr.anywhere(function (T) {
-                T('#follow-twitterapi').followButton("ttlocal");
-            });
-        </script>
-        -->
-        <script type="text/javascript">
-            twttr.anywhere(function (T) {
-                T("#tbox").tweetBox({
-                    label: "What do you think of @TTlocal?",
-                    defaultContent: "@ttlocal "
-                });
-            });
-        </script>
-        <!-- end twitter goodies -->
-
+        <!-- facebook goodies -->
         <div id="fb-root"></div>
-        <script>
+        <script type="text/javascript" >
             window.fbAsyncInit = function() {
                 FB.init({appId: '151028201584145', status: true, cookie: true,
                     xfbml: true});
@@ -134,6 +113,32 @@
                 document.getElementById('fb-root').appendChild(e);
             }());
         </script>
+        <!-- end facebook goodies -->
 
+        <!-- twitter goodies -->
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        <script src="http://platform.twitter.com/anywhere.js?id=7xd5gQGwuWDsOBSc5Wa7Hg&v=1" type="text/javascript"></script>
+        <script type="text/javascript">
+            twttr.anywhere(function (T) {
+                T("#tbox").tweetBox({
+                    label: "What do you think of @TTlocal?",
+                    defaultContent: "@ttlocal "
+                });
+            });
+       </script>
+        <!-- end twitter goodies -->
+
+        <!-- google analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-17676120-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- end google analytics -->
     </body>
 </html>

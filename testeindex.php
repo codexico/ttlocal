@@ -103,29 +103,18 @@
 
 
         </div>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.lancelot-compiled.js"></script>
         <script type="text/javascript" src="js/jquery.quicksand.min.js"></script>
 
         <!--<script type="text/javascript" src="js/testettlocal.js"></script>-->
         <script type="text/javascript" src="js/testettlocal.js"></script>
 
+        <!-- facebook goodies -->
+        <!-- end facebook goodies -->
+
         <!-- twitter goodies -->
         <!-- end twitter goodies -->
-
-        <div id="fb-root"></div>
-        <script>
-            window.fbAsyncInit = function() {
-                FB.init({appId: '151028201584145', status: true, cookie: true,
-                    xfbml: true});
-            };
-            (function() {
-                var e = document.createElement('script'); e.async = true;
-                e.src = document.location.protocol +
-                    '//connect.facebook.net/en_US/all.js';
-                document.getElementById('fb-root').appendChild(e);
-            }());
-        </script>
 
     </body>
 </html>
