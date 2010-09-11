@@ -43,18 +43,23 @@
                     <!-- <span class="version" title="Wait.." >BETA 0.4</span>-->
 
 
+                    <!-- facebook like button -->
+                    <fb:like href="http://ttlocal.info" 
+                             layout="button_count"
+                             show_faces="false"
+                             width="90"
+                             colorscheme="dark">
+                    </fb:like>
+                    <!-- end facebook like button -->
+
+                    
                     <!-- twitter followButton -->
                     <span id="follow-twitterapi" class=""></span>
-                    <!-- end twitter followButton -->
                     <a href="http://twitter.com/share" class="twitter-share-button"
                        data-count="horizontal"
                        data-via="ttlocal"
-                       data-related="codexico:ttlocal developer">Tweet</a>
-
-
-                    <!-- facebook like button -->
-                    <fb:like href="http://ttlocal.info" colorscheme="dark"></fb:like>
-                    <!-- end facebook like button -->
+                       data-related="codexico:ttlocal developer"></a>
+                    <!-- end twitter followButton -->
                 </h1>
             </div>
             <div class="clear"></div>

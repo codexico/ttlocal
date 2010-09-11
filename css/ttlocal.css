@@ -50,6 +50,7 @@ ul.nav li ul li a .name{
 }
 #branding .twitter-share-button{
     float: right;
+    margin-top: 10px;
 }
 #tbox{
     /*padding-left: 40px;*/
@@ -57,11 +58,10 @@ ul.nav li ul li a .name{
 #profile_widget{
     margin-bottom: 20px;
 }
-.twitter-share-button{
-    display: none; /*inicia escondido, carrega pelo javascript*/
-}
 
 /*facebook*/
 .fb_edge_widget_with_comment{
     float: right;
+    padding-left: 20px;
+    margin-top: -5px;
 }

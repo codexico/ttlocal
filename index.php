@@ -51,14 +51,23 @@
                 <h1 id="branding">
                     <a href="http://ttlocal.info">TTlocal</a>
 
+                    <!-- facebook like button -->
+                    <fb:like href="http://ttlocal.info"
+                             layout="button_count"
+                             show_faces="false"
+                             width="90"
+                             colorscheme="dark">
+                    </fb:like>
+                    <!-- end facebook like button -->
+
 
                     <!-- twitter followButton -->
                     <span id="follow-twitterapi" class=""></span>
-                    <!-- end twitter followButton -->
                     <a href="http://twitter.com/share" class="twitter-share-button"
                        data-count="horizontal"
                        data-via="ttlocal"
-                       data-related="codexico:ttlocal developer">Tweet</a>
+                       data-related="codexico:ttlocal developer"></a>
+                    <!-- end twitter followButton -->
                 </h1>
             </div>
             <div class="clear"></div>
@@ -111,6 +120,20 @@
             });
         </script>
         <!-- end twitter goodies -->
+
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({appId: 'your app id', status: true, cookie: true,
+                    xfbml: true});
+            };
+            (function() {
+                var e = document.createElement('script'); e.async = true;
+                e.src = document.location.protocol +
+                    '//connect.facebook.net/en_US/all.js';
+                document.getElementById('fb-root').appendChild(e);
+            }());
+        </script>
 
     </body>
 </html>
