@@ -1,0 +1,67 @@
+h1#branding{
+    background:none repeat scroll 0 0 #AAAAAA;
+    font-size:2.7em;
+    font-weight:normal;
+    margin-bottom:0;
+    padding:0.1em 1em;
+    text-align:left;
+}
+
+.box h2 a,
+.box h2 a.visible {
+	background: #333;
+}
+
+h1 span.version{
+    font-size: 0.4em;
+}
+
+li.topic{
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+#locations .local{
+    min-width: 170px;
+}
+#locations .local .box{
+    min-height:225px;
+}
+/*menu*/
+ul.nav{
+    margin-bottom: 10px;
+}
+ul.nav li a{
+    text-align: left;
+    width: 10em; /*menu width*/
+}
+ul.nav li ul li a{
+    width: 17em; /*submenu width*/
+}
+ul.nav li ul li a .name{
+    font-size: 1.3em;
+}
+
+/****************/
+/*twiter goodies*/
+/****************/
+#follow-twitterapi{
+    float: right;
+}
+#branding .twitter-share-button{
+    float: right;
+}
+#tbox{
+    /*padding-left: 40px;*/
+}
+#profile_widget{
+    margin-bottom: 20px;
+}
+.twitter-share-button{
+    display: none; /*inicia escondido, carrega pelo javascript*/
+}
+
+/*facebook*/
+.fb_edge_widget_with_comment{
+    float: right;
+}

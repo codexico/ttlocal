@@ -1,0 +1,14 @@
+.lancelotGo{
+	background:url("../images/twitter_16.png") no-repeat scroll right center transparent;
+	padding:0 16px 0 3px;
+}
+.lancelotGo2{
+	background:url("../images/google_16.png") no-repeat scroll right center transparent;
+	padding:0 16px 0 3px;
+}
+
+ul.nav li span.lancelotsimples{
+	background:url("../images/lancelot-icon2.png") no-repeat scroll right center transparent;
+	padding:0 20px 3px 3px;
+        margin-right: 1px; /* bug opera */
+}
