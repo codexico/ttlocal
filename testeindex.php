@@ -1,9 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>TTlocal - Local Twitter Trending Topics</title>
-        <meta name="description" content="Check out Twitter Trending Topics from all the places in the World in one simple view." />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+        <meta property="og:title" content="Local Twitter Trending Topics"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://ttlocal.info"/>
+        <meta property="og:site_name" content="TTlocal"/>
+        <meta property="fb:admins" content="USER_ID"/>
+        <meta property="og:description"
+              content="Check out Twitter Trending Topics from all the places in the World in one simple view."/>
+
+        <meta name="description"
+              content="Check out Twitter Trending Topics from all the places in the World in one simple view."/>
         <meta http-equiv="content-language" content="en" />
 
 
@@ -52,7 +64,7 @@
                     </fb:like>
                     <!-- end facebook like button -->
 
-                    
+
                     <!-- twitter followButton -->
                     <span id="follow-twitterapi" class=""></span>
                     <a href="http://twitter.com/share" class="twitter-share-button"
@@ -104,7 +116,7 @@
         <div id="fb-root"></div>
         <script>
             window.fbAsyncInit = function() {
-                FB.init({appId: 'your app id', status: true, cookie: true,
+                FB.init({appId: '151028201584145', status: true, cookie: true,
                     xfbml: true});
             };
             (function() {

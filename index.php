@@ -124,7 +124,7 @@
         <div id="fb-root"></div>
         <script>
             window.fbAsyncInit = function() {
-                FB.init({appId: 'your app id', status: true, cookie: true,
+                FB.init({appId: '151028201584145', status: true, cookie: true,
                     xfbml: true});
             };
             (function() {
