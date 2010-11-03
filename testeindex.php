@@ -51,7 +51,9 @@
             <!-- top -->
             <div class="grid_16">
                 <h1 id="branding">
-                    <a href="http://ttlocal.info">TTlocal</a>
+                    <a href="http://ttlocal.info">
+                        <img src="images/ttlocal-blue-big-blend.png" alt="ttlocal-logo" />
+                    </a>
                     <!-- <span class="version" title="Wait.." >BETA 0.4</span>-->
 
 
@@ -77,6 +79,10 @@
             <div class="clear"></div>
             <!-- end top -->
 
+<div class="grid_10 prefix_3 suffix_3">
+    <h2 id="page-heading" class="">The best way to discover the trending topics in your world.</h2>
+</div>
+<div class="clear"></div>
 
             <!-- content -->
             <?php

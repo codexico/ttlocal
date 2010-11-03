@@ -40,14 +40,9 @@ $placetype[2] = $town;
 <?php
 ob_start();
 ?>
-<div class="grid_16">
-    <h2 id="page-heading" class="">Twitter trending topics from all the places in the World in one simple page!</h2>
-</div>
-<div class="clear"></div>
-
-
-<div class="grid_16">
+<div id="menu" class="">
     <!-- menu -->
+        <span class="filter">Filter: </span>
     <ul class="nav main">
         <li>
             <a href="#Worldwide"  title="Show All" class="lancelot-menu">All</a>
@@ -68,7 +63,7 @@ ob_start();
             </ul>
         </li>
         <li>
-            <a href="#Town" title="Filter Tows" class="lancelot-menu">Town</a>
+            <a href="#Town" title="Filter Tows" class="lancelot-menu">City</a>
             <ul>
                 <?php foreach ($town as $t): ?>
                 <li class="town" >

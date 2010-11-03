@@ -1,17 +1,61 @@
+/* sobrepondo layout.css */
+.container_12, .container_16 {
+    background:none;
+}
+h1#branding {
+background:none;
+}
+
+h2#page-heading{
+    border: none;
+}
+
+/***********
+* ttlocal  *
+***********/
+body{
+    background: url('../images/bg-nuvem.jpg') no-repeat;
+    background-color: #9AE4E8;
+    min-width: 320px;
+}
+
 h1#branding{
-    background:none repeat scroll 0 0 #AAAAAA;
     font-size:2.7em;
     font-weight:normal;
     margin-bottom:0;
-    padding:0.1em 1em;
-    text-align:left;
+    text-align:center;
+    padding: 50px 0;
 }
 
-.box h2 a,
+h2#page-heading{
+    -moz-border-radius: 6px 6px 6px 6px;
+    background-color: #fff;
+    text-align: center;
+}
+.box{
+    background: none;
+}
+.box h2 a, .box h2 a.visible {
+    background: none;
+}
+
+#locations .box h2, .box h2 a,
 .box h2 a.visible {
-	background: #333;
+    background: none;
+    color: #DDEEFF;
+    font-size:1.1em;
+    margin: 0 auto;
+    text-align: center;
 }
-
+#locations .topic{
+    font-size: 1.2em;
+}
+#locations .topic a{
+    color: #333;
+}
+#locations span.name{
+    display: inline-block;
+}
 h1 span.version{
     font-size: 0.4em;
 }
@@ -25,15 +69,37 @@ li.topic{
     min-width: 170px;
 }
 #locations .local .box{
-    min-height:225px;
+    min-height:324px;
+}
+#locations h2 a{
+    background-color: #5599BB;
+    -moz-border-radius: 6px 6px 6px 6px;
 }
 /*menu*/
-ul.nav{
-    margin-bottom: 10px;
-}
-ul.nav li a{
+#menu{
+    width: auto;
+    -moz-border-radius: 6px 6px 6px 6px;
+    background-color: #fff;
     text-align: left;
-    width: 10em; /*menu width*/
+    padding: 6px;
+    font-size:1.3em;
+    font-weight:normal;
+    margin: 12px;
+    float: left;
+}
+#menu .filter{
+    float: left;
+    margin: 10px 6px 0;
+}
+ul.nav{
+    float: left;
+    margin: 0;
+}
+
+ul.nav li a, ul.nav li a:hover{
+    text-align: left;
+    padding-left: 1em;
+    min-width: 6em; /*menu width*/
 }
 ul.nav li ul li a{
     width: 17em; /*submenu width*/
@@ -59,9 +125,14 @@ ul.nav li ul li a .name{
     margin-bottom: 20px;
 }
 
-/*facebook*/
+/* facebook */
 .fb_edge_widget_with_comment{
     float: right;
     padding-left: 20px;
     margin-top: -5px;
+}
+
+/* footer */
+#footer{
+    float: right;
 }
