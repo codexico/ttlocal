@@ -110,7 +110,10 @@
 
         </div>
         <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+            <!-- lancelot -->
+        <!-- <script type="text/javascript" src="js/jquery.lancelot.js"></script> -->
         <script type="text/javascript" src="js/jquery.lancelot-compiled.js"></script>
+        
         <script type="text/javascript" src="js/jquery.quicksand.min.js"></script>
 
         <!--<script type="text/javascript" src="js/testettlocal.js"></script>-->

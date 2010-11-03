@@ -39,6 +39,20 @@
         <!-- end 960 ieca -->
 
 
+        <!-- google analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-17676120-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- end google analytics -->
+
+
     </head>
     <body>
         <div class="container_16">
@@ -47,7 +61,11 @@
             <!-- top -->
             <div class="grid_16">
                 <h1 id="branding">
-                    <a href="http://ttlocal.info">TTlocal</a>
+                    <a href="http://ttlocal.info">
+                        <img src="images/ttlocal-blue-big-blend.png" alt="ttlocal-logo" />
+                    </a>
+                    <!-- <span class="version" title="Wait.." >BETA 0.4</span>-->
+
 
                     <!-- facebook like button -->
                     <fb:like href="http://ttlocal.info"
@@ -71,6 +89,10 @@
             <div class="clear"></div>
             <!-- end top -->
 
+<div class="grid_10 prefix_3 suffix_3">
+    <h2 id="page-heading" class="">The best way to discover the trending topics in your world.</h2>
+</div>
+<div class="clear"></div>
 
             <!-- content -->
             <?php
@@ -93,8 +115,12 @@
 
 
         </div>
+            <!-- jquery -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.lancelot.js"></script>
+            <!-- lancelot -->
+        <!-- <script type="text/javascript" src="js/jquery.lancelot.js"></script> -->
+        <script type="text/javascript" src="js/jquery.lancelot-compiled.js"></script>
+
         <script type="text/javascript" src="js/jquery.quicksand.min.js"></script>
 
         <script type="text/javascript" src="js/ttlocal.js"></script>
@@ -128,17 +154,5 @@
        </script>
         <!-- end twitter goodies -->
 
-        <!-- google analytics -->
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-17676120-1']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-        <!-- end google analytics -->
     </body>
 </html>
