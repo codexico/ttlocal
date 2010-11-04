@@ -123,8 +123,11 @@ ob_start();
                 <?php foreach ($trends->{'trends'} as $trend) :?>
                 <li class="topic">
                     <span class="name">
-                        <a href="<?= $trend->{'url'} ?>" class="lancelot"><?= $trend->{'name'} ?></a>
-                        </span>
+                        <a href="<?= $trend->{'url'} ?>" class="trendname"><?= $trend->{'name'} ?></a>
+                        <a href="<?= $trend->{'url'} ?>" class="twittericon lancelot" title="twitter search: <?= $trend->{'name'} ?>"></a>
+                        <a href="http://www.google.com/search?q=<?= preg_replace('/#/', '', $trend->{'name'}) ?>" class="googleicon lancelot" 
+                           title="google search: <?= $trend->{'name'} ?>"></a>
+                    </span>
                 </li>
                 <?php endforeach; //trend ?>
             </ul>
@@ -135,7 +138,6 @@ ob_start();
             <?php endforeach; //location ?>
         <?php endforeach; //placetype ?>
 </ul>
-<div class="clear"></div>
 <!-- end locations -->
             
 <?php

@@ -95,6 +95,7 @@
             <!-- end content -->
 
 
+            <div class="clear"></div>
             <!-- twitter tweetBox -->
             <div id="tbox" class=" suffix_3 grid_10 prefix_3 box"></div>
             <div class="clear"></div>
@@ -109,14 +110,15 @@
 
 
         </div>
-        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-            <!-- lancelot -->
-        <!-- <script type="text/javascript" src="js/jquery.lancelot.js"></script> -->
-        <script type="text/javascript" src="js/jquery.lancelot-compiled.js"></script>
+        <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+        <!-- <script type="text/javascript" src="js/jquery.lancelot-compiled.js"></script> -->
         
         <script type="text/javascript" src="js/jquery.quicksand.min.js"></script>
 
-        <!--<script type="text/javascript" src="js/testettlocal.js"></script>-->
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+            <!-- lancelot -->
+        <script type="text/javascript" src="js/jquery.lancelot.js"></script>
+
         <script type="text/javascript" src="js/testettlocal.js"></script>
 
         <!-- facebook goodies -->

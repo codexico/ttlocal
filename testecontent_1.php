@@ -1,5 +1,5 @@
 <?php
-require_once("ttlocal.php");
+require_once("testettlocal.php");
 $tt = new ttlocal();
 
 function cmpCountry($a, $b) {
@@ -51,10 +51,10 @@ ob_start();
             <a href="#Country" title="Filter Countries" class="lancelot-menu">Country</a>
             <ul>
                 <?php foreach ($country as $c): ?>
-                <li class="country">
+                    <li class="country">
                         <a href="#<?= str_replace(" ", "_", $c->{'country'}) ?>"
                        class="lancelot-menu">
-                        <span class="country" 
+                        <span class="country"
                               data-woeid="<?= $t->{'woeid'} ?>"
                               data-country="<?= $c->{'countryCode'} ?>"><?= $c->{'country'} ?></span>
                     </a>
@@ -88,11 +88,11 @@ ob_start();
 <ul id="locations">
     <?php
         $i = 0;
-    foreach ($placetype as $location) :
+        foreach ($placetype as $location) :
 
-        foreach ($location as $local) ://mostra a trend de cada local
-            $i++;
-            $trends = $tt->topics($local->{'woeid'});
+            foreach ($location as $local) ://mostra a trend de cada local
+                $i++;
+                $trends = $tt->topics($local->{'woeid'});
                 if (isset($trends->{'trends'})):
 
                     $isTown = false;
@@ -102,7 +102,7 @@ ob_start();
                         //$hash = str_replace(" ", "_", $local->{'countryCode'} . "|" . $local->{'name'});//inclui o pais?
                         $hash = str_replace(" ", "_", $local->{'name'});
                     }
-            ?>
+    ?>
     <!-- local -->
     <li class="grid_4 local"
         data-placeType="<?= $local->placeType->{'code'} ?>"
@@ -123,11 +123,8 @@ ob_start();
                 <?php foreach ($trends->{'trends'} as $trend) :?>
                 <li class="topic">
                     <span class="name">
-                        <a href="<?= $trend->{'url'} ?>" class="trendname"><?= $trend->{'name'} ?></a>
-                        <a href="<?= $trend->{'url'} ?>" class="twittericon lancelot" title="twitter search: <?= $trend->{'name'} ?>"></a>
-                        <a href="http://www.google.com/search?q=<?= preg_replace('/#/', '', $trend->{'name'}) ?>" class="googleicon lancelot"
-                           title="google search: <?= $trend->{'name'} ?>"></a>
-                    </span>
+                        <a href="<?= $trend->{'url'} ?>" class="lancelot"><?= $trend->{'name'} ?></a>
+                        </span>
                 </li>
                 <?php endforeach; //trend ?>
             </ul>
@@ -139,7 +136,7 @@ ob_start();
         <?php endforeach; //placetype ?>
 </ul>
 <!-- end locations -->
-
+            
 <?php
 $content = ob_get_contents();
 ob_end_clean();

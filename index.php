@@ -89,10 +89,10 @@
             <div class="clear"></div>
             <!-- end top -->
 
-<div class="grid_10 prefix_3 suffix_3">
-    <h2 id="page-heading" class="">The best way to discover the trending topics in your world.</h2>
-</div>
-<div class="clear"></div>
+            <div class="grid_10 prefix_3 suffix_3">
+                <h2 id="page-heading" class="">The best way to discover the trending topics in your world.</h2>
+            </div>
+            <div class="clear"></div>
 
             <!-- content -->
             <?php
@@ -101,6 +101,7 @@
             <!-- end content -->
 
 
+            <div class="clear"></div>
             <!-- twitter tweetBox -->
             <div id="tbox" class=" suffix_3 grid_10 prefix_3 box"></div>
             <div class="clear"></div>
@@ -118,10 +119,14 @@
             <!-- jquery -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
             <!-- lancelot -->
-        <!-- <script type="text/javascript" src="js/jquery.lancelot.js"></script> -->
-        <script type="text/javascript" src="js/jquery.lancelot-compiled.js"></script>
+        <!-- <script type="text/javascript" src="js/jquery.lancelot.js"></script>
+        <script type="text/javascript" src="js/jquery.lancelot-compiled.js"></script> -->
 
         <script type="text/javascript" src="js/jquery.quicksand.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+            <!-- lancelot -->
+        <script type="text/javascript" src="js/jquery.lancelot.js"></script>
 
         <script type="text/javascript" src="js/ttlocal.js"></script>
 
@@ -145,12 +150,14 @@
         <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
         <script src="http://platform.twitter.com/anywhere.js?id=7xd5gQGwuWDsOBSc5Wa7Hg&v=1" type="text/javascript"></script>
         <script type="text/javascript">
+            /*
             twttr.anywhere(function (T) {
                 T("#tbox").tweetBox({
                     label: "What do you think of @TTlocal?",
                     defaultContent: "@ttlocal "
                 });
             });
+            */
        </script>
         <!-- end twitter goodies -->
 

@@ -39,6 +39,10 @@ h2#page-heading{
     background: none;
 }
 
+#locations{
+    min-height: 360px;
+}
+
 #locations .box h2, .box h2 a,
 .box h2 a.visible {
     background: none;
@@ -49,13 +53,29 @@ h2#page-heading{
 }
 #locations .topic{
     font-size: 1.2em;
+    /*width: 100%;*/
+}
+#locations span.name{
+    display: inline;
 }
 #locations .topic a{
     color: #333;
+    /*width: 100%;*/
 }
-#locations span.name{
-    display: inline-block;
+
+#locations .topic .twittericon{
+	background:url("../images/twitter_16.png") no-repeat scroll right center transparent;
+	padding:0 16px 0 3px;
+        margin: 0;
+        display: none;
 }
+#locations .topic .googleicon{
+	background:url("../images/google_16.png") no-repeat scroll right center transparent;
+	padding:0 16px 0 3px;
+        margin: 0;
+        display: none;
+}
+
 h1 span.version{
     font-size: 0.4em;
 }

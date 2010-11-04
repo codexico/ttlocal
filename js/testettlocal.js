@@ -5,13 +5,20 @@ jQuery(document).ready(function ($) {
     var TTlocal = (function () {
 
         // get the first collection
-        var $applications = $('#locations'),
+        var $locations = $('#locations'),
         // clone applications to get a second collection
-        $data = $applications.clone(),
+        $initialLocations = $locations.clone(),
         //menu pieces
         $menuMainNav = $('ul.nav li a'),
         $menuCountry = $('.nav li.country a'),
-        $menuTown = $('.nav li.town a');
+        $menuTown = $('.nav li.town a'),
+        //animation
+        quicksandOptions = {
+            easing: 'easeInOutQuad',
+            useScaling: false,
+            adjustHeight: false,
+            duration: 600
+        };
 
 
         ////////////////
@@ -38,12 +45,13 @@ jQuery(document).ready(function ($) {
         /////////////
         // lancelot
         /////////////
-        function googleSearch(obj) {
-            //obj is a reference to each $('.lancelot')
-            var search = obj.text().replace(/^#/, '');
-            return "http://www.google.com/search?q=" + search;
+        function googleSearch(lancelotObj) {
+        //lancelotObj is a reference to each $('.lancelot')
+        //var search = lancelotObj.text().replace(/^#/, '');
+        //return "http://www.google.com/search?q=" + search;
         }
         function lancelotLinks() {
+            /*
             $('.lancelot').lancelot({
                 hoverTime: 2000,
                 speed: "slow"
@@ -53,36 +61,39 @@ jQuery(document).ready(function ($) {
                 speed: "slow",
                 alink: googleSearch
             });
+            */
+            $('.lancelot').lancelot();
         }
         //connect lancelot to quicksand
-        function lancelotMenuLaunchQuicksand(obj) {
-            //obj is a reference to each $('.lancelot')
+        function lancelotMenuLaunchQuicksand(lancelotObj) {
+            //lancelotObj is a reference to each $('.lancelot')
             var $filteredMenu, woeid, countrycode;
-            switch (obj.attr("href")) {
+            switch (lancelotObj.attr("href")) {
                 case "#Worldwide":
-                    $filteredMenu = $data.find('li.local');
+                    $filteredMenu = $initialLocations.find('li.local');
                     break;
                 case "#Town":
-                    $filteredMenu = $data.find('li[data-placeType=7]');
+                    $filteredMenu = $initialLocations.find('li[data-placeType=7]');
                     break;
                 case "#Country":
-                    $filteredMenu = $data.find('li[data-placeType=12]');
+                    $filteredMenu = $initialLocations.find('li[data-placeType=12]');
                     break;
                 default:
-                    woeid = obj.find('span.name').first().attr('data-woeid');
+                    woeid = lancelotObj.find('span.name').first().attr('data-woeid');
                     if (woeid) {
-                        $filteredMenu = $data.find('li[data-id=' + woeid + ']');
+                        $filteredMenu = $initialLocations.find('li[data-id=' + woeid + ']');
                     } else {
-                        countrycode = obj.find('span.country').first().attr('data-country');
-                        $filteredMenu = $data.find('li[data-countryCode=' + countrycode + ']');
+                        countrycode = lancelotObj.find('span.country').first().attr('data-country');
+                        $filteredMenu = $initialLocations.find('li[data-countryCode=' + countrycode + ']');
                     }
                     break;
             }
-            $applications.quicksand($filteredMenu, function () {
-                lancelotLinks();//reappend lancelot lost when $applications.clone();
+            $locations.quicksand($filteredMenu, quicksandOptions, function () {
+                lancelotLinks();//reappend lancelot lost when $locations.clone();
             });
         }
         function lancelotMenu() {
+            /*
             $('.lancelot-menu').lancelot({
                 hoverTime: 800,
                 speed: "slow",
@@ -90,6 +101,7 @@ jQuery(document).ready(function ($) {
                 element: "span",
                 launch: lancelotMenuLaunchQuicksand
             });
+            */
         }
 
 
@@ -97,43 +109,44 @@ jQuery(document).ready(function ($) {
         // quicksand
         ////////////////
         function reappendQuicksand($all, $filtered) {
-            $all.quicksand($filtered, function () {
-                lancelotLinks();//reappend lancelot lost when $applications.clone();
+            $all.quicksand($filtered, quicksandOptions, function () {
+                lancelotLinks();//reappend lancelot lost when $locations.clone();
+                showSearchLink();
             });
         }
         function menuMainOnClickQuicksand() {
             $menuMainNav.click(function (e) {
                 var menuhref = $(this).attr('href'),
-                $filteredMenu = $data.find('li.local');
+                $filteredMenu = $initialLocations.find('li.local');
                 switch (menuhref) {
                     case "#Town":
-                        $filteredMenu = $data.find('li[data-placeType=7]');
+                        $filteredMenu = $initialLocations.find('li[data-placeType=7]');
                         break;
                     case "#Country":
-                        $filteredMenu = $data.find('li[data-placeType=12]');
+                        $filteredMenu = $initialLocations.find('li[data-placeType=12]');
                         break;
                     default:
                         break;
                 }
-                reappendQuicksand($applications, $filteredMenu);
+                reappendQuicksand($locations, $filteredMenu);
                 e.preventDefault();
             });
         }
         function menuCountryOnClickQuicksand() {
             $menuCountry.click(function (e) {
                 var countrycode = $(this).find('span.country').first().attr('data-country'),
-                $filteredCountry = $data.find('li[data-countryCode=' + countrycode + ']');
+                $filteredCountry = $initialLocations.find('li[data-countryCode=' + countrycode + ']');
 
-                reappendQuicksand($applications, $filteredCountry);
+                reappendQuicksand($locations, $filteredCountry);
                 e.preventDefault();
             });
         }
         function menuTownOnClickQuicksand() {
             $menuTown.click(function (e) {
                 var woeid = $(this).find('span.name').first().attr('data-woeid'),
-                $filteredTown = $data.find('li[data-id=' + woeid + ']');
+                $filteredTown = $initialLocations.find('li[data-id=' + woeid + ']');
 
-                reappendQuicksand($applications, $filteredTown);
+                reappendQuicksand($locations, $filteredTown);
                 e.preventDefault();
             });
         }
@@ -148,12 +161,24 @@ jQuery(document).ready(function ($) {
             $filteredHash; //lista do local do hash
             if(locationHash){
                 lhash = locationHash.replace(/^#/, '');
-                $filteredHash = $data.find('li[data-hash=' + lhash+ ']');
+                $filteredHash = $initialLocations.find('li[data-hash=' + lhash+ ']');
                 if($filteredHash.size()){//encontrou algo
-                    reappendQuicksand($applications, $filteredHash);
+                    reappendQuicksand($locations, $filteredHash);
                 }
             }
         }
+
+        function showSearchLink(){
+            $('.topic').hover(
+                function () {
+                    $(this).find('.lancelot').show();
+                },
+                function () {
+                    $(this).find('.lancelot').hide();
+                }
+            );
+        }
+
         function init() {
             //            updateCacheTT();
             //            cronTT();
@@ -161,6 +186,7 @@ jQuery(document).ready(function ($) {
             lancelotMenu();
             menusOnClickQuicksand();
             urlAnchor();
+            showSearchLink();
         }
         // reveal all things private by assigning public pointers
         return {
