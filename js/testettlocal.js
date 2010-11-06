@@ -4,20 +4,24 @@ jQuery(document).ready(function ($) {
     //Revealing Module Pattern
     var TTlocal = (function () {
 
+        var updateTime = 610000,//10min,10s
+
         // get the first collection
-        var $locations = $('#locations'),
+        $locations = $('#locations'),
+
         // clone applications to get a second collection
         $initialLocations = $locations.clone(),
+
         //menu pieces
         $menuMainNav = $('ul.nav li a'),
         $menuCountry = $('.nav li.country a'),
         $menuTown = $('.nav li.town a'),
+
         //animation
         quicksandOptions = {
             easing: 'easeInOutQuad',
             useScaling: false,
-            adjustHeight: false,
-            duration: 600
+            adjustHeight: false
         };
 
 
@@ -27,18 +31,16 @@ jQuery(document).ready(function ($) {
         function updateCacheTT() {
             $.ajax({
                 type: "POST",
-                url: "update.php",
+                url: "cron.php",
                 success: function (data) {
-                    if (data === "updated") {
                         if (window.console) {
-                            window.console.log("Updated! You can refresh now.");
-                        }
+                        window.console.log(data);
                     }//TODO: add some visual alert? auto-refresh content?
                 }
             });
         }
         function cronTT() {//quem nao tem cron vai de setInterval
-            window.setInterval(updateCacheTT, 610000);//10min,10s
+            window.setInterval(updateCacheTT, updateTime);
         }
 
 
