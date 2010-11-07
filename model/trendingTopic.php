@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Locations available from twitter and their trending topics.
  *
@@ -8,7 +9,8 @@
 class TrendingTopic {
 
     static public function locations() {
-        return json_decode(file_get_contents("cache/available.json"));;
+        return json_decode(file_get_contents("cache/available.json"));
+        ;
     }
 
     public function locationsWithTrends() {
@@ -19,7 +21,7 @@ class TrendingTopic {
         return $this->mergeLocationsWithTrends($this->locationsSorted());
     }
 
-    private function mergeLocationsWithTrends($locations){
+    private function mergeLocationsWithTrends($locations) {
         foreach ($locations as $local) {
             $trendings[$local->{'woeid'}] = $this->trendsByLocation($local->{'woeid'});
             $trendings[$local->{'woeid'}]->{'locations'} = $local;
@@ -33,7 +35,18 @@ class TrendingTopic {
      *
      * @return array
      */
-    private function locationsSorted(){
+    private function locationsSorted() {
+        $places = $this->placesSorted();
+
+        $locations = array_merge(
+                        $places['supername'],
+                        $places['country'],
+                        $places['town'],
+                        $places['other']); //junta tudo no formato original
+        return $locations;
+    }
+
+    public function placesSorted() {
 
         $locations = $this->locations();
         $supername = $country = $town = $other = array();
@@ -60,8 +73,10 @@ class TrendingTopic {
             $n[$key] = $t->{'name'};
         }
         array_multisort($c, SORT_DESC, $n, SORT_ASC, $town); //ordena town dentro de country
-
-        $locations = array_merge($supername, $country, $town, $other);//junta tudo novamente
+        $locations['supername'] = $supername;
+        $locations['country'] = $country;
+        $locations['town'] = $town;
+        $locations['other'] = $other;
         return $locations;
     }
 
@@ -70,4 +85,5 @@ class TrendingTopic {
         $trends = json_decode(file_get_contents($dest_file));
         return $trends[0]; //json do woeid eh um pouco diferente
     }
+
 }

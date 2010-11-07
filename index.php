@@ -15,8 +15,9 @@ if (PRODUCTION) {
 
     // Using the model
     $tt = new TrendingTopic();
-    $viewdata = $tt->locationsWithTrendsSorted();
-
+    $viewdata['trends'] = $tt->locationsWithTrendsSorted();
+    $viewdata['places'] = $tt->placesSorted();
+    
     // Requiring the view
     require('view/index.php');
 }

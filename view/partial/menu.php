@@ -9,7 +9,7 @@
         <li>
             <a href="#Country" title="Filter Countries" class="lancelot-menu">Country</a>
             <ul>
-                <?php foreach ($country as $c): ?>
+                <?php foreach ($viewdata['places']['country'] as $c): ?>
                     <li class="country">
                         <a href="#<?= str_replace(" ", "_", $c->{'country'}) ?>"
                        class="lancelot-menu">
@@ -24,7 +24,7 @@
         <li>
             <a href="#Town" title="Filter Tows" class="lancelot-menu">City</a>
             <ul>
-                <?php foreach ($town as $t): ?>
+                <?php foreach ($viewdata['places']['town'] as $t): ?>
                 <li class="town" >
                     <a href="#<?= str_replace(" ", "_", $t->{'countryCode'} . "_" . $t->{'name'}) ?>"
                        class="lancelot-menu">
@@ -40,4 +40,3 @@
     </ul>
     <!-- end menu -->
 </div>
-<div class="clear"></div>

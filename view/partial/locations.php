@@ -1,6 +1,6 @@
 <!-- locations -->
 <ul id="locations">
-    <?php foreach ($viewdata as $local) : ?>
+    <?php foreach ($viewdata['trends'] as $local) : ?>
         <?php if (isset($local->{'trends'})): ?>
 
 

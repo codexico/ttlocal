@@ -78,7 +78,10 @@
             </div>
             <div class="clear"></div>
 
-            <!-- content -->
+            <?php include 'view/partial/menu.php'; ?>
+                    <div class="clear"></div>
+
+                    <!-- content -->
             <?php include 'view/partial/locations.php'; ?>
                     <!-- end content -->
 
@@ -106,39 +109,43 @@
                             <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
                             <script type="text/javascript" src="js/jquery.lancelot.js"></script>
 
-                            <script type="text/javascript" src="js/ttlocal.js"></script>
+        <?php if (PRODUCTION) : ?>
+                                <script type="text/javascript" src="js/ttlocal.js"></script>
+        <?php else : ?>
+                                    <script type="text/javascript" src="js/testettlocal.js"></script>
+        <?php endif; ?>
 
         <?php if (PRODUCTION) : ?>
-                                <!-- facebook goodies -->
-                                <div id="fb-root"></div>
-                                <script type="text/javascript" >
-                                    window.fbAsyncInit = function() {
-                                        FB.init({appId: '151028201584145', status: true, cookie: true,
-                                            xfbml: true});
-                                    };
-                                    (function() {
-                                        var e = document.createElement('script'); e.async = true;
-                                        e.src = document.location.protocol +
-                                            '//connect.facebook.net/en_US/all.js';
-                                        document.getElementById('fb-root').appendChild(e);
-                                    }());
-                                </script>
-                                <!-- end facebook goodies -->
+                                        <!-- facebook goodies -->
+                                        <div id="fb-root"></div>
+                                        <script type="text/javascript" >
+                                            window.fbAsyncInit = function() {
+                                                FB.init({appId: '151028201584145', status: true, cookie: true,
+                                                    xfbml: true});
+                                            };
+                                            (function() {
+                                                var e = document.createElement('script'); e.async = true;
+                                                e.src = document.location.protocol +
+                                                    '//connect.facebook.net/en_US/all.js';
+                                                document.getElementById('fb-root').appendChild(e);
+                                            }());
+                                        </script>
+                                        <!-- end facebook goodies -->
 
-                                <!-- twitter goodies -->
-                                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-                                <script src="http://platform.twitter.com/anywhere.js?id=7xd5gQGwuWDsOBSc5Wa7Hg&v=1" type="text/javascript"></script>
-                                <script type="text/javascript">
-                                    /*
-                                    twttr.anywhere(function (T) {
-                                        T("#tbox").tweetBox({
-                                            label: "What do you think of @TTlocal?",
-                                            defaultContent: "@ttlocal "
-                                        });
-                                    });
-                                     */
-                                </script>
-                                <!-- end twitter goodies -->
+                                        <!-- twitter goodies -->
+                                        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                                        <script src="http://platform.twitter.com/anywhere.js?id=7xd5gQGwuWDsOBSc5Wa7Hg&v=1" type="text/javascript"></script>
+                                        <script type="text/javascript">
+                                            /*
+                                            twttr.anywhere(function (T) {
+                                                T("#tbox").tweetBox({
+                                                    label: "What do you think of @TTlocal?",
+                                                    defaultContent: "@ttlocal "
+                                                });
+                                            });
+                                             */
+                                        </script>
+                                        <!-- end twitter goodies -->
         <?php endif; ?>
 
     </body>

@@ -6,7 +6,7 @@ require_once 'model/cache.php';
 
 $cache = new Cache();
 
-if (!DEVELOPMENT) {
+if (PRODUCTION) {
     if ($cache->updateTwitterData()) {
         echo "trends updated <br>";
     } else {

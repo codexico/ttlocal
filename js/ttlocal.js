@@ -130,7 +130,6 @@ jQuery(document).ready(function ($) {
             updateCacheTT();
             cronTT();
             lancelotLinks();
-            lancelotMenu();
             menusOnClickQuicksand();
             urlAnchor();
             showSearchLink();
