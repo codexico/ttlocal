@@ -19,7 +19,8 @@ class Twitter {
      *
      * @return boolean
      */
-    public function update() {debug("update");
+    public function update() {
+        debug("update");
         $this->updateLocations();
 
         if (!$this->updateTrends())
@@ -28,7 +29,8 @@ class Twitter {
         return true;
     }
 
-    private function updateLocations() {debug("updateLocations");
+    private function updateLocations() {
+        debug("updateLocations");
         if (!file_exists("cache/available.json") || @filemtime("cache/available.json") < (time() - LOCATIONS_REFRESH_INTERVAL)) {
             $url = "http://api.twitter.com/1/trends/available.json";
             $dest_file = "cache/available.json";
@@ -39,21 +41,24 @@ class Twitter {
 
     private function updateTrends() {
         if (!file_exists("cache/1.json") || @filemtime("cache/1.json") < (time() - WOEID_REFRESH_INTERVAL)) {
-            $locations = TrendingTopic::locations();debug($locations);
+            $locations = TrendingTopic::locations();
+            debug($locations);
             foreach ($locations as $local) {
                 printpre($local);
                 if ($this->limit)
                     if (!$this->updateWoeid($local->{'woeid'}))
                         return false;
             }
-        }else {debug('woeid cache dentro do time');
+        }else {
+            debug('woeid cache dentro do time');
             return false; //nao precisou
         }
 
         return true; // atualizou
     }
 
-    private function updateWoeid($woeid) {debug("updateWoeid");
+    private function updateWoeid($woeid) {
+        debug("updateWoeid");
         $url = "http://api.twitter.com/1/trends/" . $woeid . ".json";
         $dest_file = "cache/" . $woeid . ".json";
 
@@ -63,20 +68,29 @@ class Twitter {
         return false;
     }
 
-    private function updateCache($url, $dest_file) {debug ("updateCache");
-        $data = getUrl($url);
+    private function updateCache($url, $dest_file) {
+        debug("updateCache");
+        if (PRODUCTION) {
+            $data = getUrlCurl($url);
+        } else {
+            $data = getUrl($url);
+        }
+
         if ($data != false) {//die("teve resposta");
             $json_data = json_decode($data);
             if (!isset($json_data->{'error'})) {//die("resposta sem erro");
-                if (!writeFile($data, $dest_file)) {debug('problema ao escrever');
+                if (!writeFile($data, $dest_file)) {
+                    debug('problema ao escrever');
                     return false;
                 }
             } else {//limite de requisicoes atingido ou twitter baleiando
-                $this->limit = false;debug("limit");
+                $this->limit = false;
+                debug("limit");
                 return false;
             }
             return true;
-        } else {debug("curl");//problema no curl
+        } else {
+            debug("curl"); //problema no curl
             return false;
         }
         return true;
