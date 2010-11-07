@@ -1,4 +1,5 @@
 <?php
+
 require_once('lib/util.php');
 require_once('model/twitter.php');
 require_once('model/trendingTopic.php');
@@ -12,8 +13,9 @@ class Cache {
 
     public function updateHtmlCache() {
         $tt = new TrendingTopic();
-        $locationsWithTrendings = $tt->locationsWithTrendsSorted();
-        $data = $this->getView('view/index.php', $locationsWithTrendings);
+        $viewdata['trends'] = $tt->locationsWithTrendsSorted();
+        $viewdata['places'] = $tt->placesSorted();
+        $data = $this->getView('view/index.php', $viewdata);
         return $this->writeHtmlCache($data, "cache/index.html");
     }
 
