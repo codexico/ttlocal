@@ -3,6 +3,7 @@
 function writeFile($data, $dest_file) {
     $fp = @fopen($dest_file, "w");
     if (!$fp) {
+        debug('problema ao escrever arquivo, confira o chmod: '.$dest_file);
         return false;
     }
     fwrite($fp, $data);

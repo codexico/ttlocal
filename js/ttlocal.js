@@ -127,8 +127,8 @@ jQuery(document).ready(function ($) {
         }
 
         function init() {
-            updateCacheTT();
-            cronTT();
+//            updateCacheTT();
+//            cronTT();
             lancelotLinks();
             menusOnClickQuicksand();
             urlAnchor();
