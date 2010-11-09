@@ -107,6 +107,7 @@
 
                             <script type="text/javascript" src="js/jquery.quicksand.min.js"></script>
                             <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+                            <script type="text/javascript" src="js/jquery.qtip-1.0.0-rc3.min.js"></script>
                             <script type="text/javascript" src="js/jquery.lancelot.js"></script>
 
         <?php if (PRODUCTION) : ?>

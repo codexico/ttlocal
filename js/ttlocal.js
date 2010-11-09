@@ -126,6 +126,27 @@ jQuery(document).ready(function ($) {
                 );
         }
 
+        function qtipInit(){
+            $('.trendname[title]').qtip({
+                position: {
+                    corner: {
+                        target: 'topMiddle',
+                        tooltip: 'bottomLeft'
+                    }
+                },
+               style: {
+                  border: {
+                     width: 5,
+                     radius: 10
+                  },
+                  padding: 10,
+                  'font-size': '1.2em',
+                  tip: true, // Give it a speech bubble tip with automatic corner detection
+                  name: 'cream' // Style it according to the preset 'cream' style
+               }
+            });
+        }
+
         function init() {
 //            updateCacheTT();
 //            cronTT();
@@ -133,6 +154,7 @@ jQuery(document).ready(function ($) {
             menusOnClickQuicksand();
             urlAnchor();
             showSearchLink();
+            qtipInit();
         }
         // reveal all things private by assigning public pointers
         return {

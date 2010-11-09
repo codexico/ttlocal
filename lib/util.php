@@ -1,9 +1,14 @@
 <?php
 
+function __autoload($class_name) {
+    echo "Want to load $class_name.\n";
+    include $class_name . '.php';
+}
+
 function writeFile($data, $dest_file) {
     $fp = @fopen($dest_file, "w");
     if (!$fp) {
-        debug('problema ao escrever arquivo, confira o chmod: '.$dest_file);
+        debug('problema ao escrever arquivo, confira o chmod: ' . $dest_file);
         return false;
     }
     fwrite($fp, $data);
@@ -58,7 +63,12 @@ function debug() {
     if (DEBUG) {
         $argv = func_get_args ();
         if (is_array($argv)) {
-            printpre($argv);
+            if (sizeof($argv) == 1) {
+                printpre($argv[0]);
+            }else{
+                printpre($argv);
+
+            }
         } else {
             echopre($argv);
         }

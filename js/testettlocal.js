@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
                 type: "POST",
                 url: "cron.php",
                 success: function (data) {
-                        if (window.console) {
+                    if (window.console) {
                         window.console.log(data);
                     }//TODO: add some visual alert? auto-refresh content?
                 }
@@ -95,7 +95,7 @@ jQuery(document).ready(function ($) {
             });
         }
         function lancelotMenu() {
-            /*
+        /*
             $('.lancelot-menu').lancelot({
                 hoverTime: 800,
                 speed: "slow",
@@ -178,7 +178,28 @@ jQuery(document).ready(function ($) {
                 function () {
                     $(this).find('.lancelot').hide();
                 }
-            );
+                );
+        }
+
+        function qtipInit(){
+            $('.trendname[title]').qtip({
+                position: {
+                    corner: {
+                        target: 'topMiddle',
+                        tooltip: 'bottomLeft'
+                    }
+                },
+               style: {
+                  border: {
+                     width: 5,
+                     radius: 10
+                  },
+                  padding: 10,
+                  'font-size': '1.2em',
+                  tip: true, // Give it a speech bubble tip with automatic corner detection
+                  name: 'cream' // Style it according to the preset 'cream' style
+               }
+            });
         }
 
         function init() {
@@ -189,6 +210,7 @@ jQuery(document).ready(function ($) {
             menusOnClickQuicksand();
             urlAnchor();
             showSearchLink();
+            qtipInit()
         }
         // reveal all things private by assigning public pointers
         return {

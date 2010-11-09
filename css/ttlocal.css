@@ -154,5 +154,10 @@ ul.nav li ul li a .name{
 
 /* footer */
 #footer{
+}
+#footer #databywtt{
+    float: left;
+}
+#footer #codexicoblog{
     float: right;
 }

@@ -5,7 +5,10 @@
  *
  * @author francisco
  */
-class TwitterLocation {
+class twitterLocation {
+
+   function __construct() {
+   }
 
     public function getAll() {
         return json_decode(file_get_contents("cache/available.json"));
@@ -63,7 +66,7 @@ class TwitterLocation {
     }
 
     public function updateAll() {
-        debug("updateAll");
+        debug("updating locations available");
 
         $url = "http://api.twitter.com/1/trends/available.json";
         $dest_file = "cache/available.json";

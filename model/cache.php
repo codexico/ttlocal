@@ -4,12 +4,13 @@ require_once('lib/util.php');
 //require_once('model/twitter.php');
 //require_once('model/trendingTopic.php');
 require_once 'model/twitterTrend.php';
+require_once 'model/wttTrend.php';
 require_once 'model/twitterLocation.php';
 
 class Cache {
 
-    var $twitterLocation;
-    var $twitterTrend;
+    var $location;
+    var $trend;
 
     /**
      * Determina se o limite de requisições foi atingido
@@ -20,24 +21,27 @@ class Cache {
     private static $limit = true;
 
     function __construct() {
-        $this->twitterLocation = new TwitterLocation();
-        $this->twitterTrend= new TwitterTrend();
+        debug('cache');
+        $this->location = new twitterLocation();
+        //$trend = new twitterTrend();
+        $this->trend = new wttTrend();
     }
 
     public function updateTwitterData() {
         if ($this->locationCacheExpired()) {
-            $this->twitterLocation->updateAll();
+            $this->location->updateAll();
         }
         if ($this->trendCacheExpired()) {
-            if (!$this->twitterTrend->updateAll())
+            if (!$this->trend->updateAll())
                 return false;
         }
         return true;
     }
 
     public function updateHtmlCache() {
-        $viewdata['trends'] = $this->twitterTrend->getAllWithLocationsSortedByPlacetype();
-        $viewdata['places'] = $this->twitterLocation->getAllSorted();
+        debug('update html');
+        $viewdata['trends'] = $this->trend->getAllWithLocationsSortedByPlacetype();
+        $viewdata['places'] = $this->location->getAllSorted();
         $data = $this->getView('view/index.php', $viewdata);
         
         return $this->writeHtmlCache($data, "cache/index.html");
