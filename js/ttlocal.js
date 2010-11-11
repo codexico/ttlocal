@@ -22,6 +22,24 @@ jQuery(document).ready(function ($) {
             easing: 'easeInOutQuad',
             useScaling: false,
             adjustHeight: false
+        },
+        qtipOptions = {
+            position: {
+                corner: {
+                    target: 'topMiddle',
+                    tooltip: 'bottomLeft'
+                }
+            },
+            style: {
+                border: {
+                    width: 5,
+                    radius: 10
+                },
+                padding: 10,
+                'font-size': '1.2em',
+                tip: true, // Give it a speech bubble tip with automatic corner detection
+                name: 'cream' // Style it according to the preset 'cream' style
+            }
         };
 
 
@@ -51,6 +69,15 @@ jQuery(document).ready(function ($) {
             $('.lancelot').lancelot();
         }
 
+        function reappendAll($all, $filtered) {
+            reappendQuicksand($all, $filtered);
+        }
+
+
+        function reappendQTip() {
+            $('.trendname[title]').qtip(qtipOptions);
+        }
+
 
         ////////////////
         // quicksand
@@ -59,6 +86,7 @@ jQuery(document).ready(function ($) {
             $all.quicksand($filtered, quicksandOptions, function () {
                 lancelotLinks();//reappend lancelot lost when $locations.clone();
                 showSearchLink();
+                reappendQTip();
             });
         }
         function menuMainOnClickQuicksand() {
@@ -127,25 +155,8 @@ jQuery(document).ready(function ($) {
         }
 
         function qtipInit(){
-            $('.trendname[title]').qtip({
-                position: {
-                    corner: {
-                        target: 'topMiddle',
-                        tooltip: 'bottomLeft'
+            $('.trendname[title]').qtip(qtipOptions);
                     }
-                },
-               style: {
-                  border: {
-                     width: 5,
-                     radius: 10
-                  },
-                  padding: 10,
-                  'font-size': '1.2em',
-                  tip: true, // Give it a speech bubble tip with automatic corner detection
-                  name: 'cream' // Style it according to the preset 'cream' style
-               }
-            });
-        }
 
         function init() {
 //            updateCacheTT();

@@ -22,6 +22,24 @@ jQuery(document).ready(function ($) {
             easing: 'easeInOutQuad',
             useScaling: false,
             adjustHeight: false
+        },
+        qtipOptions = {
+            position: {
+                corner: {
+                    target: 'topMiddle',
+                    tooltip: 'bottomLeft'
+                }
+            },
+            style: {
+                border: {
+                    width: 5,
+                    radius: 10
+                },
+                padding: 10,
+                'font-size': '1.2em',
+                tip: true, // Give it a speech bubble tip with automatic corner detection
+                name: 'cream' // Style it according to the preset 'cream' style
+            }
         };
 
 
@@ -105,6 +123,15 @@ jQuery(document).ready(function ($) {
             });
             */
         }
+        
+        function reappendAll($all, $filtered) {
+            reappendQuicksand($all, $filtered);
+        }
+
+
+        function reappendQTip() {
+            $('.trendname[title]').qtip(qtipOptions);
+        }
 
 
         ////////////////
@@ -114,6 +141,7 @@ jQuery(document).ready(function ($) {
             $all.quicksand($filtered, quicksandOptions, function () {
                 lancelotLinks();//reappend lancelot lost when $locations.clone();
                 showSearchLink();
+                reappendQTip();
             });
         }
         function menuMainOnClickQuicksand() {
@@ -130,7 +158,7 @@ jQuery(document).ready(function ($) {
                     default:
                         break;
                 }
-                reappendQuicksand($locations, $filteredMenu);
+                reappendAll($locations, $filteredMenu);
                 e.preventDefault();
             });
         }
@@ -139,7 +167,7 @@ jQuery(document).ready(function ($) {
                 var countrycode = $(this).find('span.country').first().attr('data-country'),
                 $filteredCountry = $initialLocations.find('li[data-countryCode=' + countrycode + ']');
 
-                reappendQuicksand($locations, $filteredCountry);
+                reappendAll($locations, $filteredCountry);
                 e.preventDefault();
             });
         }
@@ -148,7 +176,7 @@ jQuery(document).ready(function ($) {
                 var woeid = $(this).find('span.name').first().attr('data-woeid'),
                 $filteredTown = $initialLocations.find('li[data-id=' + woeid + ']');
 
-                reappendQuicksand($locations, $filteredTown);
+                reappendAll($locations, $filteredTown);
                 e.preventDefault();
             });
         }
@@ -165,7 +193,7 @@ jQuery(document).ready(function ($) {
                 lhash = locationHash.replace(/^#/, '');
                 $filteredHash = $initialLocations.find('li[data-hash=' + lhash+ ']');
                 if($filteredHash.size()){//encontrou algo
-                    reappendQuicksand($locations, $filteredHash);
+                    reappendAll($locations, $filteredHash);
                 }
             }
         }
@@ -182,24 +210,7 @@ jQuery(document).ready(function ($) {
         }
 
         function qtipInit(){
-            $('.trendname[title]').qtip({
-                position: {
-                    corner: {
-                        target: 'topMiddle',
-                        tooltip: 'bottomLeft'
-                    }
-                },
-               style: {
-                  border: {
-                     width: 5,
-                     radius: 10
-                  },
-                  padding: 10,
-                  'font-size': '1.2em',
-                  tip: true, // Give it a speech bubble tip with automatic corner detection
-                  name: 'cream' // Style it according to the preset 'cream' style
-               }
-            });
+            $('.trendname[title]').qtip(qtipOptions);
         }
 
         function init() {
@@ -210,7 +221,7 @@ jQuery(document).ready(function ($) {
             menusOnClickQuicksand();
             urlAnchor();
             showSearchLink();
-            qtipInit()
+            qtipInit();
         }
         // reveal all things private by assigning public pointers
         return {

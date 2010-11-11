@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Description of twitterLocation
- *
- * @author francisco
- */
 class twitterLocation {
 
    function __construct() {
