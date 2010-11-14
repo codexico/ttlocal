@@ -40,6 +40,10 @@ jQuery(document).ready(function ($) {
                 tip: true, // Give it a speech bubble tip with automatic corner detection
                 name: 'cream' // Style it according to the preset 'cream' style
             }
+        },
+        tipTipOptions = {
+            defaultPosition: "right",
+            keepAlive: true
         };
 
 
@@ -129,8 +133,8 @@ jQuery(document).ready(function ($) {
         }
 
 
-        function reappendQTip() {
-            $('.trendname[title]').qtip(qtipOptions);
+        function reappendToolTip() {
+            $('.trendname[title]').tipTip(tipTipOptions);
         }
 
 
@@ -141,7 +145,7 @@ jQuery(document).ready(function ($) {
             $all.quicksand($filtered, quicksandOptions, function () {
                 lancelotLinks();//reappend lancelot lost when $locations.clone();
                 showSearchLink();
-                reappendQTip();
+                reappendToolTip();
             });
         }
         function menuMainOnClickQuicksand() {
@@ -209,8 +213,8 @@ jQuery(document).ready(function ($) {
                 );
         }
 
-        function qtipInit(){
-            $('.trendname[title]').qtip(qtipOptions);
+        function toolTipInit(){
+            $('.trendname[title]').tipTip(tipTipOptions);
         }
 
         function init() {
@@ -221,7 +225,7 @@ jQuery(document).ready(function ($) {
             menusOnClickQuicksand();
             urlAnchor();
             showSearchLink();
-            qtipInit();
+            toolTipInit();
         }
         // reveal all things private by assigning public pointers
         return {

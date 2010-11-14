@@ -26,6 +26,8 @@
         <link rel="stylesheet" type="text/css" href="css/nav.css" media="screen" />
         <!-- end 960 -->
 
+        <link rel="stylesheet" type="text/css" href="css/tipTip.css" media="screen" />
+
         <link rel="stylesheet" type="text/css" href="css/lancelot.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/ttlocal.css" media="screen" />
 
@@ -107,7 +109,7 @@
 
                             <script type="text/javascript" src="js/jquery.quicksand.min.js"></script>
                             <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-                            <script type="text/javascript" src="js/jquery.qtip-1.0.0-rc3.min.js"></script>
+                            <script type="text/javascript" src="js/jquery.tipTip.minified.js"></script>
                             <script type="text/javascript" src="js/jquery.lancelot.js"></script>
 
         <?php if (PRODUCTION) : ?>

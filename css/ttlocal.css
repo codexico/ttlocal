@@ -3,7 +3,7 @@
     background:none;
 }
 h1#branding {
-background:none;
+    background:none;
 }
 
 h2#page-heading{
@@ -64,16 +64,16 @@ h2#page-heading{
 }
 
 #locations .topic .twittericon{
-	background:url("../images/twitter_16.png") no-repeat scroll right center transparent;
-	padding:0 16px 0 3px;
-        margin: 0;
-        display: none;
+    background:url("../images/twitter_16.png") no-repeat scroll right center transparent;
+    padding:0 16px 0 3px;
+    margin: 0;
+    display: none;
 }
 #locations .topic .googleicon{
-	background:url("../images/google_16.png") no-repeat scroll right center transparent;
-	padding:0 16px 0 3px;
-        margin: 0;
-        display: none;
+    background:url("../images/google_16.png") no-repeat scroll right center transparent;
+    padding:0 16px 0 3px;
+    margin: 0;
+    display: none;
 }
 
 h1 span.version{
@@ -160,4 +160,13 @@ ul.nav li ul li a .name{
 }
 #footer #codexicoblog{
     float: right;
+}
+
+/* tipTip*/
+#tiptip_content {
+    font-size: 1.1em;
+}
+#tiptip_content a{
+    color: #fff;
+    text-decoration: underline;
 }
