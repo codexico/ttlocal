@@ -14,7 +14,7 @@
                         <a href="#<?= str_replace(" ", "_", $c->{'country'}) ?>"
                        class="lancelot-menu">
                         <span class="country"
-                              data-woeid="<?= $t->{'woeid'} ?>"
+                              data-woeid="<?= $c->{'woeid'} ?>"
                               data-country="<?= $c->{'countryCode'} ?>"><?= $c->{'country'} ?></span>
                     </a>
                 </li>

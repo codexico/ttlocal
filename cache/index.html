@@ -23,8 +23,10 @@
         <link rel="stylesheet" type="text/css" href="css/text.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/nav.css" media="screen" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/nav.css" media="screen" /> -->
         <!-- end 960 -->
+
+        <link rel="stylesheet" type="text/css" href="css/tipTip.css" media="screen" />
 
         <link rel="stylesheet" type="text/css" href="css/lancelot.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/ttlocal.css" media="screen" />
@@ -34,22 +36,10 @@
         <!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
         <!-- end 960 ieca -->
 
-                    <!-- google analytics -->
-            <script type="text/javascript">
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-17676120-1']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
-            <!-- end google analytics -->
         
         </head>
         <body>
-            <div class="container_16">
+            <div id="container" class="container_16">
 
 
                 <!-- top -->
@@ -93,11 +83,11 @@
     <!-- menu -->
         <span class="filter">Filter: </span>
     <ul class="nav main">
-        <li>
-            <a href="#Worldwide"  title="Show All" class="lancelot-menu">All</a>
+        <li class="placetype" >
+            <a href="#Worldwide"  title="Show All" class="lancelot-menu first">All</a>
         </li>
-        <li>
-            <a href="#Country" title="Filter Countries" class="lancelot-menu">Country</a>
+        <li class="placetype" >
+            <a href="#Country" title="Filter Countries" class="lancelot-menu first">Country</a>
             <ul>
                                     <li class="country">
                         <a href="#United_States"
@@ -173,14 +163,16 @@
                 </li>
                             </ul>
         </li>
-        <li>
-            <a href="#Town" title="Filter Tows" class="lancelot-menu">City</a>
+        <li class="placetype" >
+            <a href="#Town" title="Filter Tows" class="lancelot-menu first">City</a>
             <ul>
                                 <li class="town" >
                     <a href="#US_Atlanta"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2357024">Atlanta</span>
                     </a>
@@ -188,8 +180,10 @@
                                 <li class="town" >
                     <a href="#US_Baltimore"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2358820">Baltimore</span>
                     </a>
@@ -197,8 +191,10 @@
                                 <li class="town" >
                     <a href="#US_Boston"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2367105">Boston</span>
                     </a>
@@ -206,8 +202,10 @@
                                 <li class="town" >
                     <a href="#US_Chicago"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2379574">Chicago</span>
                     </a>
@@ -215,8 +213,10 @@
                                 <li class="town" >
                     <a href="#US_Dallas"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2388929">Dallas</span>
                     </a>
@@ -224,8 +224,10 @@
                                 <li class="town" >
                     <a href="#US_Fort_Worth"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2406080">Fort Worth</span>
                     </a>
@@ -233,8 +235,10 @@
                                 <li class="town" >
                     <a href="#US_Houston"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2424766">Houston</span>
                     </a>
@@ -242,8 +246,10 @@
                                 <li class="town" >
                     <a href="#US_Los_Angeles"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2442047">Los Angeles</span>
                     </a>
@@ -251,8 +257,10 @@
                                 <li class="town" >
                     <a href="#US_New_York"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2459115">New York</span>
                     </a>
@@ -260,8 +268,10 @@
                                 <li class="town" >
                     <a href="#US_Philadelphia"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2471217">Philadelphia</span>
                     </a>
@@ -269,8 +279,10 @@
                                 <li class="town" >
                     <a href="#US_San_Antonio"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2487796">San Antonio</span>
                     </a>
@@ -278,8 +290,10 @@
                                 <li class="town" >
                     <a href="#US_San_Francisco"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2487956">San Francisco</span>
                     </a>
@@ -287,8 +301,10 @@
                                 <li class="town" >
                     <a href="#US_Seattle"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2490383">Seattle</span>
                     </a>
@@ -296,8 +312,10 @@
                                 <li class="town" >
                     <a href="#US_Washington"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="US">United States</span> -
+                        -->
                         <span class="name"
                               data-woeid="2514815">Washington</span>
                     </a>
@@ -305,8 +323,10 @@
                                 <li class="town" >
                     <a href="#GB_London"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="GB">United Kingdom</span> -
+                        -->
                         <span class="name"
                               data-woeid="44418">London</span>
                     </a>
@@ -314,8 +334,10 @@
                                 <li class="town" >
                     <a href="#BR_Sao_Paulo"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="BR">Brazil</span> -
+                        -->
                         <span class="name"
                               data-woeid="455827">Sao Paulo</span>
                     </a>
@@ -1262,28 +1284,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23remembranceday" class="trendname"
-               title="Remembrance Day is when we remember those who gave their lives in war to safeguard our way of life. Observed on November 11th in the UK and most Commonwealth countries."
-       >
-           #remembranceday    </a>
-    <a href="http://search.twitter.com/search?q=%23remembranceday" class="twittericon lancelot"
-       title="twitter search: #remembranceday"></a>
-    <a href="http://www.google.com/search?q=remembranceday" class="googleicon lancelot"
-       title="google search: #remembranceday"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23lestweforget" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23riders" class="trendname"
     >
-           #lestweforget    </a>
-    <a href="http://search.twitter.com/search?q=%23lestweforget" class="twittericon lancelot"
-       title="twitter search: #lestweforget"></a>
-    <a href="http://www.google.com/search?q=lestweforget" class="googleicon lancelot"
-       title="google search: #lestweforget"></a>
+           #riders    </a>
+    <a href="http://search.twitter.com/search?q=%23riders" class="twittericon lancelot"
+       title="twitter search: #riders"></a>
+    <a href="http://www.google.com/search?q=riders" class="googleicon lancelot"
+       title="google search: #riders"></a>
 </span>
 
                     </li>
@@ -1291,88 +1298,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Bournival" class="trendname"
-               title="Montréal Canadiens have acquired Michael Bournival from Colerado Avalanche."
-       >
-           Bournival    </a>
-    <a href="http://search.twitter.com/search?q=Bournival" class="twittericon lancelot"
-       title="twitter search: Bournival"></a>
-    <a href="http://www.google.com/search?q=Bournival" class="googleicon lancelot"
-       title="google search: Bournival"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Flanders" class="trendname"
-               title="'In Flanders Fields' is perhaps the best known poem written during the First World War."
-       >
-           Flanders    </a>
-    <a href="http://search.twitter.com/search?q=Flanders" class="twittericon lancelot"
-       title="twitter search: Flanders"></a>
-    <a href="http://www.google.com/search?q=Flanders" class="googleicon lancelot"
-       title="google search: Flanders"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Rememberance" class="trendname"
-               title="Rememberance Day is held on November 11 to honour those who gave their lives fighting in wars and the veterans who remain."
-       >
-           Rememberance    </a>
-    <a href="http://search.twitter.com/search?q=Rememberance" class="twittericon lancelot"
-       title="twitter search: Rememberance"></a>
-    <a href="http://www.google.com/search?q=Rememberance" class="googleicon lancelot"
-       title="google search: Rememberance"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="trendname"
-               title="Italian producer Dino de Laurentiis dies at age 91 in Los Angeles."
-       >
-           Laurentiis    </a>
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="twittericon lancelot"
-       title="twitter search: Laurentiis"></a>
-    <a href="http://www.google.com/search?q=Laurentiis" class="googleicon lancelot"
-       title="google search: Laurentiis"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=WW2" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23bclions" class="trendname"
     >
-           WW2    </a>
-    <a href="http://search.twitter.com/search?q=WW2" class="twittericon lancelot"
-       title="twitter search: WW2"></a>
-    <a href="http://www.google.com/search?q=WW2" class="googleicon lancelot"
-       title="google search: WW2"></a>
+           #bclions    </a>
+    <a href="http://search.twitter.com/search?q=%23bclions" class="twittericon lancelot"
+       title="twitter search: #bclions"></a>
+    <a href="http://www.google.com/search?q=bclions" class="googleicon lancelot"
+       title="google search: #bclions"></a>
 </span>
 
                     </li>
@@ -1380,13 +1312,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=War+Memorial" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23wsf" class="trendname"
     >
-           War Memorial    </a>
-    <a href="http://search.twitter.com/search?q=War+Memorial" class="twittericon lancelot"
-       title="twitter search: War Memorial"></a>
-    <a href="http://www.google.com/search?q=War Memorial" class="googleicon lancelot"
-       title="google search: War Memorial"></a>
+           #wsf    </a>
+    <a href="http://search.twitter.com/search?q=%23wsf" class="twittericon lancelot"
+       title="twitter search: #wsf"></a>
+    <a href="http://www.google.com/search?q=wsf" class="googleicon lancelot"
+       title="google search: #wsf"></a>
 </span>
 
                     </li>
@@ -1394,13 +1326,97 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Cenotaph" class="trendname"
+    <a href="http://search.twitter.com/search?q=CFL" class="trendname"
     >
-           Cenotaph    </a>
-    <a href="http://search.twitter.com/search?q=Cenotaph" class="twittericon lancelot"
-       title="twitter search: Cenotaph"></a>
-    <a href="http://www.google.com/search?q=Cenotaph" class="googleicon lancelot"
-       title="google search: Cenotaph"></a>
+           CFL    </a>
+    <a href="http://search.twitter.com/search?q=CFL" class="twittericon lancelot"
+       title="twitter search: CFL"></a>
+    <a href="http://www.google.com/search?q=CFL" class="googleicon lancelot"
+       title="google search: CFL"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Lulay" class="trendname"
+    >
+           Lulay    </a>
+    <a href="http://search.twitter.com/search?q=Lulay" class="twittericon lancelot"
+       title="twitter search: Lulay"></a>
+    <a href="http://www.google.com/search?q=Lulay" class="googleicon lancelot"
+       title="google search: Lulay"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Jean+Coutu" class="trendname"
+    >
+           Jean Coutu    </a>
+    <a href="http://search.twitter.com/search?q=Jean+Coutu" class="twittericon lancelot"
+       title="twitter search: Jean Coutu"></a>
+    <a href="http://www.google.com/search?q=Jean Coutu" class="googleicon lancelot"
+       title="google search: Jean Coutu"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Gaultier" class="trendname"
+    >
+           Gaultier    </a>
+    <a href="http://search.twitter.com/search?q=Gaultier" class="twittericon lancelot"
+       title="twitter search: Gaultier"></a>
+    <a href="http://www.google.com/search?q=Gaultier" class="googleicon lancelot"
+       title="google search: Gaultier"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Clermont" class="trendname"
+    >
+           Clermont    </a>
+    <a href="http://search.twitter.com/search?q=Clermont" class="twittericon lancelot"
+       title="twitter search: Clermont"></a>
+    <a href="http://www.google.com/search?q=Clermont" class="googleicon lancelot"
+       title="google search: Clermont"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Roughriders" class="trendname"
+    >
+           Roughriders    </a>
+    <a href="http://search.twitter.com/search?q=Roughriders" class="twittericon lancelot"
+       title="twitter search: Roughriders"></a>
+    <a href="http://www.google.com/search?q=Roughriders" class="googleicon lancelot"
+       title="google search: Roughriders"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Sask" class="trendname"
+    >
+           Sask    </a>
+    <a href="http://search.twitter.com/search?q=Sask" class="twittericon lancelot"
+       title="twitter search: Sask"></a>
+    <a href="http://www.google.com/search?q=Sask" class="googleicon lancelot"
+       title="google search: Sask"></a>
 </span>
 
                     </li>
@@ -1443,43 +1459,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23hp7premiere" class="trendname"
-               title="The Worldwide Phenomenon: Harry Potter and the Deathly Hallows - Part I. London Premiere! Happening right now!"
-       >
-           #hp7premiere    </a>
-    <a href="http://search.twitter.com/search?q=%23hp7premiere" class="twittericon lancelot"
-       title="twitter search: #hp7premiere"></a>
-    <a href="http://www.google.com/search?q=hp7premiere" class="googleicon lancelot"
-       title="google search: #hp7premiere"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23muitacalmanessahora" class="trendname"
-               title="Bruno Mazzeo's new movie whose premiere on November 8."
-       >
-           #muitacalmanessahora    </a>
-    <a href="http://search.twitter.com/search?q=%23muitacalmanessahora" class="twittericon lancelot"
-       title="twitter search: #muitacalmanessahora"></a>
-    <a href="http://www.google.com/search?q=muitacalmanessahora" class="googleicon lancelot"
-       title="google search: #muitacalmanessahora"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23nemmineiro" class="trendname"
+    <a href="http://search.twitter.com/search?q=Toninho" class="trendname"
     >
-           #nemmineiro    </a>
-    <a href="http://search.twitter.com/search?q=%23nemmineiro" class="twittericon lancelot"
-       title="twitter search: #nemmineiro"></a>
-    <a href="http://www.google.com/search?q=nemmineiro" class="googleicon lancelot"
-       title="google search: #nemmineiro"></a>
+           Toninho    </a>
+    <a href="http://search.twitter.com/search?q=Toninho" class="twittericon lancelot"
+       title="twitter search: Toninho"></a>
+    <a href="http://www.google.com/search?q=Toninho" class="googleicon lancelot"
+       title="google search: Toninho"></a>
 </span>
 
                     </li>
@@ -1487,43 +1473,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Grint" class="trendname"
-               title="As in Rupert Grint who plays Ron Weasley in the Harry Potter series. Tonight is the premiere in London."
-       >
-           Grint    </a>
-    <a href="http://search.twitter.com/search?q=Grint" class="twittericon lancelot"
-       title="twitter search: Grint"></a>
-    <a href="http://www.google.com/search?q=Grint" class="googleicon lancelot"
-       title="google search: Grint"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Banco+Panamericano" class="trendname"
-               title="Banco Panamericano is the Brazilian lender controlled by media mogul Silvio Santos. The Brazil's Central Bank began probing accounting irregularities (i.e. Fictitious assets and credits registered by the bank’s directors inflated its results) after a 2.5 billion reais ($1.5 billion) rescue made by its holding company."
-       >
-           Banco Panamericano    </a>
-    <a href="http://search.twitter.com/search?q=Banco+Panamericano" class="twittericon lancelot"
-       title="twitter search: Banco Panamericano"></a>
-    <a href="http://www.google.com/search?q=Banco Panamericano" class="googleicon lancelot"
-       title="google search: Banco Panamericano"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=ClaudiaLeitteNoGrammyLatino" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23flamengo115anos" class="trendname"
     >
-           ClaudiaLeitteNoGrammyLatino    </a>
-    <a href="http://search.twitter.com/search?q=ClaudiaLeitteNoGrammyLatino" class="twittericon lancelot"
-       title="twitter search: ClaudiaLeitteNoGrammyLatino"></a>
-    <a href="http://www.google.com/search?q=ClaudiaLeitteNoGrammyLatino" class="googleicon lancelot"
-       title="google search: ClaudiaLeitteNoGrammyLatino"></a>
+           #flamengo115anos    </a>
+    <a href="http://search.twitter.com/search?q=%23flamengo115anos" class="twittericon lancelot"
+       title="twitter search: #flamengo115anos"></a>
+    <a href="http://www.google.com/search?q=flamengo115anos" class="googleicon lancelot"
+       title="google search: #flamengo115anos"></a>
 </span>
 
                     </li>
@@ -1531,14 +1487,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Evanna" class="trendname"
-               title="As in Evanna Lynch, who plays Luna Lovegood on the Harry Potter films."
-       >
-           Evanna    </a>
-    <a href="http://search.twitter.com/search?q=Evanna" class="twittericon lancelot"
-       title="twitter search: Evanna"></a>
-    <a href="http://www.google.com/search?q=Evanna" class="googleicon lancelot"
-       title="google search: Evanna"></a>
+    <a href="http://search.twitter.com/search?q=%23toninhoforever" class="trendname"
+    >
+           #toninhoforever    </a>
+    <a href="http://search.twitter.com/search?q=%23toninhoforever" class="twittericon lancelot"
+       title="twitter search: #toninhoforever"></a>
+    <a href="http://www.google.com/search?q=toninhoforever" class="googleicon lancelot"
+       title="google search: #toninhoforever"></a>
 </span>
 
                     </li>
@@ -1546,14 +1501,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Grammy+Latino" class="trendname"
-               title="The annual ceremony for Latin Grammys is today!"
-       >
-           Grammy Latino    </a>
-    <a href="http://search.twitter.com/search?q=Grammy+Latino" class="twittericon lancelot"
-       title="twitter search: Grammy Latino"></a>
-    <a href="http://www.google.com/search?q=Grammy Latino" class="googleicon lancelot"
-       title="google search: Grammy Latino"></a>
+    <a href="http://search.twitter.com/search?q=%23tweetumfato" class="trendname"
+    >
+           #tweetumfato    </a>
+    <a href="http://search.twitter.com/search?q=%23tweetumfato" class="twittericon lancelot"
+       title="twitter search: #tweetumfato"></a>
+    <a href="http://www.google.com/search?q=tweetumfato" class="googleicon lancelot"
+       title="google search: #tweetumfato"></a>
 </span>
 
                     </li>
@@ -1561,14 +1515,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Gianecchini" class="trendname"
-               title="Ator e galã, cuja foto aparece no supermercado Pintos, sobre um slogan bem sugestivo."
-       >
-           Gianecchini    </a>
-    <a href="http://search.twitter.com/search?q=Gianecchini" class="twittericon lancelot"
-       title="twitter search: Gianecchini"></a>
-    <a href="http://www.google.com/search?q=Gianecchini" class="googleicon lancelot"
-       title="google search: Gianecchini"></a>
+    <a href="http://search.twitter.com/search?q=Impostor" class="trendname"
+    >
+           Impostor    </a>
+    <a href="http://search.twitter.com/search?q=Impostor" class="twittericon lancelot"
+       title="twitter search: Impostor"></a>
+    <a href="http://www.google.com/search?q=Impostor" class="googleicon lancelot"
+       title="google search: Impostor"></a>
 </span>
 
                     </li>
@@ -1576,14 +1529,69 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Bonham" class="trendname"
-               title="As in Helena Bonham Carter, who plays Bellatrix Lestrange on the Harry Potter films!"
-       >
-           Bonham    </a>
-    <a href="http://search.twitter.com/search?q=Bonham" class="twittericon lancelot"
-       title="twitter search: Bonham"></a>
-    <a href="http://www.google.com/search?q=Bonham" class="googleicon lancelot"
-       title="google search: Bonham"></a>
+    <a href="http://search.twitter.com/search?q=Tayna" class="trendname"
+    >
+           Tayna    </a>
+    <a href="http://search.twitter.com/search?q=Tayna" class="twittericon lancelot"
+       title="twitter search: Tayna"></a>
+    <a href="http://www.google.com/search?q=Tayna" class="googleicon lancelot"
+       title="google search: Tayna"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Lucas+Ga%C3%BAcho" class="trendname"
+    >
+           Lucas Gaúcho    </a>
+    <a href="http://search.twitter.com/search?q=Lucas+Ga%C3%BAcho" class="twittericon lancelot"
+       title="twitter search: Lucas Gaúcho"></a>
+    <a href="http://www.google.com/search?q=Lucas Gaúcho" class="googleicon lancelot"
+       title="google search: Lucas Gaúcho"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Inri" class="trendname"
+    >
+           Inri    </a>
+    <a href="http://search.twitter.com/search?q=Inri" class="twittericon lancelot"
+       title="twitter search: Inri"></a>
+    <a href="http://www.google.com/search?q=Inri" class="googleicon lancelot"
+       title="google search: Inri"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Esme" class="trendname"
+    >
+           Esme    </a>
+    <a href="http://search.twitter.com/search?q=Esme" class="twittericon lancelot"
+       title="twitter search: Esme"></a>
+    <a href="http://www.google.com/search?q=Esme" class="googleicon lancelot"
+       title="google search: Esme"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Garota+Fant%C3%A1stica" class="trendname"
+    >
+           Garota Fantástica    </a>
+    <a href="http://search.twitter.com/search?q=Garota+Fant%C3%A1stica" class="twittericon lancelot"
+       title="twitter search: Garota Fantástica"></a>
+    <a href="http://www.google.com/search?q=Garota Fantástica" class="googleicon lancelot"
+       title="google search: Garota Fantástica"></a>
 </span>
 
                     </li>
@@ -1627,58 +1635,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="trendname"
-               title="Today is November 11th, Remembrance Day WORLDWIDE, a day of remembering those who served in the military forces."
-       >
-           #veteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="twittericon lancelot"
-       title="twitter search: #veteransday"></a>
-    <a href="http://www.google.com/search?q=veteransday" class="googleicon lancelot"
-       title="google search: #veteransday"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="trendname"
-               title="People are tweeting nicknames saved instead of their contacts real name on their phone also, the game."
-       >
-           #nicknamesinmyphone    </a>
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="twittericon lancelot"
-       title="twitter search: #nicknamesinmyphone"></a>
-    <a href="http://www.google.com/search?q=nicknamesinmyphone" class="googleicon lancelot"
-       title="google search: #nicknamesinmyphone"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Train+Awards" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="trendname"
     >
-           Train Awards    </a>
-    <a href="http://search.twitter.com/search?q=Train+Awards" class="twittericon lancelot"
-       title="twitter search: Train Awards"></a>
-    <a href="http://www.google.com/search?q=Train Awards" class="googleicon lancelot"
-       title="google search: Train Awards"></a>
+           #sheiswifey    </a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="twittericon lancelot"
+       title="twitter search: #sheiswifey"></a>
+    <a href="http://www.google.com/search?q=sheiswifey" class="googleicon lancelot"
+       title="google search: #sheiswifey"></a>
 </span>
 
                     </li>
@@ -1686,28 +1649,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="trendname"
-               title="In the United States, it is Veterans Day today. People are honoring the armed forces."
-       >
-           Armed Forces    </a>
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="twittericon lancelot"
-       title="twitter search: Armed Forces"></a>
-    <a href="http://www.google.com/search?q=Armed Forces" class="googleicon lancelot"
-       title="google search: Armed Forces"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Crown+Forum" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23fridaynightlights" class="trendname"
     >
-           Crown Forum    </a>
-    <a href="http://search.twitter.com/search?q=Crown+Forum" class="twittericon lancelot"
-       title="twitter search: Crown Forum"></a>
-    <a href="http://www.google.com/search?q=Crown Forum" class="googleicon lancelot"
-       title="google search: Crown Forum"></a>
+           #fridaynightlights    </a>
+    <a href="http://search.twitter.com/search?q=%23fridaynightlights" class="twittericon lancelot"
+       title="twitter search: #fridaynightlights"></a>
+    <a href="http://www.google.com/search?q=fridaynightlights" class="googleicon lancelot"
+       title="google search: #fridaynightlights"></a>
 </span>
 
                     </li>
@@ -1715,28 +1663,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="trendname"
-               title="Italian producer Dino de Laurentiis dies at age 91 in Los Angeles."
-       >
-           Laurentiis    </a>
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="twittericon lancelot"
-       title="twitter search: Laurentiis"></a>
-    <a href="http://www.google.com/search?q=Laurentiis" class="googleicon lancelot"
-       title="google search: Laurentiis"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Anita+Baker" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23dallascowboys" class="trendname"
     >
-           Anita Baker    </a>
-    <a href="http://search.twitter.com/search?q=Anita+Baker" class="twittericon lancelot"
-       title="twitter search: Anita Baker"></a>
-    <a href="http://www.google.com/search?q=Anita Baker" class="googleicon lancelot"
-       title="google search: Anita Baker"></a>
+           #dallascowboys    </a>
+    <a href="http://search.twitter.com/search?q=%23dallascowboys" class="twittericon lancelot"
+       title="twitter search: #dallascowboys"></a>
+    <a href="http://www.google.com/search?q=dallascowboys" class="googleicon lancelot"
+       title="google search: #dallascowboys"></a>
 </span>
 
                     </li>
@@ -1744,14 +1677,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Lauer" class="trendname"
-               title="Obama is in Indonesia.*selokali*."
-       >
-           Lauer    </a>
-    <a href="http://search.twitter.com/search?q=Lauer" class="twittericon lancelot"
-       title="twitter search: Lauer"></a>
-    <a href="http://www.google.com/search?q=Lauer" class="googleicon lancelot"
-       title="google search: Lauer"></a>
+    <a href="http://search.twitter.com/search?q=Fairley" class="trendname"
+    >
+           Fairley    </a>
+    <a href="http://search.twitter.com/search?q=Fairley" class="twittericon lancelot"
+       title="twitter search: Fairley"></a>
+    <a href="http://www.google.com/search?q=Fairley" class="googleicon lancelot"
+       title="google search: Fairley"></a>
 </span>
 
                     </li>
@@ -1759,14 +1691,84 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Splendor" class="trendname"
-               title="Splendor is a cruise ship that recently arrived in port at San Diego."
+    <a href="http://search.twitter.com/search?q=Tabernacle" class="trendname"
+    >
+           Tabernacle    </a>
+    <a href="http://search.twitter.com/search?q=Tabernacle" class="twittericon lancelot"
+       title="twitter search: Tabernacle"></a>
+    <a href="http://www.google.com/search?q=Tabernacle" class="googleicon lancelot"
+       title="google search: Tabernacle"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="trendname"
+    >
+           Pam Oliver    </a>
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="twittericon lancelot"
+       title="twitter search: Pam Oliver"></a>
+    <a href="http://www.google.com/search?q=Pam Oliver" class="googleicon lancelot"
+       title="google search: Pam Oliver"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Law+%26+Order" class="trendname"
+               title="Viewers watching Law & Order: Los Angeles."
        >
-           Splendor    </a>
-    <a href="http://search.twitter.com/search?q=Splendor" class="twittericon lancelot"
-       title="twitter search: Splendor"></a>
-    <a href="http://www.google.com/search?q=Splendor" class="googleicon lancelot"
-       title="google search: Splendor"></a>
+           Law & Order    </a>
+    <a href="http://search.twitter.com/search?q=Law+%26+Order" class="twittericon lancelot"
+       title="twitter search: Law & Order"></a>
+    <a href="http://www.google.com/search?q=Law & Order" class="googleicon lancelot"
+       title="google search: Law & Order"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Tim+Tebow" class="trendname"
+    >
+           Tim Tebow    </a>
+    <a href="http://search.twitter.com/search?q=Tim+Tebow" class="twittericon lancelot"
+       title="twitter search: Tim Tebow"></a>
+    <a href="http://www.google.com/search?q=Tim Tebow" class="googleicon lancelot"
+       title="google search: Tim Tebow"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=MANSION+PARTY" class="trendname"
+    >
+           MANSION PARTY    </a>
+    <a href="http://search.twitter.com/search?q=MANSION+PARTY" class="twittericon lancelot"
+       title="twitter search: MANSION PARTY"></a>
+    <a href="http://www.google.com/search?q=MANSION PARTY" class="googleicon lancelot"
+       title="google search: MANSION PARTY"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Soundclash" class="trendname"
+    >
+           Soundclash    </a>
+    <a href="http://search.twitter.com/search?q=Soundclash" class="twittericon lancelot"
+       title="twitter search: Soundclash"></a>
+    <a href="http://www.google.com/search?q=Soundclash" class="googleicon lancelot"
+       title="google search: Soundclash"></a>
 </span>
 
                     </li>
@@ -2177,14 +2179,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="trendname"
-               title="Today is November 11th, Remembrance Day WORLDWIDE, a day of remembering those who served in the military forces."
-       >
-           #veteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="twittericon lancelot"
-       title="twitter search: #veteransday"></a>
-    <a href="http://www.google.com/search?q=veteransday" class="googleicon lancelot"
-       title="google search: #veteransday"></a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="trendname"
+    >
+           #sheiswifey    </a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="twittericon lancelot"
+       title="twitter search: #sheiswifey"></a>
+    <a href="http://www.google.com/search?q=sheiswifey" class="googleicon lancelot"
+       title="google search: #sheiswifey"></a>
 </span>
 
                     </li>
@@ -2192,14 +2193,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
+    <a href="http://search.twitter.com/search?q=%23beardown" class="trendname"
+    >
+           #beardown    </a>
+    <a href="http://search.twitter.com/search?q=%23beardown" class="twittericon lancelot"
+       title="twitter search: #beardown"></a>
+    <a href="http://www.google.com/search?q=beardown" class="googleicon lancelot"
+       title="google search: #beardown"></a>
 </span>
 
                     </li>
@@ -2207,14 +2207,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="trendname"
-               title="People are tweeting nicknames saved instead of their contacts real name on their phone also, the game."
-       >
-           #nicknamesinmyphone    </a>
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="twittericon lancelot"
-       title="twitter search: #nicknamesinmyphone"></a>
-    <a href="http://www.google.com/search?q=nicknamesinmyphone" class="googleicon lancelot"
-       title="google search: #nicknamesinmyphone"></a>
+    <a href="http://search.twitter.com/search?q=%23dabears" class="trendname"
+    >
+           #dabears    </a>
+    <a href="http://search.twitter.com/search?q=%23dabears" class="twittericon lancelot"
+       title="twitter search: #dabears"></a>
+    <a href="http://www.google.com/search?q=dabears" class="googleicon lancelot"
+       title="google search: #dabears"></a>
 </span>
 
                     </li>
@@ -2222,14 +2221,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="trendname"
-               title="Italian producer Dino de Laurentiis dies at age 91 in Los Angeles."
-       >
-           Laurentiis    </a>
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="twittericon lancelot"
-       title="twitter search: Laurentiis"></a>
-    <a href="http://www.google.com/search?q=Laurentiis" class="googleicon lancelot"
-       title="google search: Laurentiis"></a>
+    <a href="http://search.twitter.com/search?q=BEARS+WIN" class="trendname"
+    >
+           BEARS WIN    </a>
+    <a href="http://search.twitter.com/search?q=BEARS+WIN" class="twittericon lancelot"
+       title="twitter search: BEARS WIN"></a>
+    <a href="http://www.google.com/search?q=BEARS WIN" class="googleicon lancelot"
+       title="google search: BEARS WIN"></a>
 </span>
 
                     </li>
@@ -2237,14 +2235,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Zeller" class="trendname"
-               title="Cody Zeller signed his National Letter of Intent to play basketball at Indiana University! HooHooHoosiers!"
-       >
-           Zeller    </a>
-    <a href="http://search.twitter.com/search?q=Zeller" class="twittericon lancelot"
-       title="twitter search: Zeller"></a>
-    <a href="http://www.google.com/search?q=Zeller" class="googleicon lancelot"
-       title="google search: Zeller"></a>
+    <a href="http://search.twitter.com/search?q=Soldier+Field" class="trendname"
+    >
+           Soldier Field    </a>
+    <a href="http://search.twitter.com/search?q=Soldier+Field" class="twittericon lancelot"
+       title="twitter search: Soldier Field"></a>
+    <a href="http://www.google.com/search?q=Soldier Field" class="googleicon lancelot"
+       title="google search: Soldier Field"></a>
 </span>
 
                     </li>
@@ -2252,14 +2249,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="trendname"
-               title="In the United States, it is Veterans Day today. People are honoring the armed forces."
-       >
-           Armed Forces    </a>
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="twittericon lancelot"
-       title="twitter search: Armed Forces"></a>
-    <a href="http://www.google.com/search?q=Armed Forces" class="googleicon lancelot"
-       title="google search: Armed Forces"></a>
+    <a href="http://search.twitter.com/search?q=Chicago+State" class="trendname"
+    >
+           Chicago State    </a>
+    <a href="http://search.twitter.com/search?q=Chicago+State" class="twittericon lancelot"
+       title="twitter search: Chicago State"></a>
+    <a href="http://www.google.com/search?q=Chicago State" class="googleicon lancelot"
+       title="google search: Chicago State"></a>
 </span>
 
                     </li>
@@ -2267,14 +2263,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Lauer" class="trendname"
-               title="Obama is in Indonesia.*selokali*."
-       >
-           Lauer    </a>
-    <a href="http://search.twitter.com/search?q=Lauer" class="twittericon lancelot"
-       title="twitter search: Lauer"></a>
-    <a href="http://www.google.com/search?q=Lauer" class="googleicon lancelot"
-       title="google search: Lauer"></a>
+    <a href="http://search.twitter.com/search?q=Lance+Briggs" class="trendname"
+    >
+           Lance Briggs    </a>
+    <a href="http://search.twitter.com/search?q=Lance+Briggs" class="twittericon lancelot"
+       title="twitter search: Lance Briggs"></a>
+    <a href="http://www.google.com/search?q=Lance Briggs" class="googleicon lancelot"
+       title="google search: Lance Briggs"></a>
 </span>
 
                     </li>
@@ -2282,14 +2277,14 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="trendname"
-               title=" Country Music Association Awards Winners: 'Magical Night' for Taylor Swift."
+    <a href="http://search.twitter.com/search?q=Pennington" class="trendname"
+               title="Chad Pennington is the new starting QB for the Miami Dolphins."
        >
-           CMA Awards    </a>
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="twittericon lancelot"
-       title="twitter search: CMA Awards"></a>
-    <a href="http://www.google.com/search?q=CMA Awards" class="googleicon lancelot"
-       title="google search: CMA Awards"></a>
+           Pennington    </a>
+    <a href="http://search.twitter.com/search?q=Pennington" class="twittericon lancelot"
+       title="twitter search: Pennington"></a>
+    <a href="http://www.google.com/search?q=Pennington" class="googleicon lancelot"
+       title="google search: Pennington"></a>
 </span>
 
                     </li>
@@ -2297,14 +2292,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=CMAs" class="trendname"
-               title="The CMAs are on right now on ABC."
-       >
-           CMAs    </a>
-    <a href="http://search.twitter.com/search?q=CMAs" class="twittericon lancelot"
-       title="twitter search: CMAs"></a>
-    <a href="http://www.google.com/search?q=CMAs" class="googleicon lancelot"
-       title="google search: CMAs"></a>
+    <a href="http://search.twitter.com/search?q=Hail+Mary" class="trendname"
+    >
+           Hail Mary    </a>
+    <a href="http://search.twitter.com/search?q=Hail+Mary" class="twittericon lancelot"
+       title="twitter search: Hail Mary"></a>
+    <a href="http://www.google.com/search?q=Hail Mary" class="googleicon lancelot"
+       title="google search: Hail Mary"></a>
 </span>
 
                     </li>
@@ -2312,14 +2306,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Armistice" class="trendname"
-               title="Veterans Day or also known as Poppy Day started out as Armistice Day, commemorating the time - the 11th hour of the 11th day of the 11th month of 1918 - when World War I formally ended with the signature of the armistice between the Allied nations and Germany. The day was specifically dedicated in UK by King George V, on 1919, to remember the members of the armed forces who were killed during the World War I ."
-       >
-           Armistice    </a>
-    <a href="http://search.twitter.com/search?q=Armistice" class="twittericon lancelot"
-       title="twitter search: Armistice"></a>
-    <a href="http://www.google.com/search?q=Armistice" class="googleicon lancelot"
-       title="google search: Armistice"></a>
+    <a href="http://search.twitter.com/search?q=Blue+Demons" class="trendname"
+    >
+           Blue Demons    </a>
+    <a href="http://search.twitter.com/search?q=Blue+Demons" class="twittericon lancelot"
+       title="twitter search: Blue Demons"></a>
+    <a href="http://www.google.com/search?q=Blue Demons" class="googleicon lancelot"
+       title="google search: Blue Demons"></a>
 </span>
 
                     </li>
@@ -2363,73 +2356,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="trendname"
-               title="Today is November 11th, Remembrance Day WORLDWIDE, a day of remembering those who served in the military forces."
-       >
-           #veteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="twittericon lancelot"
-       title="twitter search: #veteransday"></a>
-    <a href="http://www.google.com/search?q=veteransday" class="googleicon lancelot"
-       title="google search: #veteransday"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="trendname"
-               title="People are tweeting nicknames saved instead of their contacts real name on their phone also, the game."
-       >
-           #nicknamesinmyphone    </a>
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="twittericon lancelot"
-       title="twitter search: #nicknamesinmyphone"></a>
-    <a href="http://www.google.com/search?q=nicknamesinmyphone" class="googleicon lancelot"
-       title="google search: #nicknamesinmyphone"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="trendname"
-               title="In the United States, it is Veterans Day today. People are honoring the armed forces."
-       >
-           Armed Forces    </a>
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="twittericon lancelot"
-       title="twitter search: Armed Forces"></a>
-    <a href="http://www.google.com/search?q=Armed Forces" class="googleicon lancelot"
-       title="google search: Armed Forces"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Hyndman" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="trendname"
     >
-           Hyndman    </a>
-    <a href="http://search.twitter.com/search?q=Hyndman" class="twittericon lancelot"
-       title="twitter search: Hyndman"></a>
-    <a href="http://www.google.com/search?q=Hyndman" class="googleicon lancelot"
-       title="google search: Hyndman"></a>
+           #sheiswifey    </a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="twittericon lancelot"
+       title="twitter search: #sheiswifey"></a>
+    <a href="http://www.google.com/search?q=sheiswifey" class="googleicon lancelot"
+       title="google search: #sheiswifey"></a>
 </span>
 
                     </li>
@@ -2437,43 +2370,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=CMAs" class="trendname"
-               title="The CMAs are on right now on ABC."
-       >
-           CMAs    </a>
-    <a href="http://search.twitter.com/search?q=CMAs" class="twittericon lancelot"
-       title="twitter search: CMAs"></a>
-    <a href="http://www.google.com/search?q=CMAs" class="googleicon lancelot"
-       title="google search: CMAs"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="trendname"
-               title=" Country Music Association Awards Winners: 'Magical Night' for Taylor Swift."
-       >
-           CMA Awards    </a>
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="twittericon lancelot"
-       title="twitter search: CMA Awards"></a>
-    <a href="http://www.google.com/search?q=CMA Awards" class="googleicon lancelot"
-       title="google search: CMA Awards"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Schellas" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23dallascowboys" class="trendname"
     >
-           Schellas    </a>
-    <a href="http://search.twitter.com/search?q=Schellas" class="twittericon lancelot"
-       title="twitter search: Schellas"></a>
-    <a href="http://www.google.com/search?q=Schellas" class="googleicon lancelot"
-       title="google search: Schellas"></a>
+           #dallascowboys    </a>
+    <a href="http://search.twitter.com/search?q=%23dallascowboys" class="twittericon lancelot"
+       title="twitter search: #dallascowboys"></a>
+    <a href="http://www.google.com/search?q=dallascowboys" class="googleicon lancelot"
+       title="google search: #dallascowboys"></a>
 </span>
 
                     </li>
@@ -2481,13 +2384,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Dallas%2FFort+Worth" class="trendname"
+    <a href="http://search.twitter.com/search?q=Marion+Barber" class="trendname"
     >
-           Dallas/Fort Worth    </a>
-    <a href="http://search.twitter.com/search?q=Dallas%2FFort+Worth" class="twittericon lancelot"
-       title="twitter search: Dallas/Fort Worth"></a>
-    <a href="http://www.google.com/search?q=Dallas/Fort Worth" class="googleicon lancelot"
-       title="google search: Dallas/Fort Worth"></a>
+           Marion Barber    </a>
+    <a href="http://search.twitter.com/search?q=Marion+Barber" class="twittericon lancelot"
+       title="twitter search: Marion Barber"></a>
+    <a href="http://www.google.com/search?q=Marion Barber" class="googleicon lancelot"
+       title="google search: Marion Barber"></a>
 </span>
 
                     </li>
@@ -2495,14 +2398,97 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Armistice" class="trendname"
-               title="Veterans Day or also known as Poppy Day started out as Armistice Day, commemorating the time - the 11th hour of the 11th day of the 11th month of 1918 - when World War I formally ended with the signature of the armistice between the Allied nations and Germany. The day was specifically dedicated in UK by King George V, on 1919, to remember the members of the armed forces who were killed during the World War I ."
-       >
-           Armistice    </a>
-    <a href="http://search.twitter.com/search?q=Armistice" class="twittericon lancelot"
-       title="twitter search: Armistice"></a>
-    <a href="http://www.google.com/search?q=Armistice" class="googleicon lancelot"
-       title="google search: Armistice"></a>
+    <a href="http://search.twitter.com/search?q=%23fcdallas" class="trendname"
+    >
+           #fcdallas    </a>
+    <a href="http://search.twitter.com/search?q=%23fcdallas" class="twittericon lancelot"
+       title="twitter search: #fcdallas"></a>
+    <a href="http://www.google.com/search?q=fcdallas" class="googleicon lancelot"
+       title="google search: #fcdallas"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="trendname"
+    >
+           Pam Oliver    </a>
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="twittericon lancelot"
+       title="twitter search: Pam Oliver"></a>
+    <a href="http://www.google.com/search?q=Pam Oliver" class="googleicon lancelot"
+       title="google search: Pam Oliver"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Buehler" class="trendname"
+    >
+           Buehler    </a>
+    <a href="http://search.twitter.com/search?q=Buehler" class="twittericon lancelot"
+       title="twitter search: Buehler"></a>
+    <a href="http://www.google.com/search?q=Buehler" class="googleicon lancelot"
+       title="google search: Buehler"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Hurdle" class="trendname"
+    >
+           Hurdle    </a>
+    <a href="http://search.twitter.com/search?q=Hurdle" class="twittericon lancelot"
+       title="twitter search: Hurdle"></a>
+    <a href="http://www.google.com/search?q=Hurdle" class="googleicon lancelot"
+       title="google search: Hurdle"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Garret" class="trendname"
+    >
+           Garret    </a>
+    <a href="http://search.twitter.com/search?q=Garret" class="twittericon lancelot"
+       title="twitter search: Garret"></a>
+    <a href="http://www.google.com/search?q=Garret" class="googleicon lancelot"
+       title="google search: Garret"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Felix+Jones" class="trendname"
+    >
+           Felix Jones    </a>
+    <a href="http://search.twitter.com/search?q=Felix+Jones" class="twittericon lancelot"
+       title="twitter search: Felix Jones"></a>
+    <a href="http://www.google.com/search?q=Felix Jones" class="googleicon lancelot"
+       title="google search: Felix Jones"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Alan+Ball" class="trendname"
+    >
+           Alan Ball    </a>
+    <a href="http://search.twitter.com/search?q=Alan+Ball" class="twittericon lancelot"
+       title="twitter search: Alan Ball"></a>
+    <a href="http://www.google.com/search?q=Alan Ball" class="googleicon lancelot"
+       title="google search: Alan Ball"></a>
 </span>
 
                     </li>
@@ -2546,73 +2532,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="trendname"
-               title="Today is November 11th, Remembrance Day WORLDWIDE, a day of remembering those who served in the military forces."
-       >
-           #veteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="twittericon lancelot"
-       title="twitter search: #veteransday"></a>
-    <a href="http://www.google.com/search?q=veteransday" class="googleicon lancelot"
-       title="google search: #veteransday"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="trendname"
-               title="People are tweeting nicknames saved instead of their contacts real name on their phone also, the game."
-       >
-           #nicknamesinmyphone    </a>
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="twittericon lancelot"
-       title="twitter search: #nicknamesinmyphone"></a>
-    <a href="http://www.google.com/search?q=nicknamesinmyphone" class="googleicon lancelot"
-       title="google search: #nicknamesinmyphone"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="trendname"
-               title="In the United States, it is Veterans Day today. People are honoring the armed forces."
-       >
-           Armed Forces    </a>
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="twittericon lancelot"
-       title="twitter search: Armed Forces"></a>
-    <a href="http://www.google.com/search?q=Armed Forces" class="googleicon lancelot"
-       title="google search: Armed Forces"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Hyndman" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="trendname"
     >
-           Hyndman    </a>
-    <a href="http://search.twitter.com/search?q=Hyndman" class="twittericon lancelot"
-       title="twitter search: Hyndman"></a>
-    <a href="http://www.google.com/search?q=Hyndman" class="googleicon lancelot"
-       title="google search: Hyndman"></a>
+           #sheiswifey    </a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="twittericon lancelot"
+       title="twitter search: #sheiswifey"></a>
+    <a href="http://www.google.com/search?q=sheiswifey" class="googleicon lancelot"
+       title="google search: #sheiswifey"></a>
 </span>
 
                     </li>
@@ -2620,43 +2546,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=CMAs" class="trendname"
-               title="The CMAs are on right now on ABC."
-       >
-           CMAs    </a>
-    <a href="http://search.twitter.com/search?q=CMAs" class="twittericon lancelot"
-       title="twitter search: CMAs"></a>
-    <a href="http://www.google.com/search?q=CMAs" class="googleicon lancelot"
-       title="google search: CMAs"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="trendname"
-               title=" Country Music Association Awards Winners: 'Magical Night' for Taylor Swift."
-       >
-           CMA Awards    </a>
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="twittericon lancelot"
-       title="twitter search: CMA Awards"></a>
-    <a href="http://www.google.com/search?q=CMA Awards" class="googleicon lancelot"
-       title="google search: CMA Awards"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Schellas" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23dallascowboys" class="trendname"
     >
-           Schellas    </a>
-    <a href="http://search.twitter.com/search?q=Schellas" class="twittericon lancelot"
-       title="twitter search: Schellas"></a>
-    <a href="http://www.google.com/search?q=Schellas" class="googleicon lancelot"
-       title="google search: Schellas"></a>
+           #dallascowboys    </a>
+    <a href="http://search.twitter.com/search?q=%23dallascowboys" class="twittericon lancelot"
+       title="twitter search: #dallascowboys"></a>
+    <a href="http://www.google.com/search?q=dallascowboys" class="googleicon lancelot"
+       title="google search: #dallascowboys"></a>
 </span>
 
                     </li>
@@ -2664,13 +2560,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Dallas%2FFort+Worth" class="trendname"
+    <a href="http://search.twitter.com/search?q=Marion+Barber" class="trendname"
     >
-           Dallas/Fort Worth    </a>
-    <a href="http://search.twitter.com/search?q=Dallas%2FFort+Worth" class="twittericon lancelot"
-       title="twitter search: Dallas/Fort Worth"></a>
-    <a href="http://www.google.com/search?q=Dallas/Fort Worth" class="googleicon lancelot"
-       title="google search: Dallas/Fort Worth"></a>
+           Marion Barber    </a>
+    <a href="http://search.twitter.com/search?q=Marion+Barber" class="twittericon lancelot"
+       title="twitter search: Marion Barber"></a>
+    <a href="http://www.google.com/search?q=Marion Barber" class="googleicon lancelot"
+       title="google search: Marion Barber"></a>
 </span>
 
                     </li>
@@ -2678,14 +2574,97 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Armistice" class="trendname"
-               title="Veterans Day or also known as Poppy Day started out as Armistice Day, commemorating the time - the 11th hour of the 11th day of the 11th month of 1918 - when World War I formally ended with the signature of the armistice between the Allied nations and Germany. The day was specifically dedicated in UK by King George V, on 1919, to remember the members of the armed forces who were killed during the World War I ."
-       >
-           Armistice    </a>
-    <a href="http://search.twitter.com/search?q=Armistice" class="twittericon lancelot"
-       title="twitter search: Armistice"></a>
-    <a href="http://www.google.com/search?q=Armistice" class="googleicon lancelot"
-       title="google search: Armistice"></a>
+    <a href="http://search.twitter.com/search?q=%23fcdallas" class="trendname"
+    >
+           #fcdallas    </a>
+    <a href="http://search.twitter.com/search?q=%23fcdallas" class="twittericon lancelot"
+       title="twitter search: #fcdallas"></a>
+    <a href="http://www.google.com/search?q=fcdallas" class="googleicon lancelot"
+       title="google search: #fcdallas"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="trendname"
+    >
+           Pam Oliver    </a>
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="twittericon lancelot"
+       title="twitter search: Pam Oliver"></a>
+    <a href="http://www.google.com/search?q=Pam Oliver" class="googleicon lancelot"
+       title="google search: Pam Oliver"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Buehler" class="trendname"
+    >
+           Buehler    </a>
+    <a href="http://search.twitter.com/search?q=Buehler" class="twittericon lancelot"
+       title="twitter search: Buehler"></a>
+    <a href="http://www.google.com/search?q=Buehler" class="googleicon lancelot"
+       title="google search: Buehler"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Hurdle" class="trendname"
+    >
+           Hurdle    </a>
+    <a href="http://search.twitter.com/search?q=Hurdle" class="twittericon lancelot"
+       title="twitter search: Hurdle"></a>
+    <a href="http://www.google.com/search?q=Hurdle" class="googleicon lancelot"
+       title="google search: Hurdle"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Garret" class="trendname"
+    >
+           Garret    </a>
+    <a href="http://search.twitter.com/search?q=Garret" class="twittericon lancelot"
+       title="twitter search: Garret"></a>
+    <a href="http://www.google.com/search?q=Garret" class="googleicon lancelot"
+       title="google search: Garret"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Felix+Jones" class="trendname"
+    >
+           Felix Jones    </a>
+    <a href="http://search.twitter.com/search?q=Felix+Jones" class="twittericon lancelot"
+       title="twitter search: Felix Jones"></a>
+    <a href="http://www.google.com/search?q=Felix Jones" class="googleicon lancelot"
+       title="google search: Felix Jones"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Alan+Ball" class="trendname"
+    >
+           Alan Ball    </a>
+    <a href="http://search.twitter.com/search?q=Alan+Ball" class="twittericon lancelot"
+       title="twitter search: Alan Ball"></a>
+    <a href="http://www.google.com/search?q=Alan Ball" class="googleicon lancelot"
+       title="google search: Alan Ball"></a>
 </span>
 
                     </li>
@@ -2729,88 +2708,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="trendname"
-               title="Today is November 11th, Remembrance Day WORLDWIDE, a day of remembering those who served in the military forces."
-       >
-           #veteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="twittericon lancelot"
-       title="twitter search: #veteransday"></a>
-    <a href="http://www.google.com/search?q=veteransday" class="googleicon lancelot"
-       title="google search: #veteransday"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="trendname"
-               title="People are tweeting nicknames saved instead of their contacts real name on their phone also, the game."
-       >
-           #nicknamesinmyphone    </a>
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="twittericon lancelot"
-       title="twitter search: #nicknamesinmyphone"></a>
-    <a href="http://www.google.com/search?q=nicknamesinmyphone" class="googleicon lancelot"
-       title="google search: #nicknamesinmyphone"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="trendname"
-               title="In the United States, it is Veterans Day today. People are honoring the armed forces."
-       >
-           Armed Forces    </a>
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="twittericon lancelot"
-       title="twitter search: Armed Forces"></a>
-    <a href="http://www.google.com/search?q=Armed Forces" class="googleicon lancelot"
-       title="google search: Armed Forces"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=SWAC" class="trendname"
-               title="Stands for the Disney Channel show 'Sonny With A Chance'."
-       >
-           SWAC    </a>
-    <a href="http://search.twitter.com/search?q=SWAC" class="twittericon lancelot"
-       title="twitter search: SWAC"></a>
-    <a href="http://www.google.com/search?q=SWAC" class="googleicon lancelot"
-       title="google search: SWAC"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Nutcracker+Market" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="trendname"
     >
-           Nutcracker Market    </a>
-    <a href="http://search.twitter.com/search?q=Nutcracker+Market" class="twittericon lancelot"
-       title="twitter search: Nutcracker Market"></a>
-    <a href="http://www.google.com/search?q=Nutcracker Market" class="googleicon lancelot"
-       title="google search: Nutcracker Market"></a>
+           #sheiswifey    </a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="twittericon lancelot"
+       title="twitter search: #sheiswifey"></a>
+    <a href="http://www.google.com/search?q=sheiswifey" class="googleicon lancelot"
+       title="google search: #sheiswifey"></a>
 </span>
 
                     </li>
@@ -2818,13 +2722,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=TABC" class="trendname"
+    <a href="http://search.twitter.com/search?q=Hail+Mary" class="trendname"
     >
-           TABC    </a>
-    <a href="http://search.twitter.com/search?q=TABC" class="twittericon lancelot"
-       title="twitter search: TABC"></a>
-    <a href="http://www.google.com/search?q=TABC" class="googleicon lancelot"
-       title="google search: TABC"></a>
+           Hail Mary    </a>
+    <a href="http://search.twitter.com/search?q=Hail+Mary" class="twittericon lancelot"
+       title="twitter search: Hail Mary"></a>
+    <a href="http://www.google.com/search?q=Hail Mary" class="googleicon lancelot"
+       title="google search: Hail Mary"></a>
 </span>
 
                     </li>
@@ -2832,28 +2736,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="trendname"
-               title="Italian producer Dino de Laurentiis dies at age 91 in Los Angeles."
-       >
-           Laurentiis    </a>
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="twittericon lancelot"
-       title="twitter search: Laurentiis"></a>
-    <a href="http://www.google.com/search?q=Laurentiis" class="googleicon lancelot"
-       title="google search: Laurentiis"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=KTRU" class="trendname"
+    <a href="http://search.twitter.com/search?q=Andre+Johnson" class="trendname"
     >
-           KTRU    </a>
-    <a href="http://search.twitter.com/search?q=KTRU" class="twittericon lancelot"
-       title="twitter search: KTRU"></a>
-    <a href="http://www.google.com/search?q=KTRU" class="googleicon lancelot"
-       title="google search: KTRU"></a>
+           Andre Johnson    </a>
+    <a href="http://search.twitter.com/search?q=Andre+Johnson" class="twittericon lancelot"
+       title="twitter search: Andre Johnson"></a>
+    <a href="http://www.google.com/search?q=Andre Johnson" class="googleicon lancelot"
+       title="google search: Andre Johnson"></a>
 </span>
 
                     </li>
@@ -2861,14 +2750,97 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Lauer" class="trendname"
-               title="Obama is in Indonesia.*selokali*."
-       >
-           Lauer    </a>
-    <a href="http://search.twitter.com/search?q=Lauer" class="twittericon lancelot"
-       title="twitter search: Lauer"></a>
-    <a href="http://www.google.com/search?q=Lauer" class="googleicon lancelot"
-       title="google search: Lauer"></a>
+    <a href="http://search.twitter.com/search?q=Gary+Kubiak" class="trendname"
+    >
+           Gary Kubiak    </a>
+    <a href="http://search.twitter.com/search?q=Gary+Kubiak" class="twittericon lancelot"
+       title="twitter search: Gary Kubiak"></a>
+    <a href="http://www.google.com/search?q=Gary Kubiak" class="googleicon lancelot"
+       title="google search: Gary Kubiak"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=%23houstontexans" class="trendname"
+    >
+           #houstontexans    </a>
+    <a href="http://search.twitter.com/search?q=%23houstontexans" class="twittericon lancelot"
+       title="twitter search: #houstontexans"></a>
+    <a href="http://www.google.com/search?q=houstontexans" class="googleicon lancelot"
+       title="google search: #houstontexans"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=%23teamtexans" class="trendname"
+    >
+           #teamtexans    </a>
+    <a href="http://search.twitter.com/search?q=%23teamtexans" class="twittericon lancelot"
+       title="twitter search: #teamtexans"></a>
+    <a href="http://www.google.com/search?q=teamtexans" class="googleicon lancelot"
+       title="google search: #teamtexans"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=McNair" class="trendname"
+    >
+           McNair    </a>
+    <a href="http://search.twitter.com/search?q=McNair" class="twittericon lancelot"
+       title="twitter search: McNair"></a>
+    <a href="http://www.google.com/search?q=McNair" class="googleicon lancelot"
+       title="google search: McNair"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Jones-Drew" class="trendname"
+    >
+           Jones-Drew    </a>
+    <a href="http://search.twitter.com/search?q=Jones-Drew" class="twittericon lancelot"
+       title="twitter search: Jones-Drew"></a>
+    <a href="http://www.google.com/search?q=Jones-Drew" class="googleicon lancelot"
+       title="google search: Jones-Drew"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Glover+Quin" class="trendname"
+    >
+           Glover Quin    </a>
+    <a href="http://search.twitter.com/search?q=Glover+Quin" class="twittericon lancelot"
+       title="twitter search: Glover Quin"></a>
+    <a href="http://www.google.com/search?q=Glover Quin" class="googleicon lancelot"
+       title="google search: Glover Quin"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Scobee" class="trendname"
+    >
+           Scobee    </a>
+    <a href="http://search.twitter.com/search?q=Scobee" class="twittericon lancelot"
+       title="twitter search: Scobee"></a>
+    <a href="http://www.google.com/search?q=Scobee" class="googleicon lancelot"
+       title="google search: Scobee"></a>
 </span>
 
                     </li>
@@ -2912,58 +2884,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="trendname"
-               title="Today is November 11th, Remembrance Day WORLDWIDE, a day of remembering those who served in the military forces."
-       >
-           #veteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="twittericon lancelot"
-       title="twitter search: #veteransday"></a>
-    <a href="http://www.google.com/search?q=veteransday" class="googleicon lancelot"
-       title="google search: #veteransday"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="trendname"
-               title="Italian producer Dino de Laurentiis dies at age 91 in Los Angeles."
-       >
-           Laurentiis    </a>
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="twittericon lancelot"
-       title="twitter search: Laurentiis"></a>
-    <a href="http://www.google.com/search?q=Laurentiis" class="googleicon lancelot"
-       title="google search: Laurentiis"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23happyveteransday" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="trendname"
     >
-           #happyveteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23happyveteransday" class="twittericon lancelot"
-       title="twitter search: #happyveteransday"></a>
-    <a href="http://www.google.com/search?q=happyveteransday" class="googleicon lancelot"
-       title="google search: #happyveteransday"></a>
+           #sheiswifey    </a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="twittericon lancelot"
+       title="twitter search: #sheiswifey"></a>
+    <a href="http://www.google.com/search?q=sheiswifey" class="googleicon lancelot"
+       title="google search: #sheiswifey"></a>
 </span>
 
                     </li>
@@ -2971,43 +2898,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Splendor" class="trendname"
-               title="Splendor is a cruise ship that recently arrived in port at San Diego."
-       >
-           Splendor    </a>
-    <a href="http://search.twitter.com/search?q=Splendor" class="twittericon lancelot"
-       title="twitter search: Splendor"></a>
-    <a href="http://www.google.com/search?q=Splendor" class="googleicon lancelot"
-       title="google search: Splendor"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="trendname"
-               title="In the United States, it is Veterans Day today. People are honoring the armed forces."
-       >
-           Armed Forces    </a>
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="twittericon lancelot"
-       title="twitter search: Armed Forces"></a>
-    <a href="http://www.google.com/search?q=Armed Forces" class="googleicon lancelot"
-       title="google search: Armed Forces"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=RIP+Dino" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23dallascowboys" class="trendname"
     >
-           RIP Dino    </a>
-    <a href="http://search.twitter.com/search?q=RIP+Dino" class="twittericon lancelot"
-       title="twitter search: RIP Dino"></a>
-    <a href="http://www.google.com/search?q=RIP Dino" class="googleicon lancelot"
-       title="google search: RIP Dino"></a>
+           #dallascowboys    </a>
+    <a href="http://search.twitter.com/search?q=%23dallascowboys" class="twittericon lancelot"
+       title="twitter search: #dallascowboys"></a>
+    <a href="http://www.google.com/search?q=dallascowboys" class="googleicon lancelot"
+       title="google search: #dallascowboys"></a>
 </span>
 
                     </li>
@@ -3015,14 +2912,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="trendname"
-               title=" Country Music Association Awards Winners: 'Magical Night' for Taylor Swift."
-       >
-           CMA Awards    </a>
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="twittericon lancelot"
-       title="twitter search: CMA Awards"></a>
-    <a href="http://www.google.com/search?q=CMA Awards" class="googleicon lancelot"
-       title="google search: CMA Awards"></a>
+    <a href="http://search.twitter.com/search?q=AFC+West" class="trendname"
+    >
+           AFC West    </a>
+    <a href="http://search.twitter.com/search?q=AFC+West" class="twittericon lancelot"
+       title="twitter search: AFC West"></a>
+    <a href="http://www.google.com/search?q=AFC West" class="googleicon lancelot"
+       title="google search: AFC West"></a>
 </span>
 
                     </li>
@@ -3030,14 +2926,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=CMAs" class="trendname"
-               title="The CMAs are on right now on ABC."
-       >
-           CMAs    </a>
-    <a href="http://search.twitter.com/search?q=CMAs" class="twittericon lancelot"
-       title="twitter search: CMAs"></a>
-    <a href="http://www.google.com/search?q=CMAs" class="googleicon lancelot"
-       title="google search: CMAs"></a>
+    <a href="http://search.twitter.com/search?q=%23preguntasquenohayquehacer" class="trendname"
+    >
+           #preguntasquenohayquehacer    </a>
+    <a href="http://search.twitter.com/search?q=%23preguntasquenohayquehacer" class="twittericon lancelot"
+       title="twitter search: #preguntasquenohayquehacer"></a>
+    <a href="http://www.google.com/search?q=preguntasquenohayquehacer" class="googleicon lancelot"
+       title="google search: #preguntasquenohayquehacer"></a>
 </span>
 
                     </li>
@@ -3045,14 +2940,83 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Armistice" class="trendname"
-               title="Veterans Day or also known as Poppy Day started out as Armistice Day, commemorating the time - the 11th hour of the 11th day of the 11th month of 1918 - when World War I formally ended with the signature of the armistice between the Allied nations and Germany. The day was specifically dedicated in UK by King George V, on 1919, to remember the members of the armed forces who were killed during the World War I ."
-       >
-           Armistice    </a>
-    <a href="http://search.twitter.com/search?q=Armistice" class="twittericon lancelot"
-       title="twitter search: Armistice"></a>
-    <a href="http://www.google.com/search?q=Armistice" class="googleicon lancelot"
-       title="google search: Armistice"></a>
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="trendname"
+    >
+           Pam Oliver    </a>
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="twittericon lancelot"
+       title="twitter search: Pam Oliver"></a>
+    <a href="http://www.google.com/search?q=Pam Oliver" class="googleicon lancelot"
+       title="google search: Pam Oliver"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Suu+Kyi" class="trendname"
+    >
+           Suu Kyi    </a>
+    <a href="http://search.twitter.com/search?q=Suu+Kyi" class="twittericon lancelot"
+       title="twitter search: Suu Kyi"></a>
+    <a href="http://www.google.com/search?q=Suu Kyi" class="googleicon lancelot"
+       title="google search: Suu Kyi"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Morning+Glory" class="trendname"
+    >
+           Morning Glory    </a>
+    <a href="http://search.twitter.com/search?q=Morning+Glory" class="twittericon lancelot"
+       title="twitter search: Morning Glory"></a>
+    <a href="http://www.google.com/search?q=Morning Glory" class="googleicon lancelot"
+       title="google search: Morning Glory"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Crabtree" class="trendname"
+    >
+           Crabtree    </a>
+    <a href="http://search.twitter.com/search?q=Crabtree" class="twittericon lancelot"
+       title="twitter search: Crabtree"></a>
+    <a href="http://www.google.com/search?q=Crabtree" class="googleicon lancelot"
+       title="google search: Crabtree"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Mayweather" class="trendname"
+    >
+           Mayweather    </a>
+    <a href="http://search.twitter.com/search?q=Mayweather" class="twittericon lancelot"
+       title="twitter search: Mayweather"></a>
+    <a href="http://www.google.com/search?q=Mayweather" class="googleicon lancelot"
+       title="google search: Mayweather"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Avalon+High" class="trendname"
+    >
+           Avalon High    </a>
+    <a href="http://search.twitter.com/search?q=Avalon+High" class="twittericon lancelot"
+       title="twitter search: Avalon High"></a>
+    <a href="http://www.google.com/search?q=Avalon High" class="googleicon lancelot"
+       title="google search: Avalon High"></a>
 </span>
 
                     </li>
@@ -3280,73 +3244,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="trendname"
-               title="Today is November 11th, Remembrance Day WORLDWIDE, a day of remembering those who served in the military forces."
-       >
-           #veteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="twittericon lancelot"
-       title="twitter search: #veteransday"></a>
-    <a href="http://www.google.com/search?q=veteransday" class="googleicon lancelot"
-       title="google search: #veteransday"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="trendname"
-               title="People are tweeting nicknames saved instead of their contacts real name on their phone also, the game."
-       >
-           #nicknamesinmyphone    </a>
-    <a href="http://search.twitter.com/search?q=%23nicknamesinmyphone" class="twittericon lancelot"
-       title="twitter search: #nicknamesinmyphone"></a>
-    <a href="http://www.google.com/search?q=nicknamesinmyphone" class="googleicon lancelot"
-       title="google search: #nicknamesinmyphone"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="trendname"
-               title="Italian producer Dino de Laurentiis dies at age 91 in Los Angeles."
-       >
-           Laurentiis    </a>
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="twittericon lancelot"
-       title="twitter search: Laurentiis"></a>
-    <a href="http://www.google.com/search?q=Laurentiis" class="googleicon lancelot"
-       title="google search: Laurentiis"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=McFaddens" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="trendname"
     >
-           McFaddens    </a>
-    <a href="http://search.twitter.com/search?q=McFaddens" class="twittericon lancelot"
-       title="twitter search: McFaddens"></a>
-    <a href="http://www.google.com/search?q=McFaddens" class="googleicon lancelot"
-       title="google search: McFaddens"></a>
+           #sheiswifey    </a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="twittericon lancelot"
+       title="twitter search: #sheiswifey"></a>
+    <a href="http://www.google.com/search?q=sheiswifey" class="googleicon lancelot"
+       title="google search: #sheiswifey"></a>
 </span>
 
                     </li>
@@ -3354,28 +3258,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="trendname"
-               title="In the United States, it is Veterans Day today. People are honoring the armed forces."
-       >
-           Armed Forces    </a>
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="twittericon lancelot"
-       title="twitter search: Armed Forces"></a>
-    <a href="http://www.google.com/search?q=Armed Forces" class="googleicon lancelot"
-       title="google search: Armed Forces"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Lindbergh" class="trendname"
+    <a href="http://search.twitter.com/search?q=Nick+Folk" class="trendname"
     >
-           Lindbergh    </a>
-    <a href="http://search.twitter.com/search?q=Lindbergh" class="twittericon lancelot"
-       title="twitter search: Lindbergh"></a>
-    <a href="http://www.google.com/search?q=Lindbergh" class="googleicon lancelot"
-       title="google search: Lindbergh"></a>
+           Nick Folk    </a>
+    <a href="http://search.twitter.com/search?q=Nick+Folk" class="twittericon lancelot"
+       title="twitter search: Nick Folk"></a>
+    <a href="http://www.google.com/search?q=Nick Folk" class="googleicon lancelot"
+       title="google search: Nick Folk"></a>
 </span>
 
                     </li>
@@ -3383,13 +3272,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Pete+Orr" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23dontwait" class="trendname"
     >
-           Pete Orr    </a>
-    <a href="http://search.twitter.com/search?q=Pete+Orr" class="twittericon lancelot"
-       title="twitter search: Pete Orr"></a>
-    <a href="http://www.google.com/search?q=Pete Orr" class="googleicon lancelot"
-       title="google search: Pete Orr"></a>
+           #dontwait    </a>
+    <a href="http://search.twitter.com/search?q=%23dontwait" class="twittericon lancelot"
+       title="twitter search: #dontwait"></a>
+    <a href="http://www.google.com/search?q=dontwait" class="googleicon lancelot"
+       title="google search: #dontwait"></a>
 </span>
 
                     </li>
@@ -3397,14 +3286,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Lauer" class="trendname"
-               title="Obama is in Indonesia.*selokali*."
-       >
-           Lauer    </a>
-    <a href="http://search.twitter.com/search?q=Lauer" class="twittericon lancelot"
-       title="twitter search: Lauer"></a>
-    <a href="http://www.google.com/search?q=Lauer" class="googleicon lancelot"
-       title="google search: Lauer"></a>
+    <a href="http://search.twitter.com/search?q=%23fridaynightlights" class="trendname"
+    >
+           #fridaynightlights    </a>
+    <a href="http://search.twitter.com/search?q=%23fridaynightlights" class="twittericon lancelot"
+       title="twitter search: #fridaynightlights"></a>
+    <a href="http://www.google.com/search?q=fridaynightlights" class="googleicon lancelot"
+       title="google search: #fridaynightlights"></a>
 </span>
 
                     </li>
@@ -3412,14 +3300,84 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=CMAs" class="trendname"
-               title="The CMAs are on right now on ABC."
+    <a href="http://search.twitter.com/search?q=Hail+Mary" class="trendname"
+    >
+           Hail Mary    </a>
+    <a href="http://search.twitter.com/search?q=Hail+Mary" class="twittericon lancelot"
+       title="twitter search: Hail Mary"></a>
+    <a href="http://www.google.com/search?q=Hail Mary" class="googleicon lancelot"
+       title="google search: Hail Mary"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="trendname"
+    >
+           Pam Oliver    </a>
+    <a href="http://search.twitter.com/search?q=Pam+Oliver" class="twittericon lancelot"
+       title="twitter search: Pam Oliver"></a>
+    <a href="http://www.google.com/search?q=Pam Oliver" class="googleicon lancelot"
+       title="google search: Pam Oliver"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Giants+Stadium" class="trendname"
+    >
+           Giants Stadium    </a>
+    <a href="http://search.twitter.com/search?q=Giants+Stadium" class="twittericon lancelot"
+       title="twitter search: Giants Stadium"></a>
+    <a href="http://www.google.com/search?q=Giants Stadium" class="googleicon lancelot"
+       title="google search: Giants Stadium"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Thigpen" class="trendname"
+    >
+           Thigpen    </a>
+    <a href="http://search.twitter.com/search?q=Thigpen" class="twittericon lancelot"
+       title="twitter search: Thigpen"></a>
+    <a href="http://www.google.com/search?q=Thigpen" class="googleicon lancelot"
+       title="google search: Thigpen"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Pennington" class="trendname"
+               title="Chad Pennington is the new starting QB for the Miami Dolphins."
        >
-           CMAs    </a>
-    <a href="http://search.twitter.com/search?q=CMAs" class="twittericon lancelot"
-       title="twitter search: CMAs"></a>
-    <a href="http://www.google.com/search?q=CMAs" class="googleicon lancelot"
-       title="google search: CMAs"></a>
+           Pennington    </a>
+    <a href="http://search.twitter.com/search?q=Pennington" class="twittericon lancelot"
+       title="twitter search: Pennington"></a>
+    <a href="http://www.google.com/search?q=Pennington" class="googleicon lancelot"
+       title="google search: Pennington"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Felix+Jones" class="trendname"
+    >
+           Felix Jones    </a>
+    <a href="http://search.twitter.com/search?q=Felix+Jones" class="twittericon lancelot"
+       title="twitter search: Felix Jones"></a>
+    <a href="http://www.google.com/search?q=Felix Jones" class="googleicon lancelot"
+       title="google search: Felix Jones"></a>
 </span>
 
                     </li>
@@ -3646,88 +3604,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="trendname"
-               title="Today is November 11th, Remembrance Day WORLDWIDE, a day of remembering those who served in the military forces."
-       >
-           #veteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="twittericon lancelot"
-       title="twitter search: #veteransday"></a>
-    <a href="http://www.google.com/search?q=veteransday" class="googleicon lancelot"
-       title="google search: #veteransday"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23baybridge" class="trendname"
-               title="There was a bomb threat as well as a jumper this morning and the bridge was shut down."
-       >
-           #baybridge    </a>
-    <a href="http://search.twitter.com/search?q=%23baybridge" class="twittericon lancelot"
-       title="twitter search: #baybridge"></a>
-    <a href="http://www.google.com/search?q=baybridge" class="googleicon lancelot"
-       title="google search: #baybridge"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="trendname"
-               title="Italian producer Dino de Laurentiis dies at age 91 in Los Angeles."
-       >
-           Laurentiis    </a>
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="twittericon lancelot"
-       title="twitter search: Laurentiis"></a>
-    <a href="http://www.google.com/search?q=Laurentiis" class="googleicon lancelot"
-       title="google search: Laurentiis"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Armistice" class="trendname"
-               title="Veterans Day or also known as Poppy Day started out as Armistice Day, commemorating the time - the 11th hour of the 11th day of the 11th month of 1918 - when World War I formally ended with the signature of the armistice between the Allied nations and Germany. The day was specifically dedicated in UK by King George V, on 1919, to remember the members of the armed forces who were killed during the World War I ."
-       >
-           Armistice    </a>
-    <a href="http://search.twitter.com/search?q=Armistice" class="twittericon lancelot"
-       title="twitter search: Armistice"></a>
-    <a href="http://www.google.com/search?q=Armistice" class="googleicon lancelot"
-       title="google search: Armistice"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Jean+Quan" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="trendname"
     >
-           Jean Quan    </a>
-    <a href="http://search.twitter.com/search?q=Jean+Quan" class="twittericon lancelot"
-       title="twitter search: Jean Quan"></a>
-    <a href="http://www.google.com/search?q=Jean Quan" class="googleicon lancelot"
-       title="google search: Jean Quan"></a>
+           #sheiswifey    </a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="twittericon lancelot"
+       title="twitter search: #sheiswifey"></a>
+    <a href="http://www.google.com/search?q=sheiswifey" class="googleicon lancelot"
+       title="google search: #sheiswifey"></a>
 </span>
 
                     </li>
@@ -3735,28 +3618,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="trendname"
-               title="In the United States, it is Veterans Day today. People are honoring the armed forces."
-       >
-           Armed Forces    </a>
-    <a href="http://search.twitter.com/search?q=Armed+Forces" class="twittericon lancelot"
-       title="twitter search: Armed Forces"></a>
-    <a href="http://www.google.com/search?q=Armed Forces" class="googleicon lancelot"
-       title="google search: Armed Forces"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Harmonix" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23in8thgrade" class="trendname"
     >
-           Harmonix    </a>
-    <a href="http://search.twitter.com/search?q=Harmonix" class="twittericon lancelot"
-       title="twitter search: Harmonix"></a>
-    <a href="http://www.google.com/search?q=Harmonix" class="googleicon lancelot"
-       title="google search: Harmonix"></a>
+           #in8thgrade    </a>
+    <a href="http://search.twitter.com/search?q=%23in8thgrade" class="twittericon lancelot"
+       title="twitter search: #in8thgrade"></a>
+    <a href="http://www.google.com/search?q=in8thgrade" class="googleicon lancelot"
+       title="google search: #in8thgrade"></a>
 </span>
 
                     </li>
@@ -3764,14 +3632,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="trendname"
-               title=" Country Music Association Awards Winners: 'Magical Night' for Taylor Swift."
-       >
-           CMA Awards    </a>
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="twittericon lancelot"
-       title="twitter search: CMA Awards"></a>
-    <a href="http://www.google.com/search?q=CMA Awards" class="googleicon lancelot"
-       title="google search: CMA Awards"></a>
+    <a href="http://search.twitter.com/search?q=Crabtree" class="trendname"
+    >
+           Crabtree    </a>
+    <a href="http://search.twitter.com/search?q=Crabtree" class="twittericon lancelot"
+       title="twitter search: Crabtree"></a>
+    <a href="http://www.google.com/search?q=Crabtree" class="googleicon lancelot"
+       title="google search: Crabtree"></a>
 </span>
 
                     </li>
@@ -3779,14 +3646,97 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Splendor" class="trendname"
-               title="Splendor is a cruise ship that recently arrived in port at San Diego."
-       >
-           Splendor    </a>
-    <a href="http://search.twitter.com/search?q=Splendor" class="twittericon lancelot"
-       title="twitter search: Splendor"></a>
-    <a href="http://www.google.com/search?q=Splendor" class="googleicon lancelot"
-       title="google search: Splendor"></a>
+    <a href="http://search.twitter.com/search?q=%23sf49ers" class="trendname"
+    >
+           #sf49ers    </a>
+    <a href="http://search.twitter.com/search?q=%23sf49ers" class="twittericon lancelot"
+       title="twitter search: #sf49ers"></a>
+    <a href="http://www.google.com/search?q=sf49ers" class="googleicon lancelot"
+       title="google search: #sf49ers"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Frank+Gore" class="trendname"
+    >
+           Frank Gore    </a>
+    <a href="http://search.twitter.com/search?q=Frank+Gore" class="twittericon lancelot"
+       title="twitter search: Frank Gore"></a>
+    <a href="http://www.google.com/search?q=Frank Gore" class="googleicon lancelot"
+       title="google search: Frank Gore"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Nedney" class="trendname"
+    >
+           Nedney    </a>
+    <a href="http://search.twitter.com/search?q=Nedney" class="twittericon lancelot"
+       title="twitter search: Nedney"></a>
+    <a href="http://www.google.com/search?q=Nedney" class="googleicon lancelot"
+       title="google search: Nedney"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Anthony+Davis" class="trendname"
+    >
+           Anthony Davis    </a>
+    <a href="http://search.twitter.com/search?q=Anthony+Davis" class="twittericon lancelot"
+       title="twitter search: Anthony Davis"></a>
+    <a href="http://www.google.com/search?q=Anthony Davis" class="googleicon lancelot"
+       title="google search: Anthony Davis"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=AFC+West" class="trendname"
+    >
+           AFC West    </a>
+    <a href="http://search.twitter.com/search?q=AFC+West" class="twittericon lancelot"
+       title="twitter search: AFC West"></a>
+    <a href="http://www.google.com/search?q=AFC West" class="googleicon lancelot"
+       title="google search: AFC West"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Staley" class="trendname"
+    >
+           Staley    </a>
+    <a href="http://search.twitter.com/search?q=Staley" class="twittericon lancelot"
+       title="twitter search: Staley"></a>
+    <a href="http://www.google.com/search?q=Staley" class="googleicon lancelot"
+       title="google search: Staley"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Amendola" class="trendname"
+    >
+           Amendola    </a>
+    <a href="http://search.twitter.com/search?q=Amendola" class="twittericon lancelot"
+       title="twitter search: Amendola"></a>
+    <a href="http://www.google.com/search?q=Amendola" class="googleicon lancelot"
+       title="google search: Amendola"></a>
 </span>
 
                     </li>
@@ -3830,6 +3780,76 @@
 
 
                 <span class="name">
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="trendname"
+    >
+           #sheiswifey    </a>
+    <a href="http://search.twitter.com/search?q=%23sheiswifey" class="twittericon lancelot"
+       title="twitter search: #sheiswifey"></a>
+    <a href="http://www.google.com/search?q=sheiswifey" class="googleicon lancelot"
+       title="google search: #sheiswifey"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Whitehurst" class="trendname"
+    >
+           Whitehurst    </a>
+    <a href="http://search.twitter.com/search?q=Whitehurst" class="twittericon lancelot"
+       title="twitter search: Whitehurst"></a>
+    <a href="http://www.google.com/search?q=Whitehurst" class="googleicon lancelot"
+       title="google search: Whitehurst"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=%23failedcandy" class="trendname"
+    >
+           #failedcandy    </a>
+    <a href="http://search.twitter.com/search?q=%23failedcandy" class="twittericon lancelot"
+       title="twitter search: #failedcandy"></a>
+    <a href="http://www.google.com/search?q=failedcandy" class="googleicon lancelot"
+       title="google search: #failedcandy"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=%23curryscrew" class="trendname"
+    >
+           #curryscrew    </a>
+    <a href="http://search.twitter.com/search?q=%23curryscrew" class="twittericon lancelot"
+       title="twitter search: #curryscrew"></a>
+    <a href="http://www.google.com/search?q=curryscrew" class="googleicon lancelot"
+       title="google search: #curryscrew"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Suu+Kyi" class="trendname"
+    >
+           Suu Kyi    </a>
+    <a href="http://search.twitter.com/search?q=Suu+Kyi" class="twittericon lancelot"
+       title="twitter search: Suu Kyi"></a>
+    <a href="http://www.google.com/search?q=Suu Kyi" class="googleicon lancelot"
+       title="google search: Suu Kyi"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
     <a href="http://search.twitter.com/search?q=Niehaus" class="trendname"
                title="Seattle Mariners' beloved announcer Dave Niehaus has died at age 75."
        >
@@ -3845,58 +3865,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="trendname"
-               title="Today is November 11th, Remembrance Day WORLDWIDE, a day of remembering those who served in the military forces."
-       >
-           #veteransday    </a>
-    <a href="http://search.twitter.com/search?q=%23veteransday" class="twittericon lancelot"
-       title="twitter search: #veteransday"></a>
-    <a href="http://www.google.com/search?q=veteransday" class="googleicon lancelot"
-       title="google search: #veteransday"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=RIP+Dave" class="trendname"
-               title="Seattle Mariners' beloved announcer Dave Niehaus has died at age 75."
-       >
-           RIP Dave    </a>
-    <a href="http://search.twitter.com/search?q=RIP+Dave" class="twittericon lancelot"
-       title="twitter search: RIP Dave"></a>
-    <a href="http://www.google.com/search?q=RIP Dave" class="googleicon lancelot"
-       title="google search: RIP Dave"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23myohmy" class="trendname"
+    <a href="http://search.twitter.com/search?q=Billick" class="trendname"
     >
-           #myohmy    </a>
-    <a href="http://search.twitter.com/search?q=%23myohmy" class="twittericon lancelot"
-       title="twitter search: #myohmy"></a>
-    <a href="http://www.google.com/search?q=myohmy" class="googleicon lancelot"
-       title="google search: #myohmy"></a>
+           Billick    </a>
+    <a href="http://search.twitter.com/search?q=Billick" class="twittericon lancelot"
+       title="twitter search: Billick"></a>
+    <a href="http://www.google.com/search?q=Billick" class="googleicon lancelot"
+       title="google search: Billick"></a>
 </span>
 
                     </li>
@@ -3904,13 +3879,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Safeco" class="trendname"
+    <a href="http://search.twitter.com/search?q=4CHAN" class="trendname"
     >
-           Safeco    </a>
-    <a href="http://search.twitter.com/search?q=Safeco" class="twittericon lancelot"
-       title="twitter search: Safeco"></a>
-    <a href="http://www.google.com/search?q=Safeco" class="googleicon lancelot"
-       title="google search: Safeco"></a>
+           4CHAN    </a>
+    <a href="http://search.twitter.com/search?q=4CHAN" class="twittericon lancelot"
+       title="twitter search: 4CHAN"></a>
+    <a href="http://www.google.com/search?q=4CHAN" class="googleicon lancelot"
+       title="google search: 4CHAN"></a>
 </span>
 
                     </li>
@@ -3918,43 +3893,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="trendname"
-               title=" Country Music Association Awards Winners: 'Magical Night' for Taylor Swift."
-       >
-           CMA Awards    </a>
-    <a href="http://search.twitter.com/search?q=CMA+Awards" class="twittericon lancelot"
-       title="twitter search: CMA Awards"></a>
-    <a href="http://www.google.com/search?q=CMA Awards" class="googleicon lancelot"
-       title="google search: CMA Awards"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=CMAs" class="trendname"
-               title="The CMAs are on right now on ABC."
-       >
-           CMAs    </a>
-    <a href="http://search.twitter.com/search?q=CMAs" class="twittericon lancelot"
-       title="twitter search: CMAs"></a>
-    <a href="http://www.google.com/search?q=CMAs" class="googleicon lancelot"
-       title="google search: CMAs"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Griffey" class="trendname"
+    <a href="http://search.twitter.com/search?q=Aung" class="trendname"
     >
-           Griffey    </a>
-    <a href="http://search.twitter.com/search?q=Griffey" class="twittericon lancelot"
-       title="twitter search: Griffey"></a>
-    <a href="http://www.google.com/search?q=Griffey" class="googleicon lancelot"
-       title="google search: Griffey"></a>
+           Aung    </a>
+    <a href="http://search.twitter.com/search?q=Aung" class="twittericon lancelot"
+       title="twitter search: Aung"></a>
+    <a href="http://www.google.com/search?q=Aung" class="googleicon lancelot"
+       title="google search: Aung"></a>
 </span>
 
                     </li>
@@ -3962,14 +3907,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="trendname"
-               title="Italian producer Dino de Laurentiis dies at age 91 in Los Angeles."
-       >
-           Laurentiis    </a>
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="twittericon lancelot"
-       title="twitter search: Laurentiis"></a>
-    <a href="http://www.google.com/search?q=Laurentiis" class="googleicon lancelot"
-       title="google search: Laurentiis"></a>
+    <a href="http://search.twitter.com/search?q=Deon+Butler" class="trendname"
+    >
+           Deon Butler    </a>
+    <a href="http://search.twitter.com/search?q=Deon+Butler" class="twittericon lancelot"
+       title="twitter search: Deon Butler"></a>
+    <a href="http://www.google.com/search?q=Deon Butler" class="googleicon lancelot"
+       title="google search: Deon Butler"></a>
 </span>
 
                     </li>
@@ -4197,103 +4141,13 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=%23twitterjoketrial" class="trendname"
-               title="Paul Chambers appeared at Doncaster Crown Court today lost his appeal against his conviction for sending menacing communications. The menacing communication in question was a joke sent on Twitter to his friends, albeit in poor taste. The conviction is the biggest joke, there was no intent and therefore no crime. The conviction was upheld in crown court today."
-       >
-           #twitterjoketrial    </a>
-    <a href="http://search.twitter.com/search?q=%23twitterjoketrial" class="twittericon lancelot"
-       title="twitter search: #twitterjoketrial"></a>
-    <a href="http://www.google.com/search?q=twitterjoketrial" class="googleicon lancelot"
-       title="google search: #twitterjoketrial"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="trendname"
-               title="Reasons why we can't be friends.....yes."
-       >
-           #wecantbefriends    </a>
-    <a href="http://search.twitter.com/search?q=%23wecantbefriends" class="twittericon lancelot"
-       title="twitter search: #wecantbefriends"></a>
-    <a href="http://www.google.com/search?q=wecantbefriends" class="googleicon lancelot"
-       title="google search: #wecantbefriends"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Wilkins" class="trendname"
-               title="Ray Wilkins leaves Chelsea Football Club with immediate effect after board decide not to renew contract."
-       >
-           Wilkins    </a>
-    <a href="http://search.twitter.com/search?q=Wilkins" class="twittericon lancelot"
-       title="twitter search: Wilkins"></a>
-    <a href="http://www.google.com/search?q=Wilkins" class="googleicon lancelot"
-       title="google search: Wilkins"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Joey+Barton" class="trendname"
-               title="Joey Barton could be hit with FA charge after striking Morten Gamst Pedersen. A lot of discussion is going on about what action should be taken."
-       >
-           Joey Barton    </a>
-    <a href="http://search.twitter.com/search?q=Joey+Barton" class="twittericon lancelot"
-       title="twitter search: Joey Barton"></a>
-    <a href="http://www.google.com/search?q=Joey Barton" class="googleicon lancelot"
-       title="google search: Joey Barton"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=%23twtour" class="trendname"
-               title="The Wanted are planning a tour and fans are trying to persuade them to come to their area for a show."
-       >
-           #twtour    </a>
-    <a href="http://search.twitter.com/search?q=%23twtour" class="twittericon lancelot"
-       title="twitter search: #twtour"></a>
-    <a href="http://www.google.com/search?q=twtour" class="googleicon lancelot"
-       title="google search: #twtour"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="trendname"
-               title="Italian producer Dino de Laurentiis dies at age 91 in Los Angeles."
-       >
-           Laurentiis    </a>
-    <a href="http://search.twitter.com/search?q=Laurentiis" class="twittericon lancelot"
-       title="twitter search: Laurentiis"></a>
-    <a href="http://www.google.com/search?q=Laurentiis" class="googleicon lancelot"
-       title="google search: Laurentiis"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Gareth+Compton" class="trendname"
+    <a href="http://search.twitter.com/search?q=%23imaceleb" class="trendname"
     >
-           Gareth Compton    </a>
-    <a href="http://search.twitter.com/search?q=Gareth+Compton" class="twittericon lancelot"
-       title="twitter search: Gareth Compton"></a>
-    <a href="http://www.google.com/search?q=Gareth Compton" class="googleicon lancelot"
-       title="google search: Gareth Compton"></a>
+           #imaceleb    </a>
+    <a href="http://search.twitter.com/search?q=%23imaceleb" class="twittericon lancelot"
+       title="twitter search: #imaceleb"></a>
+    <a href="http://www.google.com/search?q=imaceleb" class="googleicon lancelot"
+       title="google search: #imaceleb"></a>
 </span>
 
                     </li>
@@ -4301,43 +4155,125 @@
 
 
                 <span class="name">
-    <a href="http://search.twitter.com/search?q=Millbank" class="trendname"
-               title="UK students are in London today to protest against the tuition fee increase in UK universities. Millbank is trending, as it is the HQ of the UK Conservative Party and where the protest is located. Reports are surfacing about violence breaking out, riot police arriving and the whole building evacuating."
-       >
-           Millbank    </a>
-    <a href="http://search.twitter.com/search?q=Millbank" class="twittericon lancelot"
-       title="twitter search: Millbank"></a>
-    <a href="http://www.google.com/search?q=Millbank" class="googleicon lancelot"
-       title="google search: Millbank"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=Armistice" class="trendname"
-               title="Veterans Day or also known as Poppy Day started out as Armistice Day, commemorating the time - the 11th hour of the 11th day of the 11th month of 1918 - when World War I formally ended with the signature of the armistice between the Allied nations and Germany. The day was specifically dedicated in UK by King George V, on 1919, to remember the members of the armed forces who were killed during the World War I ."
-       >
-           Armistice    </a>
-    <a href="http://search.twitter.com/search?q=Armistice" class="twittericon lancelot"
-       title="twitter search: Armistice"></a>
-    <a href="http://www.google.com/search?q=Armistice" class="googleicon lancelot"
-       title="google search: Armistice"></a>
-</span>
-
-                    </li>
-                                    <li class="topic">
-
-
-                <span class="name">
-    <a href="http://search.twitter.com/search?q=CPS" class="trendname"
+    <a href="http://search.twitter.com/search?q=Gillian" class="trendname"
     >
-           CPS    </a>
-    <a href="http://search.twitter.com/search?q=CPS" class="twittericon lancelot"
-       title="twitter search: CPS"></a>
-    <a href="http://www.google.com/search?q=CPS" class="googleicon lancelot"
-       title="google search: CPS"></a>
+           Gillian    </a>
+    <a href="http://search.twitter.com/search?q=Gillian" class="twittericon lancelot"
+       title="twitter search: Gillian"></a>
+    <a href="http://www.google.com/search?q=Gillian" class="googleicon lancelot"
+       title="google search: Gillian"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=McKeith" class="trendname"
+    >
+           McKeith    </a>
+    <a href="http://search.twitter.com/search?q=McKeith" class="twittericon lancelot"
+       title="twitter search: McKeith"></a>
+    <a href="http://www.google.com/search?q=McKeith" class="googleicon lancelot"
+       title="google search: McKeith"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Aggro" class="trendname"
+    >
+           Aggro    </a>
+    <a href="http://search.twitter.com/search?q=Aggro" class="twittericon lancelot"
+       title="twitter search: Aggro"></a>
+    <a href="http://www.google.com/search?q=Aggro" class="googleicon lancelot"
+       title="google search: Aggro"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=%23wantedinmybed" class="trendname"
+    >
+           #wantedinmybed    </a>
+    <a href="http://search.twitter.com/search?q=%23wantedinmybed" class="twittericon lancelot"
+       title="twitter search: #wantedinmybed"></a>
+    <a href="http://www.google.com/search?q=wantedinmybed" class="googleicon lancelot"
+       title="google search: #wantedinmybed"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Lembit" class="trendname"
+    >
+           Lembit    </a>
+    <a href="http://search.twitter.com/search?q=Lembit" class="twittericon lancelot"
+       title="twitter search: Lembit"></a>
+    <a href="http://www.google.com/search?q=Lembit" class="googleicon lancelot"
+       title="google search: Lembit"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Stacey+Solomon" class="trendname"
+    >
+           Stacey Solomon    </a>
+    <a href="http://search.twitter.com/search?q=Stacey+Solomon" class="twittericon lancelot"
+       title="twitter search: Stacey Solomon"></a>
+    <a href="http://www.google.com/search?q=Stacey Solomon" class="googleicon lancelot"
+       title="google search: Stacey Solomon"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=%23motd2" class="trendname"
+    >
+           #motd2    </a>
+    <a href="http://search.twitter.com/search?q=%23motd2" class="twittericon lancelot"
+       title="twitter search: #motd2"></a>
+    <a href="http://www.google.com/search?q=motd2" class="googleicon lancelot"
+       title="google search: #motd2"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Shaun+Ryder" class="trendname"
+    >
+           Shaun Ryder    </a>
+    <a href="http://search.twitter.com/search?q=Shaun+Ryder" class="twittericon lancelot"
+       title="twitter search: Shaun Ryder"></a>
+    <a href="http://www.google.com/search?q=Shaun Ryder" class="googleicon lancelot"
+       title="google search: Shaun Ryder"></a>
+</span>
+
+                    </li>
+                                    <li class="topic">
+
+
+                <span class="name">
+    <a href="http://search.twitter.com/search?q=Havers" class="trendname"
+    >
+           Havers    </a>
+    <a href="http://search.twitter.com/search?q=Havers" class="twittericon lancelot"
+       title="twitter search: Havers"></a>
+    <a href="http://www.google.com/search?q=Havers" class="googleicon lancelot"
+       title="google search: Havers"></a>
 </span>
 
                     </li>
@@ -4558,7 +4494,6 @@
                     <!-- footer -->
             <div id="footer">
     <a href="http://api.whatthetrend.com/" id="databywtt">
-            <img src="http://api.whatthetrend.com/images/wtt_api_badge_120.png" border="0" alt="data by What the Trend?">
         </a>
     <a href="http://codexico.com.br/blog" title="Codexico blog" id="codexicoblog">codexico</a>
 </div>                    <!-- end footer -->
@@ -4567,45 +4502,15 @@
                 </div>
 
                 <!-- jquery -->
-                                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+                                    <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
         
                             <script type="text/javascript" src="js/jquery.quicksand.min.js"></script>
                             <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-                            <script type="text/javascript" src="js/jquery.qtip-1.0.0-rc3.min.js"></script>
+                            <script type="text/javascript" src="js/jquery.tipTip.minified.js"></script>
                             <script type="text/javascript" src="js/jquery.lancelot.js"></script>
 
-                                        <script type="text/javascript" src="js/ttlocal.js"></script>
+                                            <script type="text/javascript" src="js/testettlocal.js"></script>
         
-                                                <!-- facebook goodies -->
-                                        <div id="fb-root"></div>
-                                        <script type="text/javascript" >
-                                            window.fbAsyncInit = function() {
-                                                FB.init({appId: '151028201584145', status: true, cookie: true,
-                                                    xfbml: true});
-                                            };
-                                            (function() {
-                                                var e = document.createElement('script'); e.async = true;
-                                                e.src = document.location.protocol +
-                                                    '//connect.facebook.net/en_US/all.js';
-                                                document.getElementById('fb-root').appendChild(e);
-                                            }());
-                                        </script>
-                                        <!-- end facebook goodies -->
-
-                                        <!-- twitter goodies -->
-                                        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-                                        <script src="http://platform.twitter.com/anywhere.js?id=7xd5gQGwuWDsOBSc5Wa7Hg&v=1" type="text/javascript"></script>
-                                        <script type="text/javascript">
-                                            /*
-                                            twttr.anywhere(function (T) {
-                                                T("#tbox").tweetBox({
-                                                    label: "What do you think of @TTlocal?",
-                                                    defaultContent: "@ttlocal "
-                                                });
-                                            });
-                                             */
-                                        </script>
-                                        <!-- end twitter goodies -->
         
     </body>
 </html>

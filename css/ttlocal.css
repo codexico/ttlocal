@@ -161,7 +161,12 @@ li.topic{
 #menu ul.nav li{
     list-style-type: none;
     margin: 0;
-    padding-top: 1px;
+}
+#menu ul.nav li.placetype{
+    padding: 4px 0 2px;
+}
+#menu ul.nav li{
+    padding: 0 0 1px;
 }
 #menu ul.nav li.placetype{
     border-bottom: 1px #CCC solid;
@@ -220,7 +225,7 @@ li.topic{
 
 /* tipTip*/
 #tiptip_content {
-    font-size: 1.1em;
+    font-size: 1.25em;
 }
 #tiptip_content a{
     color: #fff;

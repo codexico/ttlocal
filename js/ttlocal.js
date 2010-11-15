@@ -23,24 +23,6 @@ jQuery(document).ready(function ($) {
             useScaling: false,
             adjustHeight: false
         },
-        qtipOptions = {
-            position: {
-                corner: {
-                    target: 'topMiddle',
-                    tooltip: 'bottomLeft'
-                }
-            },
-            style: {
-                border: {
-                    width: 5,
-                    radius: 10
-                },
-                padding: 10,
-                'font-size': '1.2em',
-                tip: true, // Give it a speech bubble tip with automatic corner detection
-                name: 'cream' // Style it according to the preset 'cream' style
-            }
-        },
         tipTipOptions = {
             defaultPosition: "right",
             keepAlive: true
@@ -160,7 +142,7 @@ jQuery(document).ready(function ($) {
 
         function toolTipInit(){
             $('.trendname[title]').tipTip(tipTipOptions);
-                    }
+        }
 
         function init() {
 //            updateCacheTT();
