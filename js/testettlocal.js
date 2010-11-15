@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
             }
         },
         tipTipOptions = {
-            defaultPosition: "right",
+            defaultPosition: "left",
             keepAlive: true
         };
 

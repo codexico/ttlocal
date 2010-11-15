@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
             adjustHeight: false
         },
         tipTipOptions = {
-            defaultPosition: "right",
+            defaultPosition: "left",
             keepAlive: true
         };
 
