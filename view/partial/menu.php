@@ -3,11 +3,11 @@
     <!-- menu -->
         <span class="filter">Filter: </span>
     <ul class="nav main">
-        <li>
-            <a href="#Worldwide"  title="Show All" class="lancelot-menu">All</a>
+        <li class="placetype" >
+            <a href="#Worldwide"  title="Show All" class="lancelot-menu first">All</a>
         </li>
-        <li>
-            <a href="#Country" title="Filter Countries" class="lancelot-menu">Country</a>
+        <li class="placetype" >
+            <a href="#Country" title="Filter Countries" class="lancelot-menu first">Country</a>
             <ul>
                 <?php foreach ($viewdata['places']['country'] as $c): ?>
                     <li class="country">
@@ -21,15 +21,17 @@
                 <?php endforeach; //country ?>
             </ul>
         </li>
-        <li>
-            <a href="#Town" title="Filter Tows" class="lancelot-menu">City</a>
+        <li class="placetype" >
+            <a href="#Town" title="Filter Tows" class="lancelot-menu first">City</a>
             <ul>
                 <?php foreach ($viewdata['places']['town'] as $t): ?>
                 <li class="town" >
                     <a href="#<?= str_replace(" ", "_", $t->{'countryCode'} . "_" . $t->{'name'}) ?>"
                        class="lancelot-menu">
+                        <!--
                         <span class="country"
                               data-country="<?= $t->{'countryCode'} ?>"><?= $t->{'country'} ?></span> -
+                        -->
                         <span class="name"
                               data-woeid="<?= $t->{'woeid'} ?>"><?= $t->{'name'} ?></span>
                     </a>

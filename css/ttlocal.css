@@ -95,38 +95,91 @@ li.topic{
     background-color: #5599BB;
     -moz-border-radius: 6px 6px 6px 6px;
 }
-/*menu*/
+/***********
+**  menu  **
+***********/
 #menu{
-    width: auto;
-    -moz-border-radius: 6px 6px 6px 6px;
-    background-color: #fff;
-    text-align: left;
-    padding: 6px;
-    font-size:1.3em;
-    font-weight:normal;
-    margin: 12px;
     float: left;
+    width: auto;
 }
 #menu .filter{
     float: left;
-    margin: 10px 6px 0;
 }
-ul.nav{
+#menu ul.nav{
+    float: right;
+    width: 92%;
+    padding-right: 2%;
+}
+#menu ul li{
     float: left;
-    margin: 0;
+    width: 100%;
+}
+#menu ul li li{
+    width: auto;
+    float: left;
+}
+#menu ul.nav li a, ul.nav li a:hover{
+    float: left;
+}
+#menu ul li ul a, #menu ul li ul a:hover {
+    display: inline-block;
 }
 
-ul.nav li a, ul.nav li a:hover{
+
+
+#menu{
+    -moz-border-radius: 6px 6px 6px 6px;
+    background-color: #fff;
     text-align: left;
-    padding-left: 1em;
-    min-width: 6em; /*menu width*/
+    padding: 1em 0;
+    font-weight:normal;
+    margin: 12px;
 }
-ul.nav li ul li a{
-    width: 17em; /*submenu width*/
+#menu .filter{
+    margin: 10px 2px 0 6px;
 }
-ul.nav li ul li a .name{
-    font-size: 1.3em;
+#menu a{
+    font-family: verdana, helvetica, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding: 1px 8px;
 }
+#menu a:hover{
+    -moz-border-radius: 6px 6px 6px 6px;
+    background-color: #5599BB;
+    color: #DDEEFF;
+    color: #FFF;
+}
+#menu ul.nav{
+    margin: 0 0 0 1em;
+}
+#menu ul.nav li{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 1px;
+}
+#menu ul.nav li.placetype{
+    border-bottom: 1px #CCC solid;
+}
+#menu ul.nav li.placetype:first-child{
+    border-top: 1px #CCC solid;
+}
+#menu ul.nav li.placetype a.first{
+    font-weight: bold;
+    min-width: 6em;
+}
+#menu ul.nav ul{
+    padding-left: 6em;
+}
+#menu ul.nav ul li{
+    margin-left: 10px;
+}
+#menu ul.nav ul li.town span.country{
+    font-size: 0.9em;
+}
+
 
 /****************/
 /*twiter goodies*/
