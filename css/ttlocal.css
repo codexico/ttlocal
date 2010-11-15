@@ -14,8 +14,11 @@ h2#page-heading{
 * ttlocal  *
 ***********/
 body{
-    background: url('../images/bg-nuvem.jpg') no-repeat;
-    background-color: #9AE4E8;
+    background: url('../images/bg-nuvem.jpg') no-repeat #9AE4E8;
+    min-width: 320px;
+}
+#container{
+    background: url('../images/bg-nuvem.jpg') no-repeat bottom right transparent;
     min-width: 320px;
 }
 

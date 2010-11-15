@@ -53,7 +53,7 @@
 
         </head>
         <body>
-            <div class="container_16">
+            <div id="container" class="container_16">
 
 
                 <!-- top -->
