@@ -26,7 +26,7 @@
             <ul>
                 <?php foreach ($viewdata['places']['town'] as $t): ?>
                 <li class="town" >
-                    <a href="#<?= str_replace(" ", "_", $t->{'countryCode'} . "_" . $t->{'name'}) ?>"
+                    <a href="#<?= str_replace(" ", "_", $t->{'name'}) ?>"
                        class="lancelot-menu">
                         <!--
                         <span class="country"
