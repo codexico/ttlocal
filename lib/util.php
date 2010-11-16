@@ -56,7 +56,7 @@ function cmpCountry($a, $b) {
     if ($a->{'country'} == $b->{'country'}) {
         return 0;
     }
-    return ($a->{'country'} > $b->{'country'}) ? -1 : 1;
+    return ($a->{'country'} < $b->{'country'}) ? -1 : 1;
 }
 
 function debug() {
