@@ -1,6 +1,7 @@
 /* sobrepondo layout.css */
 .container_12, .container_16 {
     background:none;
+    width: 100%;
 }
 h1#branding {
     background:none;
@@ -10,24 +11,25 @@ h2#page-heading{
     border: none;
 }
 
-/***********
-* ttlocal  *
-***********/
+/***********/
+/* ttlocal */
+/***********/
 body{
     background: url('../images/bg-nuvem.jpg') no-repeat #9AE4E8;
     min-width: 320px;
+    border: 0;
 }
 #container{
     background: url('../images/bg-nuvem.jpg') no-repeat bottom right transparent;
     min-width: 320px;
 }
 
+/********/
+/* topo */
+/********/
 h1#branding{
-    font-size:2.7em;
-    font-weight:normal;
-    margin-bottom:0;
-    text-align:center;
-    padding: 50px 0;
+    padding: 0;
+    text-align: center;
 }
 
 h2#page-heading{
@@ -36,6 +38,10 @@ h2#page-heading{
     background-color: #fff;
     text-align: center;
 }
+
+/************/
+/* conteudo */
+/************/
 .box{
     background: none;
 }
@@ -57,14 +63,12 @@ h2#page-heading{
 }
 #locations .topic{
     font-size: 1.2em;
-    /*width: 100%;*/
 }
 #locations span.name{
     display: inline;
 }
 #locations .topic a{
     color: #333;
-    /*width: 100%;*/
 }
 
 #locations .topic .twittericon{
@@ -100,9 +104,10 @@ li.topic{
     -moz-border-radius: 6px 6px 6px 6px;
     border-radius: 6px 6px 6px 6px;
 }
-/***********
-**  menu  **
-***********/
+/********/
+/* menu */
+/********/
+/*menu layout*/
 #menu{
     float: left;
     width: auto;
@@ -129,9 +134,7 @@ li.topic{
 #menu ul li ul a, #menu ul li ul a:hover {
     display: inline-block;
 }
-
-
-
+/*menu visual*/
 #menu{
     -moz-border-radius: 6px 6px 6px 6px;
     border-radius: 6px 6px 6px 6px;
@@ -192,32 +195,27 @@ li.topic{
     font-size: 0.9em;
 }
 
-
-/****************/
-/*twiter goodies*/
-/****************/
+/*******************/
+/* twiter facebook */
+/*******************/
+#like-buttons{
+    float: right;
+}
+#fb-button{
+    display: inline-block;
+    float: right;
+}
 #follow-twitterapi{
+    display: inline-block;
     float: right;
-}
-#branding .twitter-share-button{
-    float: right;
-    margin-top: 10px;
-}
-#tbox{
-    /*padding-left: 40px;*/
 }
 #profile_widget{
     margin-bottom: 20px;
 }
 
-/* facebook */
-.fb_edge_widget_with_comment{
-    float: right;
-    padding-left: 20px;
-    margin-top: -5px;
-}
-
+/**********/
 /* footer */
+/**********/
 #footer{
 }
 #footer #footer-left{
@@ -227,7 +225,9 @@ li.topic{
     float: right;
 }
 
-/* tipTip*/
+/**********/
+/* tipTip */
+/**********/
 #tiptip_content {
     font-size: 1.25em;
 }

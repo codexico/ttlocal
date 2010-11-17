@@ -23,7 +23,6 @@
         <link rel="stylesheet" type="text/css" href="css/text.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
-        <!-- <link rel="stylesheet" type="text/css" href="css/nav.css" media="screen" /> -->
         <!-- end 960 -->
 
         <link rel="stylesheet" type="text/css" href="css/tipTip.css" media="screen" />
@@ -59,26 +58,23 @@
                 <!-- top -->
                 <div class="grid_16">
                     <h1 id="branding">
+
                         <a href="http://ttlocal.info">
-                            <img src="images/ttlocal-blue-big-blend.png" alt="ttlocal-logo" />
+                            <img src="images/ttlocal-blue-big-blend-320.png" alt="ttlocal-logo" width="320" height="90" />
                         </a>
+                        <img src="images/ttlocal-definition.png" width="248" height="131"
+                             alt="The best way to discover the trending topics in your world." />
 
-
+                </h1>
+                <div id="like-buttons">                        
                     <?php include 'view/partial/fblike.php'; ?>
 
 
                     <?php include 'view/partial/twitterFollowButton.php'; ?>
-
-
-                </h1>
+                </div>
             </div>
             <div class="clear"></div>
-            <!-- end top -->
 
-            <div class="grid_10 prefix_3 suffix_3">
-                <h2 id="page-heading" class="">The best way to discover the trending topics in your world.</h2>
-            </div>
-            <div class="clear"></div>
 
             <?php include 'view/partial/menu.php'; ?>
                     <div class="clear"></div>
@@ -139,14 +135,14 @@
                                         <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
                                         <script src="http://platform.twitter.com/anywhere.js?id=7xd5gQGwuWDsOBSc5Wa7Hg&v=1" type="text/javascript"></script>
                                         <script type="text/javascript">
-                                            /*
+                                            
                                             twttr.anywhere(function (T) {
                                                 T("#tbox").tweetBox({
                                                     label: "What do you think of @TTlocal?",
                                                     defaultContent: "@ttlocal "
                                                 });
                                             });
-                                             */
+                                             
                                         </script>
                                         <!-- end twitter goodies -->
         <?php endif; ?>
