@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
 
         //animation
         quicksandOptions = {
-            easing: 'easeInOutQuad',
+            //easing: 'easeInOutQuad',
             useScaling: false,
             adjustHeight: false
         },

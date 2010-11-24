@@ -103,8 +103,8 @@
                             <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
         <?php endif; ?>
 
+                            <!-- <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> -->
                             <script type="text/javascript" src="js/jquery.quicksand.min.js"></script>
-                            <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
                             <script type="text/javascript" src="js/jquery.tipTip.minified.js"></script>
                             <script type="text/javascript" src="js/jquery.lancelot.js"></script>
 
