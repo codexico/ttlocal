@@ -3,7 +3,7 @@
       xmlns:og="http://opengraphprotocol.org/schema/"
       xmlns:fb="http://www.facebook.com/2008/fbml">
     <head>
-        <title>TTlocal - Local Twitter Trending Topics</title>
+        <title>ttlocal - Local Twitter Trending Topics</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description"
               content="Check out Twitter Trending Topics from all the places in the World in one simple view."/>
@@ -12,7 +12,7 @@
         <meta property="og:title" content="Local Twitter Trending Topics"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="http://ttlocal.info"/>
-        <meta property="og:site_name" content="TTlocal"/>
+        <meta property="og:site_name" content="ttlocal"/>
         <meta property="fb:admins" content="100000471561695"/>
         <meta property="fb:app_id" content="151028201584145"/>
         <meta property="og:description"
@@ -138,7 +138,7 @@
                                             
                                             twttr.anywhere(function (T) {
                                                 T("#tbox").tweetBox({
-                                                    label: "What do you think of @TTlocal?",
+                                                    label: "What do you think of ttlocal?",
                                                     defaultContent: "@ttlocal "
                                                 });
                                             });
