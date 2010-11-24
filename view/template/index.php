@@ -17,7 +17,7 @@
         <meta property="fb:app_id" content="151028201584145"/>
         <meta property="og:description"
               content="Check out Twitter Trending Topics from all the places in the World in one simple view."/>
-
+	<link rel="shortcut icon" href="favicon.ico">
         <!-- 960 -->
         <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/text.css" media="screen" />
