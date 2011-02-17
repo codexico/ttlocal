@@ -37,7 +37,7 @@
         <link rel="stylesheet" type="text/css" href="css/tipTip.css" media="screen" />
 
         <link rel="stylesheet" type="text/css" href="css/lancelot.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/ttlocal.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/ttlocal.css?v=2" media="screen" />
 
         <!-- 960 ieca -->
         <!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
@@ -58,6 +58,9 @@
             </script>
             <!-- end google analytics -->
         <?php endif; ?>
+
+            <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+            <script src="js/libs/modernizr-1.6.min.js"></script>
 
         </head>
         <body>
@@ -82,7 +85,7 @@
                         <?php include 'view/partial/twitterFollowButton.php'; ?>
                     </div>
                 </div>
-            <div class="clear"></div>
+                <div class="clear"></div>
             </header>
             <div class="clear"></div>
 
@@ -104,16 +107,16 @@
                 <?php include 'view/partial/footer.php'; ?>
                         <!-- end footer -->
 
-            <div class="clear"></div>
+                        <div class="clear"></div>
                     </footer>
                 </div><!--! end of #container -->
 
                 <!-- jquery -->
         <?php if (PRODUCTION) : ?>
                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-                            <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.5.0.min.js"%3E%3C/script%3E'))</script>
+                            <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.0.min.js"%3E%3C/script%3E'))</script>
         <?php else : ?>
-                                <script src="js/jquery-1.5.0.min.js"></script>
+                                <script src="js/libs/jquery-1.5.0.min.js"></script>
         <?php endif; ?>
 
         <?php if (PRODUCTION) : ?>
@@ -123,12 +126,12 @@
                                     <!-- end concatenated and minified scripts-->
 
                                     <!--[if lt IE 7 ]>
-                            <script src="js/dd_belatedpng.js"></script>
+                            <script src="js/libs/dd_belatedpng.js"></script>
                             <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
                             <![endif]-->
 
         <?php else : ?>
-                                                                                                         <!-- <script src="js/jquery.easing.1.3.js"></script> -->
+                                                                                                                                         <!-- <script src="js/jquery.easing.1.3.js"></script> -->
                                         <script src="js/jquery.quicksand.min.js"></script>
                                         <script src="js/jquery.tipTip.minified.js"></script>
                                         <script src="js/jquery.lancelot.js"></script>
