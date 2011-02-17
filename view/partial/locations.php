@@ -1,5 +1,5 @@
 <!-- locations -->
-<ul id="locations">
+<section id="locations">
     <?php foreach ($viewdata['trends'] as $local) : ?>
 
 
@@ -7,5 +7,5 @@
 
 
     <?php endforeach; ?>
-</ul>
+</section>
 <!-- end locations -->

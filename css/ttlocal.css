@@ -64,6 +64,18 @@ h2#page-heading{
     margin: 0 auto;
     text-align: center;
 }
+#locations .box h1, .box h1 a,
+.box h1 a.visible {
+    background: none;
+    color: #DDEEFF;
+    font-size:1.1em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+}
 #locations .topic{
     font-size: 1.2em;
 }
@@ -90,6 +102,9 @@ h2#page-heading{
 h1 span.version{
     font-size: 0.4em;
 }
+h2 span.version{
+    font-size: 0.4em;
+}
 
 li.topic{
     list-style-type: none;
@@ -103,6 +118,11 @@ li.topic{
     min-height:324px;
 }
 #locations h2 a{
+    background-color: #5599BB;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+}
+#locations h1 a{
     background-color: #5599BB;
     -moz-border-radius: 6px 6px 6px 6px;
     border-radius: 6px 6px 6px 6px;
@@ -162,7 +182,12 @@ nav a:hover{
     -moz-border-radius: 6px 6px 6px 6px;
     border-radius: 6px 6px 6px 6px;
     background-color: #5599BB;
-    color: #DDEEFF;
+    color: #FFF;
+}
+nav a:active{
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #333;
     color: #FFF;
 }
 nav ul.nav{

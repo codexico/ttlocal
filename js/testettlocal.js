@@ -94,21 +94,21 @@ jQuery(document).ready(function ($) {
             var $filteredMenu, woeid, countrycode;
             switch (lancelotObj.attr("href")) {
                 case "#Worldwide":
-                    $filteredMenu = $initialLocations.find('li.local');
+                    $filteredMenu = $initialLocations.find('article.local');
                     break;
                 case "#Town":
-                    $filteredMenu = $initialLocations.find('li[data-placeType=7]');
+                    $filteredMenu = $initialLocations.find('article[data-placeType=7]');
                     break;
                 case "#Country":
-                    $filteredMenu = $initialLocations.find('li[data-placeType=12]');
+                    $filteredMenu = $initialLocations.find('article[data-placeType=12]');
                     break;
                 default:
                     woeid = lancelotObj.find('span.name').first().attr('data-woeid');
                     if (woeid) {
-                        $filteredMenu = $initialLocations.find('li[data-id=' + woeid + ']');
+                        $filteredMenu = $initialLocations.find('article[data-id=' + woeid + ']');
                     } else {
                         countrycode = lancelotObj.find('span.country').first().attr('data-country');
-                        $filteredMenu = $initialLocations.find('li[data-countryCode=' + countrycode + ']');
+                        $filteredMenu = $initialLocations.find('article[data-countryCode=' + countrycode + ']');
                     }
                     break;
             }
@@ -151,13 +151,13 @@ jQuery(document).ready(function ($) {
         function menuMainOnClickQuicksand() {
             $menuMainNav.click(function (e) {
                 var menuhref = $(this).attr('href'),
-                $filteredMenu = $initialLocations.find('li.local');
+                $filteredMenu = $initialLocations.find('article.local');
                 switch (menuhref) {
                     case "#Town":
-                        $filteredMenu = $initialLocations.find('li[data-placeType=7]');
+                        $filteredMenu = $initialLocations.find('article[data-placeType=7]');
                         break;
                     case "#Country":
-                        $filteredMenu = $initialLocations.find('li[data-placeType=12]');
+                        $filteredMenu = $initialLocations.find('article[data-placeType=12]');
                         break;
                     default:
                         break;
@@ -169,7 +169,7 @@ jQuery(document).ready(function ($) {
         function menuCountryOnClickQuicksand() {
             $menuCountry.click(function (e) {
                 var countrycode = $(this).find('span.country').first().attr('data-country'),
-                $filteredCountry = $initialLocations.find('li[data-countryCode=' + countrycode + ']');
+                $filteredCountry = $initialLocations.find('article[data-countryCode=' + countrycode + ']');
 
                 reappendAll($locations, $filteredCountry);
                 e.preventDefault();
@@ -178,7 +178,7 @@ jQuery(document).ready(function ($) {
         function menuTownOnClickQuicksand() {
             $menuTown.click(function (e) {
                 var woeid = $(this).find('span.name').first().attr('data-woeid'),
-                $filteredTown = $initialLocations.find('li[data-id=' + woeid + ']');
+                $filteredTown = $initialLocations.find('article[data-id=' + woeid + ']');
 
                 reappendAll($locations, $filteredTown);
                 e.preventDefault();
@@ -195,7 +195,7 @@ jQuery(document).ready(function ($) {
             $filteredHash; //lista do local do hash
             if(locationHash){
                 lhash = locationHash.replace(/^#/, '');
-                $filteredHash = $initialLocations.find('li[data-hash=' + lhash+ ']');
+                $filteredHash = $initialLocations.find('article[data-hash=' + lhash+ ']');
                 if($filteredHash.size()){//encontrou algo
                     reappendAll($locations, $filteredHash);
                 }

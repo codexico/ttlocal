@@ -2,20 +2,20 @@
 $hash = str_replace(" ", "_", $local['locations']->name);
 ?>
 <!-- local -->
-<li class="grid_4 local"
-    data-placeType="<?= $local['locations']->placeType->code ?>"
-    data-id="<?= $local['locations']->woeid ?>"
-    data-countryCode="<?= $local['locations']->countryCode ?>"
-    data-hash="<?= $hash ?>" >
+<article class="grid_4 local"
+         data-placeType="<?= $local['locations']->placeType->code ?>"
+         data-id="<?= $local['locations']->woeid ?>"
+         data-countryCode="<?= $local['locations']->countryCode ?>"
+         data-hash="<?= $hash ?>" >
     <div class="box">
-        <h2>
+        <h1>
             <a name="<?= $hash ?>">
                 <? if ($local['locations']->placeType->code == 7) : //town ?>
                     <span class="country"><?= $local['locations']->country ?></span> -
                 <? endif; ?>
                     <span class="name"><?= $local['locations']->name ?></span>
                 </a>
-            </h2>
+            </h1>
 
             <ul class="block">
             <?php foreach ($local as $trend) : ?>
@@ -29,5 +29,5 @@ $hash = str_replace(" ", "_", $local['locations']->name);
             <?php endforeach; //trend ?>
         </ul>
     </div>
-</li>
+</article>
 <!-- end local -->
