@@ -1,5 +1,5 @@
 
-<div id="menu" class="">
+<nav>
     <!-- menu -->
         <span class="filter">Filter: </span>
     <ul class="nav main">
@@ -41,4 +41,4 @@
         </li>
     </ul>
     <!-- end menu -->
-</div>
+</nav>

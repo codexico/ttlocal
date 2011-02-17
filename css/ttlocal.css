@@ -111,34 +111,34 @@ li.topic{
 /* menu */
 /********/
 /*menu layout*/
-#menu{
+nav{
     float: left;
     width: auto;
 }
-#menu .filter{
+nav .filter{
     float: left;
 }
-#menu ul.nav{
+nav ul.nav{
     float: right;
     width: 92%;
     padding-right: 2%;
 }
-#menu ul li{
+nav ul li{
     float: left;
     width: 100%;
 }
-#menu ul li li{
+nav ul li li{
     width: auto;
     float: left;
 }
-#menu ul.nav li a, ul.nav li a:hover{
+nav ul.nav li a, ul.nav li a:hover{
     float: left;
 }
-#menu ul li ul a, #menu ul li ul a:hover {
+nav ul li ul a, nav ul li ul a:hover {
     display: inline-block;
 }
 /*menu visual*/
-#menu{
+nav{
     -moz-border-radius: 6px 6px 6px 6px;
     border-radius: 6px 6px 6px 6px;
     background-color: #fff;
@@ -147,10 +147,10 @@ li.topic{
     font-weight:normal;
     margin: 12px;
 }
-#menu .filter{
+nav .filter{
     margin: 10px 2px 0 6px;
 }
-#menu a{
+nav a{
     font-family: verdana, helvetica, sans-serif;
     text-transform: uppercase;
     font-style: normal;
@@ -158,43 +158,43 @@ li.topic{
     font-weight: normal;
     padding: 1px 8px;
 }
-#menu a:hover{
+nav a:hover{
     -moz-border-radius: 6px 6px 6px 6px;
     border-radius: 6px 6px 6px 6px;
     background-color: #5599BB;
     color: #DDEEFF;
     color: #FFF;
 }
-#menu ul.nav{
+nav ul.nav{
     margin: 0 0 0 1em;
 }
-#menu ul.nav li{
+nav ul.nav li{
     list-style-type: none;
     margin: 0;
 }
-#menu ul.nav li.placetype{
+nav ul.nav li.placetype{
     padding: 4px 0 2px;
 }
-#menu ul.nav li{
+nav ul.nav li{
     padding: 0 0 1px;
 }
-#menu ul.nav li.placetype{
+nav ul.nav li.placetype{
     border-bottom: 1px #CCC solid;
 }
-#menu ul.nav li.placetype:first-child{
+nav ul.nav li.placetype:first-child{
     border-top: 1px #CCC solid;
 }
-#menu ul.nav li.placetype a.first{
+nav ul.nav li.placetype a.first{
     font-weight: bold;
     min-width: 6em;
 }
-#menu ul.nav ul{
+nav ul.nav ul{
     padding-left: 6em;
 }
-#menu ul.nav ul li{
+nav ul.nav ul li{
     margin-left: 10px;
 }
-#menu ul.nav ul li.town span.country{
+nav ul.nav ul li.town span.country{
     font-size: 0.9em;
 }
 
