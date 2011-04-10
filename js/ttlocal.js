@@ -25,7 +25,8 @@ jQuery(document).ready(function ($) {
         },
         tipTipOptions = {
             defaultPosition: "left",
-            keepAlive: true
+            keepAlive: true,
+            attribute: "data-definition"
         };
 
 
@@ -61,7 +62,7 @@ jQuery(document).ready(function ($) {
 
 
         function reappendToolTip() {
-            $('.trendname[title]').tipTip(tipTipOptions);
+            $('.trendname').tipTip(tipTipOptions);
         }
 
 
@@ -141,7 +142,7 @@ jQuery(document).ready(function ($) {
         }
 
         function toolTipInit(){
-            $('.trendname[title]').tipTip(tipTipOptions);
+            $('.trendname').tipTip(tipTipOptions);
         }
 
         function init() {

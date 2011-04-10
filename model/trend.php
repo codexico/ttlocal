@@ -4,11 +4,11 @@ class trend {
     var $location;
     var $locations;
 
-    public function getAll() {
+    public function getAll($definitions = false) {
         debug('wtt  trend getAll');
         $this->locations = $this->location->getAll();
         //debug($this->locations);
-        return $this->mergeTrends($this->locations);
+        return $this->mergeTrends($this->locations, $definitions);
     }
 
     public function getAllWithLocationsSortedByPlacetype($definitions = false) {
@@ -96,10 +96,14 @@ class trend {
         }
     }
 
-    private function mergeTrends($locations) {
+    private function mergeTrends($locations, $definitions = false) {
         $trendings = array();
         foreach ($locations as $local) {
-            $trendings = array_merge($trendings, $this->getByWoeid($local->woeid)->trends);
+            //$trendings = array_merge($trendings, $this->getByWoeid($local->woeid)->trends);
+            $trends = $this->getByWoeid($local->woeid, $definitions);
+            if ($trends) {
+                $trendings = array_merge($trendings, $trends->trends);
+            }
         }
         return $trendings;
     }

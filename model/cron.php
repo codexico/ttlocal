@@ -1,5 +1,7 @@
 <?php
+
 require_once 'model/cache.php';
+
 class cron {
 
     var $cache;
@@ -9,6 +11,8 @@ class cron {
         $this->cache = new Cache();
 
         $this->production();
+
+        $this->development();
     }
 
     function production() {
@@ -22,15 +26,22 @@ class cron {
             }
             if ($this->cache->wttTrendCacheExpired()) {
                 $this->updateTrendsWTT();
-                $this->updateTrendsDefinitions();
+                //$this->updateTrendsDefinitions();
             }
         }
     }
 
-    function development($testes) {
+    function development() {
         if (!PRODUCTION) {
+            $testes = array();
+            //array_push($testes, "updateLocations");
+            //array_push($testes, "updateTrendsTwitter");
+            //array_push($testes, "updateHtmlCache");
+            //array_push($testes, "updateTrendsWTT");
+            //array_push($testes, "updateTrendsDefinitions");
+
             foreach ($testes as $teste) {
-                debug("testando... ".$teste);
+                debug("testando... " . $teste);
                 $this->$teste();
             }
         }
@@ -60,4 +71,5 @@ class cron {
         $this->cache->updateTrendsDefinitions();
         echopre("definitions updated");
     }
+
 }

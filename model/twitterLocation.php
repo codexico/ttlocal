@@ -40,6 +40,7 @@ class twitterLocation {
         $locations['country'] = $country;
         $locations['town'] = $town;
         $locations['other'] = $other;
+        //debug($locations);
         return $locations;
     }
 

@@ -44,20 +44,6 @@
         <!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
         <!-- end 960 ieca -->
 
-        <?php if (PRODUCTION) : ?>
-            <!-- google analytics
-            <script type="text/javascript">
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-17676120-1']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
-            <!-- end google analytics -->
-        <?php endif; ?>
 
             <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
             <script src="js/libs/modernizr-1.6.min.js"></script>
@@ -113,30 +99,33 @@
 
                 <!-- jquery -->
         <?php if (PRODUCTION) : ?>
-                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-                            <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.0.min.js"%3E%3C/script%3E'))</script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+                <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.0.min.js"%3E%3C/script%3E'))</script>
         <?php else : ?>
-                                <script src="js/libs/jquery-1.5.0.min.js"></script>
+                <script src="js/libs/jquery-1.5.0.min.js"></script>
         <?php endif; ?>
 
         <?php if (PRODUCTION) : ?>
-                                    <!-- scripts concatenated and minified via ant build script-->
-                                    <script src="js/plugins.js"></script>
-                                    <script src="js/ttlocal.js"></script>
-                                    <!-- end concatenated and minified scripts-->
+                <!-- scripts concatenated and minified via ant build script-->                                                                                                         <!-- <script src="js/jquery.easing.1.3.js"></script> -->
+                <script src="js/jquery.quicksand.min.js"></script>
+                <script src="js/jquery.tipTip.minified.js"></script>
+                <script src="js/jquery.lancelot.js"></script>
+                <!--<script src="js/plugins.js"></script>-->
+                <script src="js/ttlocal.js"></script>
+                <!-- end concatenated and minified scripts-->
 
-                                    <!--[if lt IE 7 ]>
-                            <script src="js/libs/dd_belatedpng.js"></script>
-                            <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
-                            <![endif]-->
+                <!--[if lt IE 7 ]>
+                <script src="js/libs/dd_belatedpng.js"></script>
+                <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+                <![endif]-->
 
         <?php else : ?>
-                                                                                                                                         <!-- <script src="js/jquery.easing.1.3.js"></script> -->
-                                        <script src="js/jquery.quicksand.min.js"></script>
-                                        <script src="js/jquery.tipTip.minified.js"></script>
-                                        <script src="js/jquery.lancelot.js"></script>
+                                                                                                                                                                         <!-- <script src="js/jquery.easing.1.3.js"></script> -->
+                <script src="js/jquery.quicksand.min.js"></script>
+                <script src="js/jquery.tipTip.js"></script>
+                <script src="js/jquery.lancelot.js"></script>
 
-                                        <script src="js/testettlocal.js"></script>
+                <script src="js/testettlocal.js"></script>
         <?php endif; ?>
 
         <?php if (PRODUCTION) : ?>

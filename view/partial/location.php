@@ -19,13 +19,11 @@ $hash = str_replace(" ", "_", $local['locations']->name);
 
             <ul class="block">
             <?php foreach ($local as $trend) : ?>
-                        <li class="topic">
-
-
+            <? if (!isset($trend->placeType)) : ?>
+                <li class="topic">
                 <?php include 'trend.php'; ?>
-
-
-                    </li>
+                </li>
+            <?php endif; ?>
             <?php endforeach; //trend ?>
         </ul>
     </div>

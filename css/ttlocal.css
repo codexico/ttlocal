@@ -52,8 +52,8 @@ h2#page-heading{
     background: none;
 }
 
-#locations{
-    min-height: 360px;
+#locations, #main{
+    min-height: 460px;
 }
 
 #locations .box h2, .box h2 a,
@@ -81,6 +81,9 @@ h2#page-heading{
 }
 #locations span.name{
     display: inline;
+}
+#locations span.name .definition{
+    display: none;
 }
 #locations .topic a{
     color: #333;
