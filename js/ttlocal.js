@@ -133,16 +133,67 @@ jQuery(document).ready(function ($) {
         function showSearchLink(){
             $('.topic').hover(
                 function () {
-                    $(this).find('.lancelot').show();
+                    $(this).find('.search').show();
                 },
                 function () {
-                    $(this).find('.lancelot').hide();
+                    $(this).find('.search').hide();
                 }
                 );
         }
 
         function toolTipInit(){
             $('.trendname').tipTip(tipTipOptions);
+        }
+
+        function mostrarVideo(data) {
+            var videoid = data.feed.entry[0].media$group.yt$videoid.$t,
+            youtubesrc = "http://www.youtube.com/embed/" + videoid + "?autoplay=1";
+
+            $("#tiptip_holder").hide();
+
+            $.modal('<iframe src="' + youtubesrc + '" height="100%" width="100%" style="border:0">',
+            {
+                containerCss:{
+                    backgroundColor:"#fff",
+                    borderColor:"#fff",
+                    height:"95%",
+                    padding:0,
+                    margin:0,
+                    width:"95%"
+                },
+                close: true,
+                overlayClose: true
+            });
+        }
+
+        function youtubeSearch(q) {
+            var src = "http://gdata.youtube.com/feeds/api/videos";
+
+            $.getJSON(src,
+            {
+                q : q,
+                orderby: "published",
+                time: "today",
+                "max-results" : 1,
+                v: 2,
+                alt: "json"
+            },
+            function(data) {
+                if(data.feed.openSearch$totalResults.$t === 0){ //not found
+                    window.location.href = "http://www.youtube.com/results?search_query=" + q;
+                } else {
+                    mostrarVideo(data);
+                }
+            });
+
+        }
+
+        function youtubeInit() {
+            $(".youtubeicon").click( function (e) {
+                e.preventDefault();
+                youtubeSearch($(this).data('query'));
+                return false;
+            })
         }
 
         function init() {
@@ -153,6 +204,7 @@ jQuery(document).ready(function ($) {
             urlAnchor();
             showSearchLink();
             toolTipInit();
+            youtubeInit();
         }
         // reveal all things private by assigning public pointers
         return {

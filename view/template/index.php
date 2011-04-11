@@ -110,6 +110,7 @@
                 <script src="js/jquery.quicksand.min.js"></script>
                 <script src="js/jquery.tipTip.minified.js"></script>
                 <script src="js/jquery.lancelot.js"></script>
+                <script src="js/jquery.simplemodal.1.4.1.min.js"></script>
                 <!--<script src="js/plugins.js"></script>-->
                 <script src="js/ttlocal.js"></script>
                 <!-- end concatenated and minified scripts-->
@@ -124,6 +125,7 @@
                 <script src="js/jquery.quicksand.min.js"></script>
                 <script src="js/jquery.tipTip.js"></script>
                 <script src="js/jquery.lancelot.js"></script>
+                <script src="js/jquery.simplemodal-1.4.1.js"></script>
 
                 <script src="js/testettlocal.js"></script>
         <?php endif; ?>
