@@ -20,6 +20,6 @@
            title="google search: <?= $trend->name ?>"></a>
         <a href="http://www.youtube.com/results?search_query=<?= preg_replace('/#/', '', $trend->name) ?>"
            class="youtubeicon search" target="_blank"
-           data-query="<?= $trend->name ?>"
+           data-query="<?= preg_replace('/#/', '', $trend->name) ?>"
            title="youtube video search: <?= $trend->name ?>"></a>
 </span>

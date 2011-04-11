@@ -287,3 +287,6 @@ nav ul.nav ul li.town span.country{
 	right:-18px;
 	cursor:pointer;
 }
+#simplemodal-data {
+    height: 100%;
+}
