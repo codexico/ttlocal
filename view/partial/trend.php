@@ -1,7 +1,7 @@
 <span class="name">
     <a href="<?= $trend->url ?>" class="trendname" data-definition="
     <?php if (isset($trend->description->text)) : ?>
-            <?= preg_replace('/"/', "'", $trend->description->text); ?>
+            <?= preg_replace('/"/i', "'", $trend->description->text); ?>
         <?php else : ?>
                Not explained yet.<br>
                <a target='_blank' href='http://whatthetrend.com/trend/<?= $trend->name; ?>'>Add a defintion!</a>
@@ -9,7 +9,7 @@
            <?= $trend->name ?>
          <span class="definition">
             <?php if (isset($trend->description->text)) : ?>
-                <?= preg_replace('/"/', "'", $trend->description->text); ?>
+                <?= htmlspecialchars(preg_replace('/"/i', "'", $trend->description->text)); ?>
             <?php endif; ?>
             </span>
         </a>
