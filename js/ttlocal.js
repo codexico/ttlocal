@@ -189,7 +189,7 @@ jQuery(document).ready(function ($) {
         }
 
         function youtubeInit() {
-            $(".youtubeicon").click( function (e) {
+            $("#locations").delegate(".youtubeicon", "click", function(e){
                 e.preventDefault();
                 youtubeSearch($(this).data('query'));
                 return false;
