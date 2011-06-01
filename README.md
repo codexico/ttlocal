@@ -20,8 +20,12 @@ and
 [jQuery](http://jquery.com/)  plugins:
 
 > [Quicksand](http://razorjack.net/quicksand/)
+>
 > [TipTip](http://code.drewwilson.com/entry/tiptip-jquery-plugin)
+> 
 > [Lancelot](http://codexico.com.br/blog/jquery-lancelot-plugin)
 
 Definitions by:
+
+
 > [whatthetrend](http://api.whatthetrend.com)
