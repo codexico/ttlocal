@@ -224,7 +224,7 @@ jQuery(document).ready(function ($) {
 
             $("#tiptip_holder").hide();
 
-            $.modal('<iframe src="' + youtubesrc + '" height="99%" width="99%" style="border:0;margin:0 0 0 0.5%;padding:0.5% 0 0 0">',
+            $.modal('<iframe src="' + youtubesrc + '" height="100%" width="99%" style="border:0;margin:0 0 0 0.5%;padding:0">',
             {
                 containerCss:{
                     backgroundColor:"#fff",
