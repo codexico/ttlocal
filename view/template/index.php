@@ -99,10 +99,10 @@
 
                 <!-- jquery -->
         <?php if (PRODUCTION) : ?>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-                <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.0.min.js"%3E%3C/script%3E'))</script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+                <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
         <?php else : ?>
-                <script src="js/libs/jquery-1.5.0.min.js"></script>
+                <script src="js/libs/jquery-1.7.1.min.js"></script>
         <?php endif; ?>
 
         <?php if (PRODUCTION) : ?>
