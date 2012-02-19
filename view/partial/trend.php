@@ -1,6 +1,6 @@
 <span class="name">
-    <a href="<?= $trend->url ?>" class="trendname" data-definition="
-    <?php if (isset($trend->description->text)) : ?>
+    <a href="<?= $trend->url ?>" rel="tooltip" class="trendname" 
+       title="<?php if (isset($trend->description->text)) : ?>
             <?= preg_replace('/"/i', "'", $trend->description->text); ?>
         <?php else : ?>
                Not explained yet.<br>

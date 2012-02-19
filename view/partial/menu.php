@@ -1,4 +1,3 @@
-
 <nav>
     <!-- menu -->
         <span class="filter">Filter: </span>

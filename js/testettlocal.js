@@ -145,7 +145,7 @@ jQuery(document).ready(function ($) {
     function reappendQuicksand($all, $filtered) {
       $all.quicksand($filtered, quicksandOptions, function () {
         lancelotLinks();//reappend lancelot lost when $locations.clone();
-        reappendToolTip();
+        //reappendToolTip();
       });
     }
     function menuMainOnClickQuicksand() {
@@ -209,7 +209,11 @@ jQuery(document).ready(function ($) {
     }
 
     function toolTipInit(){
-      $('.trendname').tipTip(tipTipOptions);
+      //$('.trendname').tipTip(tipTipOptions);
+      $('#locations').tooltip({
+        selector: "a[rel=tooltip]",
+        delay: { show: 100, hide: 700 }
+      })
     }
 
     function mostrarVideo(data) {

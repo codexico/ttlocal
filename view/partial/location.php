@@ -2,7 +2,7 @@
 $hash = str_replace(" ", "_", $local['locations']->name);
 ?>
 <!-- local -->
-<article class="grid_4 local"
+<article class="span3 local"
          data-placeType="<?= $local['locations']->placeType->code ?>"
          data-id="<?= $local['locations']->woeid ?>"
          data-countryCode="<?= $local['locations']->countryCode ?>"
