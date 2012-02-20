@@ -26,24 +26,19 @@ jQuery(document).ready(function ($) {
     // lancelot
     /////////////
     function lancelotLinks() {
-      $('.lancelot').lancelot();
-    }
-
-    function reappendAll($all, $filtered) {
-      reappendQuicksand($all, $filtered);
+      //$('.lancelot').lancelot();
+      $('body').on('hover', '.topic', function () {
+        $(this).find('.lancelot').lancelot();
+      })
     }
     
 
     ////////////////
     // quicksand
     ////////////////
-    function reappendQuicksand($all, $filtered) {
-      $all.quicksand($filtered, quicksandOptions, function () {
-        lancelotLinks();//reappend lancelot lost when $locations.clone();
-      })
-    }
     function menuMainOnClickQuicksand() {
       $menuMainNav.click(function (e) {
+        e.preventDefault();
         var menuhref = $(this).attr('href'),
         $filteredMenu = $initialLocations.find('article.local');
         switch (menuhref) {
@@ -56,26 +51,25 @@ jQuery(document).ready(function ($) {
           default:
             break;
         }
-        reappendAll($locations, $filteredMenu);
-        e.preventDefault();
+        $locations.quicksand($filteredMenu, quicksandOptions);
       });
     }
     function menuCountryOnClickQuicksand() {
       $menuCountry.click(function (e) {
+        e.preventDefault();
         var countrycode = $(this).find('span.country').first().attr('data-country'),
         $filteredCountry = $initialLocations.find('article[data-countryCode=' + countrycode + ']');
 
-        reappendAll($locations, $filteredCountry);
-        e.preventDefault();
+        $locations.quicksand($filteredCountry, quicksandOptions);
       });
     }
     function menuTownOnClickQuicksand() {
       $menuTown.click(function (e) {
+        e.preventDefault();
         var woeid = $(this).find('span.name').first().attr('data-woeid'),
         $filteredTown = $initialLocations.find('article[data-id=' + woeid + ']');
 
-        reappendAll($locations, $filteredTown);
-        e.preventDefault();
+        $locations.quicksand($filteredTown, quicksandOptions);
       });
     }
     function menusOnClickQuicksand() {
@@ -84,14 +78,15 @@ jQuery(document).ready(function ($) {
       menuTownOnClickQuicksand();
     }
     function urlAnchor(){
-      var locationHash = window.location.hash,
+      var locationHash,
       lhash, //hash sem '#'
       $filteredHash; //lista do local do hash
-      if(locationHash){
+      locationHash = window.location.hash;
+      if(locationHash !== ""){
         lhash = locationHash.replace(/^#/, '');
-        $filteredHash = $initialLocations.find('li[data-hash=' + lhash+ ']');
+        $filteredHash = $initialLocations.find('.local[data-hash=' + lhash+ ']');
         if($filteredHash.size()){//encontrou algo
-          reappendAll($locations, $filteredHash);
+          $locations.quicksand($filteredHash, quicksandOptions);
         }
       }
     }

@@ -1,4 +1,4 @@
-<nav>
+<nav id="menu">
     <!-- menu -->
         <span class="filter">Filter: </span>
     <ul class="nav main">

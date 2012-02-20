@@ -135,7 +135,7 @@
       <script src="js/jquery.simplemodal-1.4.1.js"></script>
       <script src="js/libs/bootstrap.min.js"></script>
 
-      <script src="js/testettlocal.js"></script>
+      <script src="js/ttlocal.js"></script>
     <?php endif; ?>
 
     <?php if (PRODUCTION) : ?>
