@@ -17,7 +17,6 @@ jQuery(document).ready(function ($) {
 
     //animation
     quicksandOptions = {
-      easing: 'easeInOutQuad',
       useScaling: false,
       adjustHeight: false
     }
@@ -46,13 +45,13 @@ jQuery(document).ready(function ($) {
     function menuMainOnClickQuicksand() {
       $menuMainNav.click(function (e) {
         var menuhref = $(this).attr('href'),
-        $filteredMenu = $initialLocations.find('li.local');
+        $filteredMenu = $initialLocations.find('article.local');
         switch (menuhref) {
           case "#Town":
-            $filteredMenu = $initialLocations.find('li[data-placeType=7]');
+            $filteredMenu = $initialLocations.find('article[data-placeType=7]');
             break;
           case "#Country":
-            $filteredMenu = $initialLocations.find('li[data-placeType=12]');
+            $filteredMenu = $initialLocations.find('article[data-placeType=12]');
             break;
           default:
             break;
@@ -64,7 +63,7 @@ jQuery(document).ready(function ($) {
     function menuCountryOnClickQuicksand() {
       $menuCountry.click(function (e) {
         var countrycode = $(this).find('span.country').first().attr('data-country'),
-        $filteredCountry = $initialLocations.find('li[data-countryCode=' + countrycode + ']');
+        $filteredCountry = $initialLocations.find('article[data-countryCode=' + countrycode + ']');
 
         reappendAll($locations, $filteredCountry);
         e.preventDefault();
@@ -73,7 +72,7 @@ jQuery(document).ready(function ($) {
     function menuTownOnClickQuicksand() {
       $menuTown.click(function (e) {
         var woeid = $(this).find('span.name').first().attr('data-woeid'),
-        $filteredTown = $initialLocations.find('li[data-id=' + woeid + ']');
+        $filteredTown = $initialLocations.find('article[data-id=' + woeid + ']');
 
         reappendAll($locations, $filteredTown);
         e.preventDefault();
@@ -99,14 +98,17 @@ jQuery(document).ready(function ($) {
 
     function showSearchLink(){
       $('#locations').on('hover', '.topic', function () {
-          $(this).find('.search').toggle();
+        $(this).find('.search').toggle();
       })
     }
 
     function toolTipInit(){
       $('#locations').tooltip({
         selector: "a[rel=tooltip]",
-        delay: { show: 100, hide: 700 }
+        delay: {
+          show: 100, 
+          hide: 700
+        }
       })
     }
 

@@ -110,11 +110,13 @@
     <?php endif; ?>
 
     <?php if (PRODUCTION) : ?>
-                              <!-- scripts concatenated and minified via ant build script-->                                                                                                         <!-- <script src="js/jquery.easing.1.3.js"></script> -->
+      <!-- scripts concatenated and minified via ant build script-->
+  <!-- <script src="js/jquery.easing.1.3.js"></script> -->
       <script src="js/jquery.quicksand.min.js"></script>
       <!-- <script src="js/jquery.tipTip.minified.js"></script> -->
       <script src="js/jquery.lancelot.js"></script>
       <script src="js/jquery.simplemodal.1.4.1.min.js"></script>
+      <script src="js/libs/bootstrap.min.js"></script>
       <!--<script src="js/plugins.js"></script>-->
       <script src="js/ttlocal.js"></script>
       <!-- end concatenated and minified scripts-->
@@ -125,7 +127,8 @@
       <![endif]-->
 
     <?php else : ?>
-                                                                                                                                                                                       <!-- <script src="js/jquery.easing.1.3.js"></script> -->
+
+  <!-- <script src="js/jquery.easing.1.3.js"></script> -->
       <script src="js/jquery.quicksand.min.js"></script>
       <!-- <script src="js/jquery.tipTip.js"></script> -->
       <script src="js/jquery.lancelot.js"></script>

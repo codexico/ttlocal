@@ -1,8 +1,8 @@
 <div id="footer">
     <span id="footer-left">
-    &nbsp;Thanks to <a href="http://jquery.com/">jQuery</a> plugins:
+    &nbsp;Thanks to <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, <a href="http://jquery.com/">jQuery</a> plugins:
         <a href="http://razorjack.net/quicksand/">Quicksand</a>,
-        <a href="http://code.drewwilson.com/entry/tiptip-jquery-plugin">TipTip</a>,
+        <!--<a href="http://code.drewwilson.com/entry/tiptip-jquery-plugin">TipTip</a>,-->
         <a href="http://codexico.com.br/blog/jquery-lancelot-plugin">Lancelot</a>
     <a href="http://api.whatthetrend.com/">
     <?php if (PRODUCTION) ://para testar offline ?>
