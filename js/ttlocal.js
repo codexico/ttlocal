@@ -26,7 +26,6 @@ jQuery(document).ready(function ($) {
     // lancelot
     /////////////
     function lancelotLinks() {
-      //$('.lancelot').lancelot();
       $('body').on('hover', '.topic', function () {
         $(this).find('.lancelot').lancelot();
       })

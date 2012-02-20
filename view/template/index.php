@@ -32,16 +32,10 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/lancelot.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/ttlocal.css?v=2" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/ttlocal.css?v=3" media="screen" />
 
-    <!-- 960 ieca -->
-    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
-    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
-    <!-- end 960 ieca -->
-
-
-    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects 
-    <script src="js/libs/modernizr-1.6.min.js"></script> -->
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr.js"></script>
 
   </head>
   <body>
@@ -110,32 +104,21 @@
     <?php endif; ?>
 
     <?php if (PRODUCTION) : ?>
-      <!-- scripts concatenated and minified via ant build script-->
-  <!-- <script src="js/jquery.easing.1.3.js"></script> -->
-      <script src="js/jquery.quicksand.min.js"></script>
-      <!-- <script src="js/jquery.tipTip.minified.js"></script> -->
-      <script src="js/jquery.lancelot.js"></script>
-      <script src="js/jquery.simplemodal.1.4.1.min.js"></script>
+      <script src="js/libs/jquery.quicksand.min.js"></script>
+      <script src="js/libs/jquery.lancelot.js"></script>
       <script src="js/libs/bootstrap.min.js"></script>
-      <!--<script src="js/plugins.js"></script>-->
-      <script src="js/ttlocal.js"></script>
-      <!-- end concatenated and minified scripts-->
-
-      <!--[if lt IE 7 ]>
-      <script src="js/libs/dd_belatedpng.js"></script>
-      <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
-      <![endif]-->
+      <script src="js/ttlocal2.js"></script>
 
     <?php else : ?>
 
   <!-- <script src="js/jquery.easing.1.3.js"></script> -->
-      <script src="js/jquery.quicksand.min.js"></script>
+      <script src="js/libs/jquery.quicksand.min.js"></script>
       <!-- <script src="js/jquery.tipTip.js"></script> -->
-      <script src="js/jquery.lancelot.js"></script>
-      <script src="js/jquery.simplemodal-1.4.1.js"></script>
+      <script src="js/libs/jquery.lancelot.js"></script>
+      <!-- <script src="js/jquery.simplemodal-1.4.1.js"></script> -->
       <script src="js/libs/bootstrap.min.js"></script>
 
-      <script src="js/ttlocal.js"></script>
+      <script src="js/ttlocal2.js"></script>
     <?php endif; ?>
 
     <?php if (PRODUCTION) : ?>

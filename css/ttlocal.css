@@ -263,31 +263,13 @@ nav ul.nav ul li.town span.country{
     float: right;
 }
 
-/**********/
-/* tipTip */
-/**********/
-#tiptip_content {
-    font-size: 1.25em;
-}
-#tiptip_content a{
-    color: #fff;
-    text-decoration: underline;
-}
-
 /***************/
-/* simplemodal */
+/* modal */
 /***************/
-#simplemodal-container a.modalCloseImg {
-	background:url('../img/x.png') no-repeat; /* adjust url as required */
-	width:25px;
-	height:29px;
-	display:inline;
-	z-index:3200;
-	position:absolute;
-	top:-15px;
-	right:-18px;
-	cursor:pointer;
-}
-#simplemodal-data {
-    height: 100%;
+#modal {
+	position:fixed;
+	top:5%;
+	left:5%;
+  height: 90%;
+  width: 90%;
 }
