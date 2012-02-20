@@ -16,8 +16,12 @@ TTLOCAL = {
       $filteredLocations = TTLOCAL.$locationsClone.find('a[name='+lhash+']').parents('article');
     //TODO : se for country mostrar tambem as cidades
     }
+    $('#locations').quicksand($filteredLocations, TTLOCAL.quicksandOptions, function () {
+      $('html,body').animate({
+        scrollTop : $('#locations').offset().top
+        }, 300);
+    });
     
-    $('#locations').quicksand($filteredLocations, TTLOCAL.quicksandOptions);
   },
   showSearchLink : function () {
     $('#locations').on('hover', '.topic', function () {
@@ -46,22 +50,6 @@ TTLOCAL = {
     modalcontent = '<iframe src="' + youtubesrc + '" height="100%" width="99%" style="border:0;margin:0 0 0 0.5%;padding:0">';
 
     $('<div id="modal">').html(modalcontent).modal();
-
-/*    $.modal(modalcontent,
-    {
-      containerCss:{
-        backgroundColor:"#fff",
-        borderColor:"#fff",
-        height:"95%",
-        padding:0,
-        margin:0,
-        width:"95%"
-      },
-      close: true,
-      overlayClose: true
-    });
-*/    
-    
     
   },
   youtubeSearch : function (q) {
