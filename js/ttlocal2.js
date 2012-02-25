@@ -1,11 +1,12 @@
-TTLOCAL = {
+var TTLOCAL = {
   quicksandOptions : {
     useScaling: false,
     adjustHeight: false
   },
   locationHashChanged : function () {
     var lhash = window.location.hash.replace(/^#/, ''),
-    $filteredLocations = TTLOCAL.$locationsClone.find('article.local');//all
+    $filteredLocations = TTLOCAL.$locationsClone.find('article.local'),//all
+    $location, woeid, country;
     if (lhash === "Town") {
       $filteredLocations = TTLOCAL.$locationsClone.find('article[data-placeType=7]');
     } else if (lhash === "Country") {
@@ -13,13 +14,19 @@ TTLOCAL = {
     } else if (lhash === "" || lhash === "Worldwide") {
       $filteredLocations = TTLOCAL.$locationsClone.find('article');
     } else {
-      $filteredLocations = TTLOCAL.$locationsClone.find('a[name='+lhash+']').parents('article');
-    //TODO : se for country mostrar tambem as cidades
+      $location = $('#menu a[href=' + window.location.hash + ']');
+      woeid = $location.data('woeid');
+      country = $location.data('country');
+      if(country !== undefined) {
+        $filteredLocations = TTLOCAL.$locationsClone.find('article[data-countryCode=' + country + ']');
+      } else {
+        $filteredLocations = TTLOCAL.$locationsClone.find('article[data-id=' + woeid + ']');  
+      }
     }
     $('#locations').quicksand($filteredLocations, TTLOCAL.quicksandOptions, function () {
       $('html,body').animate({
-        scrollTop : $('#locations').offset().top
-        }, 300);
+        scrollTop : $('#locations').offset().top - 344 //article height
+      }, 300);
     });
     
   },
@@ -80,7 +87,9 @@ TTLOCAL = {
   },
   init : function () {
     window.onhashchange = this.locationHashChanged;
-    this.locationHashChanged();
+    if(window.location.hash !== "") {
+      this.locationHashChanged();
+    }
     this.tooltipInit();
     this.showSearchLink();
     this.lancelotLinks();
@@ -90,7 +99,7 @@ TTLOCAL = {
 
 jQuery(document).ready(function ($) {
 
-  // clone applications to get a second collection
+  // clone locations to get a second collection
   TTLOCAL.$locationsClone = $('#locations').clone();
 
   TTLOCAL.init();
