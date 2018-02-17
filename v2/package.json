@@ -1,0 +1,30 @@
+{
+  "name": "ttlocal",
+  "version": "2.0.0",
+  "description": "all local twitter trending topics",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codexico/ttlocal.git"
+  },
+  "keywords": [
+    "twitter",
+    "trends",
+    "trending",
+    "topics"
+  ],
+  "author": "codexico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codexico/ttlocal/issues"
+  },
+  "homepage": "https://github.com/codexico/ttlocal#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2"
+  }
+}
