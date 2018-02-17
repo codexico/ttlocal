@@ -1,0 +1,306 @@
+{
+  "trends": [
+    {
+      "name": "Tottenham",
+      "url": "http://twitter.com/search?q=Tottenham",
+      "promoted_content": null,
+      "query": "Tottenham",
+      "tweet_volume": 128845
+    },
+    {
+      "name": "#الهلال_العين",
+      "url": "http://twitter.com/search?q=%23%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84_%D8%A7%D9%84%D8%B9%D9%8A%D9%86",
+      "promoted_content": null,
+      "query": "%23%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84_%D8%A7%D9%84%D8%B9%D9%8A%D9%86",
+      "tweet_volume": 302923
+    },
+    {
+      "name": "#يوفنتوس_توتنهام",
+      "url": "http://twitter.com/search?q=%23%D9%8A%D9%88%D9%81%D9%86%D8%AA%D9%88%D8%B3_%D8%AA%D9%88%D8%AA%D9%86%D9%87%D8%A7%D9%85",
+      "promoted_content": null,
+      "query": "%23%D9%8A%D9%88%D9%81%D9%86%D8%AA%D9%88%D8%B3_%D8%AA%D9%88%D8%AA%D9%86%D9%87%D8%A7%D9%85",
+      "tweet_volume": 23632
+    },
+    {
+      "name": "#انا_سعودي_وساتزوج_حبيبتي",
+      "url": "http://twitter.com/search?q=%23%D8%A7%D9%86%D8%A7_%D8%B3%D8%B9%D9%88%D8%AF%D9%8A_%D9%88%D8%B3%D8%A7%D8%AA%D8%B2%D9%88%D8%AC_%D8%AD%D8%A8%D9%8A%D8%A8%D8%AA%D9%8A",
+      "promoted_content": null,
+      "query": "%23%D8%A7%D9%86%D8%A7_%D8%B3%D8%B9%D9%88%D8%AF%D9%8A_%D9%88%D8%B3%D8%A7%D8%AA%D8%B2%D9%88%D8%AC_%D8%AD%D8%A8%D9%8A%D8%A8%D8%AA%D9%8A",
+      "tweet_volume": 35942
+    },
+    {
+      "name": "#InternetFriendsDay",
+      "url": "http://twitter.com/search?q=%23InternetFriendsDay",
+      "promoted_content": null,
+      "query": "%23InternetFriendsDay",
+      "tweet_volume": 24575
+    },
+    {
+      "name": "Aurier",
+      "url": "http://twitter.com/search?q=Aurier",
+      "promoted_content": null,
+      "query": "Aurier",
+      "tweet_volume": 24304
+    },
+    {
+      "name": "#ApuraçãoSP",
+      "url": "http://twitter.com/search?q=%23Apura%C3%A7%C3%A3oSP",
+      "promoted_content": null,
+      "query": "%23Apura%C3%A7%C3%A3oSP",
+      "tweet_volume": 36577
+    },
+    {
+      "name": "Basel",
+      "url": "http://twitter.com/search?q=Basel",
+      "promoted_content": null,
+      "query": "Basel",
+      "tweet_volume": 44242
+    },
+    {
+      "name": "Tatuapé",
+      "url": "http://twitter.com/search?q=Tatuap%C3%A9",
+      "promoted_content": null,
+      "query": "Tatuap%C3%A9",
+      "tweet_volume": 12519
+    },
+    {
+      "name": "Lloris",
+      "url": "http://twitter.com/search?q=Lloris",
+      "promoted_content": null,
+      "query": "Lloris",
+      "tweet_volume": null
+    },
+    {
+      "name": "Lamela",
+      "url": "http://twitter.com/search?q=Lamela",
+      "promoted_content": null,
+      "query": "Lamela",
+      "tweet_volume": 13414
+    },
+    {
+      "name": "Netanyahu",
+      "url": "http://twitter.com/search?q=Netanyahu",
+      "promoted_content": null,
+      "query": "Netanyahu",
+      "tweet_volume": 64932
+    },
+    {
+      "name": "Louise Linton",
+      "url": "http://twitter.com/search?q=%22Louise+Linton%22",
+      "promoted_content": null,
+      "query": "%22Louise+Linton%22",
+      "tweet_volume": null
+    },
+    {
+      "name": "El City",
+      "url": "http://twitter.com/search?q=%22El+City%22",
+      "promoted_content": null,
+      "query": "%22El+City%22",
+      "tweet_volume": null
+    },
+    {
+      "name": "Moussa Dembele",
+      "url": "http://twitter.com/search?q=%22Moussa+Dembele%22",
+      "promoted_content": null,
+      "query": "%22Moussa+Dembele%22",
+      "tweet_volume": null
+    },
+    {
+      "name": "Felipe González",
+      "url": "http://twitter.com/search?q=%22Felipe+Gonz%C3%A1lez%22",
+      "promoted_content": null,
+      "query": "%22Felipe+Gonz%C3%A1lez%22",
+      "tweet_volume": 20345
+    },
+    {
+      "name": "CISEN",
+      "url": "http://twitter.com/search?q=CISEN",
+      "promoted_content": null,
+      "query": "CISEN",
+      "tweet_volume": 15508
+    },
+    {
+      "name": "Blue Apron",
+      "url": "http://twitter.com/search?q=%22Blue+Apron%22",
+      "promoted_content": null,
+      "query": "%22Blue+Apron%22",
+      "tweet_volume": 34658
+    },
+    {
+      "name": "#غبار_القصيم",
+      "url": "http://twitter.com/search?q=%23%D8%BA%D8%A8%D8%A7%D8%B1_%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85",
+      "promoted_content": null,
+      "query": "%23%D8%BA%D8%A8%D8%A7%D8%B1_%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85",
+      "tweet_volume": 40752
+    },
+    {
+      "name": "#OTDirecto13F",
+      "url": "http://twitter.com/search?q=%23OTDirecto13F",
+      "promoted_content": null,
+      "query": "%23OTDirecto13F",
+      "tweet_volume": 45088
+    },
+    {
+      "name": "#PrincipeLibero",
+      "url": "http://twitter.com/search?q=%23PrincipeLibero",
+      "promoted_content": null,
+      "query": "%23PrincipeLibero",
+      "tweet_volume": null
+    },
+    {
+      "name": "#ottoemezzo",
+      "url": "http://twitter.com/search?q=%23ottoemezzo",
+      "promoted_content": null,
+      "query": "%23ottoemezzo",
+      "tweet_volume": 11529
+    },
+    {
+      "name": "#harrypottereilcalicedifuoco",
+      "url": "http://twitter.com/search?q=%23harrypottereilcalicedifuoco",
+      "promoted_content": null,
+      "query": "%23harrypottereilcalicedifuoco",
+      "tweet_volume": null
+    },
+    {
+      "name": "#GalentinesDay",
+      "url": "http://twitter.com/search?q=%23GalentinesDay",
+      "promoted_content": null,
+      "query": "%23GalentinesDay",
+      "tweet_volume": 59887
+    },
+    {
+      "name": "#عيد_الحب",
+      "url": "http://twitter.com/search?q=%23%D8%B9%D9%8A%D8%AF_%D8%A7%D9%84%D8%AD%D8%A8",
+      "promoted_content": null,
+      "query": "%23%D8%B9%D9%8A%D8%AF_%D8%A7%D9%84%D8%AD%D8%A8",
+      "tweet_volume": 16583
+    },
+    {
+      "name": "#Zijlstradebat",
+      "url": "http://twitter.com/search?q=%23Zijlstradebat",
+      "promoted_content": null,
+      "query": "%23Zijlstradebat",
+      "tweet_volume": null
+    },
+    {
+      "name": "#DiMartedi",
+      "url": "http://twitter.com/search?q=%23DiMartedi",
+      "promoted_content": null,
+      "query": "%23DiMartedi",
+      "tweet_volume": null
+    },
+    {
+      "name": "#sarmaşıktaaşk",
+      "url": "http://twitter.com/search?q=%23sarma%C5%9F%C4%B1ktaa%C5%9Fk",
+      "promoted_content": null,
+      "query": "%23sarma%C5%9F%C4%B1ktaa%C5%9Fk",
+      "tweet_volume": 10131
+    },
+    {
+      "name": "#FatTuesday",
+      "url": "http://twitter.com/search?q=%23FatTuesday",
+      "promoted_content": null,
+      "query": "%23FatTuesday",
+      "tweet_volume": 43800
+    },
+    {
+      "name": "#TuzağaDüşme",
+      "url": "http://twitter.com/search?q=%23Tuza%C4%9FaD%C3%BC%C5%9Fme",
+      "promoted_content": null,
+      "query": "%23Tuza%C4%9FaD%C3%BC%C5%9Fme",
+      "tweet_volume": null
+    },
+    {
+      "name": "#Bence14Şubat",
+      "url": "http://twitter.com/search?q=%23Bence14%C5%9Eubat",
+      "promoted_content": null,
+      "query": "%23Bence14%C5%9Eubat",
+      "tweet_volume": null
+    },
+    {
+      "name": "#الخذلان_يعني",
+      "url": "http://twitter.com/search?q=%23%D8%A7%D9%84%D8%AE%D8%B0%D9%84%D8%A7%D9%86_%D9%8A%D8%B9%D9%86%D9%8A",
+      "promoted_content": null,
+      "query": "%23%D8%A7%D9%84%D8%AE%D8%B0%D9%84%D8%A7%D9%86_%D9%8A%D8%B9%D9%86%D9%8A",
+      "tweet_volume": null
+    },
+    {
+      "name": "#وكاله_تعليق_الدراسه1",
+      "url": "http://twitter.com/search?q=%23%D9%88%D9%83%D8%A7%D9%84%D9%87_%D8%AA%D8%B9%D9%84%D9%8A%D9%82_%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%871",
+      "promoted_content": null,
+      "query": "%23%D9%88%D9%83%D8%A7%D9%84%D9%87_%D8%AA%D8%B9%D9%84%D9%8A%D9%82_%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%871",
+      "tweet_volume": 18767
+    },
+    {
+      "name": "#VerdadesOcultas",
+      "url": "http://twitter.com/search?q=%23VerdadesOcultas",
+      "promoted_content": null,
+      "query": "%23VerdadesOcultas",
+      "tweet_volume": null
+    },
+    {
+      "name": "#FirstDates560",
+      "url": "http://twitter.com/search?q=%23FirstDates560",
+      "promoted_content": null,
+      "query": "%23FirstDates560",
+      "tweet_volume": null
+    },
+    {
+      "name": "#VatanNAMUSTUR",
+      "url": "http://twitter.com/search?q=%23VatanNAMUSTUR",
+      "promoted_content": null,
+      "query": "%23VatanNAMUSTUR",
+      "tweet_volume": 13930
+    },
+    {
+      "name": "#حياتك10",
+      "url": "http://twitter.com/search?q=%23%D8%AD%D9%8A%D8%A7%D8%AA%D9%8310",
+      "promoted_content": null,
+      "query": "%23%D8%AD%D9%8A%D8%A7%D8%AA%D9%8310",
+      "tweet_volume": 39221
+    },
+    {
+      "name": "#MySupportSystemIs",
+      "url": "http://twitter.com/search?q=%23MySupportSystemIs",
+      "promoted_content": null,
+      "query": "%23MySupportSystemIs",
+      "tweet_volume": null
+    },
+    {
+      "name": "#الفلانتين_بالنسبالك_ايه",
+      "url": "http://twitter.com/search?q=%23%D8%A7%D9%84%D9%81%D9%84%D8%A7%D9%86%D8%AA%D9%8A%D9%86_%D8%A8%D8%A7%D9%84%D9%86%D8%B3%D8%A8%D8%A7%D9%84%D9%83_%D8%A7%D9%8A%D9%87",
+      "promoted_content": null,
+      "query": "%23%D8%A7%D9%84%D9%81%D9%84%D8%A7%D9%86%D8%AA%D9%8A%D9%86_%D8%A8%D8%A7%D9%84%D9%86%D8%B3%D8%A8%D8%A7%D9%84%D9%83_%D8%A7%D9%8A%D9%87",
+      "tweet_volume": 19647
+    },
+    {
+      "name": "#لهون_وبس",
+      "url": "http://twitter.com/search?q=%23%D9%84%D9%87%D9%88%D9%86_%D9%88%D8%A8%D8%B3",
+      "promoted_content": null,
+      "query": "%23%D9%84%D9%87%D9%88%D9%86_%D9%88%D8%A8%D8%B3",
+      "tweet_volume": null
+    },
+    {
+      "name": "#MañanaTeRegalaré",
+      "url": "http://twitter.com/search?q=%23Ma%C3%B1anaTeRegalar%C3%A9",
+      "promoted_content": null,
+      "query": "%23Ma%C3%B1anaTeRegalar%C3%A9",
+      "tweet_volume": 14085
+    },
+    {
+      "name": "#جامعه_المجمعه",
+      "url": "http://twitter.com/search?q=%23%D8%AC%D8%A7%D9%85%D8%B9%D9%87_%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D9%87",
+      "promoted_content": null,
+      "query": "%23%D8%AC%D8%A7%D9%85%D8%B9%D9%87_%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D9%87",
+      "tweet_volume": null
+    }
+  ],
+  "as_of": "2018-02-13T21:37:43Z",
+  "created_at": "2018-02-13T21:31:39Z",
+  "locations": [
+    {
+      "name": "Worldwide",
+      "woeid": 1
+    }
+  ]
+}
