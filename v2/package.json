@@ -24,7 +24,6 @@
   "homepage": "https://github.com/codexico/ttlocal#readme",
   "dependencies": {
     "axios": "^0.17.1",
-    "dotenv": "^5.0.0",
-    "express": "^4.16.2"
+    "dotenv": "^5.0.0"
   }
 }
